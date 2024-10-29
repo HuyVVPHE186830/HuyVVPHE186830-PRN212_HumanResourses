@@ -1,0 +1,6 @@
+D:\DU LIEU\KY 5 FALL2024\PRN212\HuyVVPHE186830-PRN212_HumanResourses\Repositories\obj\Debug\net8.0-windows\Repositories.csproj.AssemblyReference.cache
+D:\DU LIEU\KY 5 FALL2024\PRN212\HuyVVPHE186830-PRN212_HumanResourses\Repositories\obj\Debug\net8.0-windows\Repositories.GeneratedMSBuildEditorConfig.editorconfig
+D:\DU LIEU\KY 5 FALL2024\PRN212\HuyVVPHE186830-PRN212_HumanResourses\Repositories\obj\Debug\net8.0-windows\Repositories.AssemblyInfoInputs.cache
+D:\DU LIEU\KY 5 FALL2024\PRN212\HuyVVPHE186830-PRN212_HumanResourses\Repositories\obj\Debug\net8.0-windows\Repositories.AssemblyInfo.cs
+D:\DU LIEU\KY 5 FALL2024\PRN212\HuyVVPHE186830-PRN212_HumanResourses\Repositories\obj\Debug\net8.0-windows\Repositories.csproj.CoreCompileInputs.cache
+D:\DU LIEU\KY 5 FALL2024\PRN212\HuyVVPHE186830-PRN212_HumanResourses\Repositories\obj\Debug\net8.0-windows\Repositories.sourcelink.json

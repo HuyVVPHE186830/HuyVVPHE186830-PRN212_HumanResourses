@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer
 {
-    internal class AccountDAO
+    public class AccountDAO
     {
         private static List<Account> listAccounts;
         public static List<Account> GetAccounts()
@@ -47,7 +47,7 @@ namespace DataAccessLayer
                 throw new Exception(e.Message);
             }
         }
-        public static void DeteleAccount(Account account)
+        public static void DeleteAccount(Account account)
         {
             try
             {
@@ -62,7 +62,7 @@ namespace DataAccessLayer
             }
         }
 
-        public static Account GetAccountByBookingId(int accountId)
+        public static Account GetAccountByAccountId(int accountId)
         {
             using var db = new FuhrmContext();
             return db.Accounts.FirstOrDefault(b => b.AccountId.Equals(accountId));

@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer
 {
-    internal class EmployeeDAO
+    public class EmployeeDAO
     {
         private static List<Employee> listEmployees;
-        public static List<Employee> GetBookings()
+        public static List<Employee> GetEmployees()
         {
             listEmployees = new List<Employee>();
             try
@@ -47,7 +47,7 @@ namespace DataAccessLayer
                 throw new Exception(e.Message);
             }
         }
-        public static void DeteleEmployee(Employee employee)
+        public static void DeleteEmployee(Employee employee)
         {
             try
             {
@@ -61,8 +61,24 @@ namespace DataAccessLayer
                 throw new Exception(e.Message);
             }
         }
+        public static List<Employee> SearchEmployee(String keyword)
+        {
+            try
+            {
+                using var db = new FuhrmContext();
+                return db.Employees
+                          .Where(c => c.Department.DepartmentName.Contains(keyword)
+                                   || c.FullName.Contains(keyword)
+                                   || c.Position.PositionName.Contains(keyword))
+                          .ToList();
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
 
-        public static Employee GetEmployeeByBookingId(int employeeId)
+        public static Employee GetEmployeeByEmployeeId(int employeeId)
         {
             using var db = new FuhrmContext();
             return db.Employees.FirstOrDefault(b => b.EmployeeId.Equals(employeeId));
