@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\fu_learing\\fa24\\prn212\\Assignment\\HumanResources\\Objects\\Objects.csproj": {}
+    "C:\\Users\\FPT SHOP\\PRN212_Project\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Objects.csproj": {}
   },
   "projects": {
-    "D:\\fu_learing\\fa24\\prn212\\Assignment\\HumanResources\\Objects\\Objects.csproj": {
+    "C:\\Users\\FPT SHOP\\PRN212_Project\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Objects.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\fu_learing\\fa24\\prn212\\Assignment\\HumanResources\\Objects\\Objects.csproj",
+        "projectUniqueName": "C:\\Users\\FPT SHOP\\PRN212_Project\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Objects.csproj",
         "projectName": "Objects",
-        "projectPath": "D:\\fu_learing\\fa24\\prn212\\Assignment\\HumanResources\\Objects\\Objects.csproj",
-        "packagesPath": "C:\\Users\\RAZER\\.nuget\\packages\\",
-        "outputPath": "D:\\fu_learing\\fa24\\prn212\\Assignment\\HumanResources\\Objects\\obj\\",
+        "projectPath": "C:\\Users\\FPT SHOP\\PRN212_Project\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Objects.csproj",
+        "packagesPath": "C:\\Users\\FPT SHOP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\FPT SHOP\\PRN212_Project\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\RAZER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\FPT SHOP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -64,7 +64,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
