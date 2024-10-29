@@ -1,0 +1,6 @@
+C:\Users\FPT SHOP\PRN212_Project\HuyVVPHE186830-PRN212_HumanResourses\DataAccessLayer\obj\Debug\net8.0-windows\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\FPT SHOP\PRN212_Project\HuyVVPHE186830-PRN212_HumanResourses\DataAccessLayer\obj\Debug\net8.0-windows\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\FPT SHOP\PRN212_Project\HuyVVPHE186830-PRN212_HumanResourses\DataAccessLayer\obj\Debug\net8.0-windows\DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\FPT SHOP\PRN212_Project\HuyVVPHE186830-PRN212_HumanResourses\DataAccessLayer\obj\Debug\net8.0-windows\DataAccessLayer.AssemblyInfo.cs
+C:\Users\FPT SHOP\PRN212_Project\HuyVVPHE186830-PRN212_HumanResourses\DataAccessLayer\obj\Debug\net8.0-windows\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\FPT SHOP\PRN212_Project\HuyVVPHE186830-PRN212_HumanResourses\DataAccessLayer\obj\Debug\net8.0-windows\DataAccessLayer.sourcelink.json
