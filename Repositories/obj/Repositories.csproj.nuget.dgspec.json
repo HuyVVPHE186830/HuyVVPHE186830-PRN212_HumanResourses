@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\FPT SHOP\\PRN212_Project\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\Repositories.csproj": {}
+    "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\Repositories.csproj": {}
   },
   "projects": {
-    "C:\\Users\\FPT SHOP\\PRN212_Project\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\Repositories.csproj": {
+    "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\Repositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\FPT SHOP\\PRN212_Project\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\Repositories.csproj",
+        "projectUniqueName": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\Repositories.csproj",
         "projectName": "Repositories",
-        "projectPath": "C:\\Users\\FPT SHOP\\PRN212_Project\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\Repositories.csproj",
-        "packagesPath": "C:\\Users\\FPT SHOP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\FPT SHOP\\PRN212_Project\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\obj\\",
+        "projectPath": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\Repositories.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\FPT SHOP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -64,7 +64,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
