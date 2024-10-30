@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Workspace\\PRN212_Project\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Objects.csproj": {}
+    "D:\\FALL 2024\\PRN212\\GroupAss2\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Objects.csproj": {}
   },
   "projects": {
-    "D:\\Workspace\\PRN212_Project\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Objects.csproj": {
+    "D:\\FALL 2024\\PRN212\\GroupAss2\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Objects.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Workspace\\PRN212_Project\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Objects.csproj",
+        "projectUniqueName": "D:\\FALL 2024\\PRN212\\GroupAss2\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Objects.csproj",
         "projectName": "Objects",
-        "projectPath": "D:\\Workspace\\PRN212_Project\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Objects.csproj",
-        "packagesPath": "C:\\Users\\FPT SHOP\\.nuget\\packages\\",
-        "outputPath": "D:\\Workspace\\PRN212_Project\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\obj\\",
+        "projectPath": "D:\\FALL 2024\\PRN212\\GroupAss2\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Objects.csproj",
+        "packagesPath": "C:\\Users\\yeuda\\.nuget\\packages\\",
+        "outputPath": "D:\\FALL 2024\\PRN212\\GroupAss2\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\FPT SHOP\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\yeuda\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
