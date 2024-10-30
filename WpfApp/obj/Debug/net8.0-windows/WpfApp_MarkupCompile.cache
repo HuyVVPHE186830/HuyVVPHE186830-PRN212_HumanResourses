@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\FALL 2024\PRN212\GroupAss2\HuyVVPHE186830-PRN212_HumanResourses\WpfApp\App.xaml
-3-1938903143
+51265803428
 
-6-1193120433
+8-1416182488
 2481317021948
-EmployeeManagementWindow.xaml;MainWindow.xaml;Window1.xaml;
+AddSlaWindow.xaml;EditSlaWindow.xaml;EmployeeManagementWindow.xaml;MainWindow.xaml;SlaryWindow.xaml;
 
-True
+False
 

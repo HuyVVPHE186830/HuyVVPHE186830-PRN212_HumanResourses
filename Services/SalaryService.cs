@@ -4,24 +4,33 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Repositories;
 
 namespace Services
 {
-    class SalaryService : ISalaryService
+   
+    public class SalaryService : ISalaryService
     {
-        public void AđdSalary(Salary salary)
+        private readonly ISalaryRepository _employeeService;
+        public SalaryService()
         {
-            throw new NotImplementedException();
+            _employeeService = new SalaryRepository();
+        }
+     
+
+        public void AddSalary(Salary salary)
+        {
+            _employeeService.AddSalary(salary);
         }
 
         public Salary GetSalaryByEmployeeId(int employeeId)
         {
-            throw new NotImplementedException();
+            return _employeeService.GetEmployeeByEmployeeId(employeeId);
         }
 
         public void UpdateSalary(Salary salary)
         {
-            throw new NotImplementedException();
+            _employeeService.UpdateEmployee(salary);
         }
     }
 }

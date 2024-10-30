@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace Repositories
 {
-    internal  interface ISalaryRepository 
+    public  interface ISalaryRepository 
     {
-        void AđdSalary(Salary salary);
-        void UpdateSalary(Salary salary);
-        Salary GetSalaryByEmployeeId(int employeeId);
+        void AddSalary(Salary salary);
+        Salary GetEmployeeByEmployeeId(int employeeId);
+        void UpdateEmployee(Salary salary);
     }
 }

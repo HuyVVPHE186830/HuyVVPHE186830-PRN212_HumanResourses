@@ -4,26 +4,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DataAccessLayer;
 
 namespace Repositories
 {
-    class SalaryRepository : ISalaryRepository
+   public class SalaryRepository : ISalaryRepository
     {
-       
+        public void AddSalary(Salary salary) => SalaryDAO.AddSalary(salary);
 
-        public void AđdSalary(Salary salary)
-        {
-            throw new NotImplementedException();
-        }
+        public Salary GetEmployeeByEmployeeId(int employeeId) => SalaryDAO.GetSalaryByEmployeeId(employeeId);
 
-        public Salary GetSalaryByEmployeeId(int employeeId)
-        {
-            throw new NotImplementedException();
-        }
 
-        public void UpdateSalary(Salary salary)
-        {
-            throw new NotImplementedException();
-        }
+        public void UpdateEmployee(Salary salary) => SalaryDAO.UpdateSalary(salary);
+
+
     }
 }

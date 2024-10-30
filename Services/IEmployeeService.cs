@@ -16,5 +16,8 @@ namespace Services
         List<Employee> SearchEmployee(string keyword);
         Employee GetEmployeeByEmployeeId(int EmployeeId);
         Employee GetEmployeeByAccountId(int AccountId);
+
+        List<string> GetAvailableEmployeeNames();
+        List<string> GetEmployeeNames();
     }
 }

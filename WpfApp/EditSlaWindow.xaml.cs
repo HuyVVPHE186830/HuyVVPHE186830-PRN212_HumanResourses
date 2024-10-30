@@ -13,18 +13,20 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using DataAccessLayer;
 using Objects;
+using Services;
 
 namespace WpfApp
 {
     public partial class EditSlaWindow : Window
     {
         public event Action SalaryUpdated;
-        private readonly EmployeeDAO employeeDAO = new();
-        private readonly SalaryDAO salaryDAO = new SalaryDAO();
+        private readonly ISalaryService salaryService;
+        
         public Salary Salary { get; private set; }
 
         public EditSlaWindow(Salary salary)
         {
+            salaryService = new SalaryService();
             InitializeComponent();
             Salary = salary;
             LoadSalaryInfo();
@@ -61,7 +63,7 @@ namespace WpfApp
             // Lưu thay đổi vào cơ sở dữ liệu
             try
             {
-                SalaryDAO.UpdateSalary(Salary); // Giả sử bạn đã có phương thức này trong SalaryDAO
+                salaryService.UpdateSalary(Salary); // Giả sử bạn đã có phương thức này trong SalaryDAO
                 MessageBox.Show("Cập nhật lương thành công!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
                 this.DialogResult = true;
                 SalaryUpdated?.Invoke();

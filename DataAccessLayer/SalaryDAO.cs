@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer
 {
-    class SalaryDAO
+    public class SalaryDAO
     {
         public static void AddSalary(Salary salary)
         {
@@ -22,7 +22,7 @@ namespace DataAccessLayer
                 throw new Exception("Error adding salary: " + e.Message);
             }
         }
-        public Salary GetSalaryByEmployeeId(int employeeId)
+        public static Salary GetSalaryByEmployeeId(int employeeId)
         {
             try
             {

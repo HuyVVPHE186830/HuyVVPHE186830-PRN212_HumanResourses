@@ -9,7 +9,7 @@ namespace Services
 {
     public interface ISalaryService
     {
-        void AđdSalary(Salary salary);
+        void AddSalary(Salary salary);
         void UpdateSalary(Salary salary);
 
         Salary GetSalaryByEmployeeId(int employeeId);

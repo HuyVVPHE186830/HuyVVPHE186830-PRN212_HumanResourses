@@ -14,11 +14,14 @@ namespace WpfApp
         public event Action SalaryUpdated;
 
         private readonly ISalaryService iSalaryService;
+        private readonly IEmployeeService iEmployeeService;
         private string _selectedEmployeeName;
 
         public AddSlaWindow(string employeeName = null)
         {
             InitializeComponent();
+            iSalaryService = new SalaryService(); 
+            iEmployeeService = new EmployeeService(); 
             _selectedEmployeeName = employeeName;
             LoadEmployeeNames();
             LoadSelectedEmployee();
@@ -27,7 +30,7 @@ namespace WpfApp
         private void LoadEmployeeNames()
         {
 
-            List<string> employeeNames = EmployeeDAO.GetAvailableEmployeeNames();
+            List<string> employeeNames = iEmployeeService.GetAvailableEmployeeNames();
             EmployeeComboBox.ItemsSource = employeeNames;
         }
 
@@ -36,7 +39,7 @@ namespace WpfApp
             if (!string.IsNullOrEmpty(_selectedEmployeeName))
             {
                 EmployeeComboBox.SelectedItem = _selectedEmployeeName;
-                var employee = EmployeeDAO.GetEmployees().FirstOrDefault(e => e.FullName == _selectedEmployeeName);
+                var employee = iEmployeeService.GetEmployees().FirstOrDefault(e => e.FullName == _selectedEmployeeName);
                 if (employee != null)
                 {
                     LoadSalaryInfo(employee.EmployeeId);
@@ -92,7 +95,7 @@ namespace WpfApp
             // Lưu thông tin lương vào cơ sở dữ liệu
             try
             {
-                SalaIryDAO.AddSalary(salary); // Giả sử bạn đã có phương thức này trong SalaryDAO
+                iSalaryService.AddSalary(salary); ; // Giả sử bạn đã có phương thức này trong SalaryDAO
                 MessageBox.Show("Thêm lương thành công!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
                 SalaryUpdated?.Invoke();
                 this.Close(); // Đóng cửa sổ sau khi lưu
