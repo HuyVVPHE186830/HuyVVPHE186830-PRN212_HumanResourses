@@ -3,36 +3,140 @@
   "WorkspaceRootPath": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2FE4F837-8A73-4D41-A634-65D761B13551}|Repositories\\Repositories.csproj|d:\\du lieu\\ky 5 fall2024\\prn212\\huyvvphe186830-prn212_humanresourses\\repositories\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2FE4F837-8A73-4D41-A634-65D761B13551}|Repositories\\Repositories.csproj|solutionrelative:repositories\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|d:\\du lieu\\ky 5 fall2024\\prn212\\huyvvphe186830-prn212_humanresourses\\wpfapp\\employeemanagementwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|solutionrelative:wpfapp\\employeemanagementwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{703071E0-1DF9-4823-8DD3-332929F5BFEB}|DataAccessLayer\\DataAccessLayer.csproj|d:\\du lieu\\ky 5 fall2024\\prn212\\huyvvphe186830-prn212_humanresourses\\dataaccesslayer\\employeedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{703071E0-1DF9-4823-8DD3-332929F5BFEB}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\employeedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|d:\\du lieu\\ky 5 fall2024\\prn212\\huyvvphe186830-prn212_humanresourses\\wpfapp\\employeemanagementwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|solutionrelative:wpfapp\\employeemanagementwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{703071E0-1DF9-4823-8DD3-332929F5BFEB}|DataAccessLayer\\DataAccessLayer.csproj|d:\\du lieu\\ky 5 fall2024\\prn212\\huyvvphe186830-prn212_humanresourses\\dataaccesslayer\\accountdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{703071E0-1DF9-4823-8DD3-332929F5BFEB}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\accountdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7B3983E8-F962-4423-A105-3637C8AD08A9}|Services\\Services.csproj|d:\\du lieu\\ky 5 fall2024\\prn212\\huyvvphe186830-prn212_humanresourses\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B3983E8-F962-4423-A105-3637C8AD08A9}|Services\\Services.csproj|solutionrelative:services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B3983E8-F962-4423-A105-3637C8AD08A9}|Services\\Services.csproj|d:\\du lieu\\ky 5 fall2024\\prn212\\huyvvphe186830-prn212_humanresourses\\services\\departmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B3983E8-F962-4423-A105-3637C8AD08A9}|Services\\Services.csproj|solutionrelative:services\\departmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B3983E8-F962-4423-A105-3637C8AD08A9}|Services\\Services.csproj|d:\\du lieu\\ky 5 fall2024\\prn212\\huyvvphe186830-prn212_humanresourses\\services\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B3983E8-F962-4423-A105-3637C8AD08A9}|Services\\Services.csproj|solutionrelative:services\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2FE4F837-8A73-4D41-A634-65D761B13551}|Repositories\\Repositories.csproj|d:\\du lieu\\ky 5 fall2024\\prn212\\huyvvphe186830-prn212_humanresourses\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2FE4F837-8A73-4D41-A634-65D761B13551}|Repositories\\Repositories.csproj|solutionrelative:repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2FE4F837-8A73-4D41-A634-65D761B13551}|Repositories\\Repositories.csproj|d:\\du lieu\\ky 5 fall2024\\prn212\\huyvvphe186830-prn212_humanresourses\\repositories\\iaccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2FE4F837-8A73-4D41-A634-65D761B13551}|Repositories\\Repositories.csproj|solutionrelative:repositories\\iaccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7B3983E8-F962-4423-A105-3637C8AD08A9}|Services\\Services.csproj|d:\\du lieu\\ky 5 fall2024\\prn212\\huyvvphe186830-prn212_humanresourses\\services\\ipositionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B3983E8-F962-4423-A105-3637C8AD08A9}|Services\\Services.csproj|solutionrelative:services\\ipositionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{703071E0-1DF9-4823-8DD3-332929F5BFEB}|DataAccessLayer\\DataAccessLayer.csproj|d:\\du lieu\\ky 5 fall2024\\prn212\\huyvvphe186830-prn212_humanresourses\\dataaccesslayer\\employeedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{703071E0-1DF9-4823-8DD3-332929F5BFEB}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\employeedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{821B3EA4-CAB6-4035-9085-32CD411762EE}|Objects\\Objects.csproj|d:\\du lieu\\ky 5 fall2024\\prn212\\huyvvphe186830-prn212_humanresourses\\objects\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{821B3EA4-CAB6-4035-9085-32CD411762EE}|Objects\\Objects.csproj|solutionrelative:objects\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2FE4F837-8A73-4D41-A634-65D761B13551}|Repositories\\Repositories.csproj|d:\\du lieu\\ky 5 fall2024\\prn212\\huyvvphe186830-prn212_humanresourses\\repositories\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2FE4F837-8A73-4D41-A634-65D761B13551}|Repositories\\Repositories.csproj|solutionrelative:repositories\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{2FE4F837-8A73-4D41-A634-65D761B13551}|Repositories\\Repositories.csproj|d:\\du lieu\\ky 5 fall2024\\prn212\\huyvvphe186830-prn212_humanresourses\\repositories\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FE4F837-8A73-4D41-A634-65D761B13551}|Repositories\\Repositories.csproj|solutionrelative:repositories\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B3983E8-F962-4423-A105-3637C8AD08A9}|Services\\Services.csproj|d:\\du lieu\\ky 5 fall2024\\prn212\\huyvvphe186830-prn212_humanresourses\\services\\positionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B3983E8-F962-4423-A105-3637C8AD08A9}|Services\\Services.csproj|solutionrelative:services\\positionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B3983E8-F962-4423-A105-3637C8AD08A9}|Services\\Services.csproj|d:\\du lieu\\ky 5 fall2024\\prn212\\huyvvphe186830-prn212_humanresourses\\services\\idepartmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B3983E8-F962-4423-A105-3637C8AD08A9}|Services\\Services.csproj|solutionrelative:services\\idepartmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B3983E8-F962-4423-A105-3637C8AD08A9}|Services\\Services.csproj|d:\\du lieu\\ky 5 fall2024\\prn212\\huyvvphe186830-prn212_humanresourses\\services\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B3983E8-F962-4423-A105-3637C8AD08A9}|Services\\Services.csproj|solutionrelative:services\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B3983E8-F962-4423-A105-3637C8AD08A9}|Services\\Services.csproj|d:\\du lieu\\ky 5 fall2024\\prn212\\huyvvphe186830-prn212_humanresourses\\services\\iroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B3983E8-F962-4423-A105-3637C8AD08A9}|Services\\Services.csproj|solutionrelative:services\\iroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FE4F837-8A73-4D41-A634-65D761B13551}|Repositories\\Repositories.csproj|d:\\du lieu\\ky 5 fall2024\\prn212\\huyvvphe186830-prn212_humanresourses\\repositories\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FE4F837-8A73-4D41-A634-65D761B13551}|Repositories\\Repositories.csproj|solutionrelative:repositories\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FE4F837-8A73-4D41-A634-65D761B13551}|Repositories\\Repositories.csproj|d:\\du lieu\\ky 5 fall2024\\prn212\\huyvvphe186830-prn212_humanresourses\\repositories\\positionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FE4F837-8A73-4D41-A634-65D761B13551}|Repositories\\Repositories.csproj|solutionrelative:repositories\\positionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FE4F837-8A73-4D41-A634-65D761B13551}|Repositories\\Repositories.csproj|d:\\du lieu\\ky 5 fall2024\\prn212\\huyvvphe186830-prn212_humanresourses\\repositories\\irolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FE4F837-8A73-4D41-A634-65D761B13551}|Repositories\\Repositories.csproj|solutionrelative:repositories\\irolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FE4F837-8A73-4D41-A634-65D761B13551}|Repositories\\Repositories.csproj|d:\\du lieu\\ky 5 fall2024\\prn212\\huyvvphe186830-prn212_humanresourses\\repositories\\ipositionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FE4F837-8A73-4D41-A634-65D761B13551}|Repositories\\Repositories.csproj|solutionrelative:repositories\\ipositionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FE4F837-8A73-4D41-A634-65D761B13551}|Repositories\\Repositories.csproj|d:\\du lieu\\ky 5 fall2024\\prn212\\huyvvphe186830-prn212_humanresourses\\repositories\\rolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FE4F837-8A73-4D41-A634-65D761B13551}|Repositories\\Repositories.csproj|solutionrelative:repositories\\rolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FE4F837-8A73-4D41-A634-65D761B13551}|Repositories\\Repositories.csproj|d:\\du lieu\\ky 5 fall2024\\prn212\\huyvvphe186830-prn212_humanresourses\\repositories\\idepartmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FE4F837-8A73-4D41-A634-65D761B13551}|Repositories\\Repositories.csproj|solutionrelative:repositories\\idepartmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B3983E8-F962-4423-A105-3637C8AD08A9}|Services\\Services.csproj|d:\\du lieu\\ky 5 fall2024\\prn212\\huyvvphe186830-prn212_humanresourses\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B3983E8-F962-4423-A105-3637C8AD08A9}|Services\\Services.csproj|solutionrelative:services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{703071E0-1DF9-4823-8DD3-332929F5BFEB}|DataAccessLayer\\DataAccessLayer.csproj|d:\\du lieu\\ky 5 fall2024\\prn212\\huyvvphe186830-prn212_humanresourses\\dataaccesslayer\\positiondao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{703071E0-1DF9-4823-8DD3-332929F5BFEB}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\positiondao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{703071E0-1DF9-4823-8DD3-332929F5BFEB}|DataAccessLayer\\DataAccessLayer.csproj|d:\\du lieu\\ky 5 fall2024\\prn212\\huyvvphe186830-prn212_humanresourses\\dataaccesslayer\\departmentdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{703071E0-1DF9-4823-8DD3-332929F5BFEB}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\departmentdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{821B3EA4-CAB6-4035-9085-32CD411762EE}|Objects\\Objects.csproj|d:\\du lieu\\ky 5 fall2024\\prn212\\huyvvphe186830-prn212_humanresourses\\objects\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{821B3EA4-CAB6-4035-9085-32CD411762EE}|Objects\\Objects.csproj|solutionrelative:objects\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{703071E0-1DF9-4823-8DD3-332929F5BFEB}|DataAccessLayer\\DataAccessLayer.csproj|d:\\du lieu\\ky 5 fall2024\\prn212\\huyvvphe186830-prn212_humanresourses\\dataaccesslayer\\roledao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{703071E0-1DF9-4823-8DD3-332929F5BFEB}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\roledao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{821B3EA4-CAB6-4035-9085-32CD411762EE}|Objects\\Objects.csproj|d:\\du lieu\\ky 5 fall2024\\prn212\\huyvvphe186830-prn212_humanresourses\\objects\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{821B3EA4-CAB6-4035-9085-32CD411762EE}|Objects\\Objects.csproj|solutionrelative:objects\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{821B3EA4-CAB6-4035-9085-32CD411762EE}|Objects\\Objects.csproj|d:\\du lieu\\ky 5 fall2024\\prn212\\huyvvphe186830-prn212_humanresourses\\objects\\position.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{821B3EA4-CAB6-4035-9085-32CD411762EE}|Objects\\Objects.csproj|solutionrelative:objects\\position.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{703071E0-1DF9-4823-8DD3-332929F5BFEB}|DataAccessLayer\\DataAccessLayer.csproj|d:\\du lieu\\ky 5 fall2024\\prn212\\huyvvphe186830-prn212_humanresourses\\dataaccesslayer\\fuhrmcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{703071E0-1DF9-4823-8DD3-332929F5BFEB}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\fuhrmcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{7B3983E8-F962-4423-A105-3637C8AD08A9}|Services\\Services.csproj|d:\\du lieu\\ky 5 fall2024\\prn212\\huyvvphe186830-prn212_humanresourses\\services\\iaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B3983E8-F962-4423-A105-3637C8AD08A9}|Services\\Services.csproj|solutionrelative:services\\iaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{703071E0-1DF9-4823-8DD3-332929F5BFEB}|DataAccessLayer\\DataAccessLayer.csproj|d:\\du lieu\\ky 5 fall2024\\prn212\\huyvvphe186830-prn212_humanresourses\\dataaccesslayer\\accountdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{703071E0-1DF9-4823-8DD3-332929F5BFEB}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\accountdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FE4F837-8A73-4D41-A634-65D761B13551}|Repositories\\Repositories.csproj|d:\\du lieu\\ky 5 fall2024\\prn212\\huyvvphe186830-prn212_humanresourses\\repositories\\iaccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FE4F837-8A73-4D41-A634-65D761B13551}|Repositories\\Repositories.csproj|solutionrelative:repositories\\iaccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|d:\\du lieu\\ky 5 fall2024\\prn212\\huyvvphe186830-prn212_humanresourses\\wpfapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|solutionrelative:wpfapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|d:\\du lieu\\ky 5 fall2024\\prn212\\huyvvphe186830-prn212_humanresourses\\wpfapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|solutionrelative:wpfapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +146,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,26 +154,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EmployeeRepository.cs",
-              "DocumentMoniker": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\EmployeeRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\EmployeeRepository.cs",
-              "ToolTip": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\EmployeeRepository.cs*",
-              "RelativeToolTip": "Repositories\\EmployeeRepository.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAwAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "EmployeeManagementWindow.xaml.cs",
+              "DocumentMoniker": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\WpfApp\\EmployeeManagementWindow.xaml.cs",
+              "RelativeDocumentMoniker": "WpfApp\\EmployeeManagementWindow.xaml.cs",
+              "ToolTip": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\WpfApp\\EmployeeManagementWindow.xaml.cs",
+              "RelativeToolTip": "WpfApp\\EmployeeManagementWindow.xaml.cs",
+              "ViewState": "AgIAAGUBAAAAAAAAAAAwwJ0BAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T18:26:49.226Z",
+              "WhenOpened": "2024-10-29T19:24:53.899Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 10,
               "Title": "AccountRepository.cs",
               "DocumentMoniker": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\AccountRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\AccountRepository.cs",
-              "ToolTip": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\AccountRepository.cs*",
-              "RelativeToolTip": "Repositories\\AccountRepository.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAMAAAAAAAAAA==",
+              "ToolTip": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\AccountRepository.cs",
+              "RelativeToolTip": "Repositories\\AccountRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-29T18:26:35.218Z",
               "EditorCaption": ""
@@ -77,12 +181,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "EmployeeRepository.cs",
+              "DocumentMoniker": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\EmployeeRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\EmployeeRepository.cs",
+              "ToolTip": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\EmployeeRepository.cs",
+              "RelativeToolTip": "Repositories\\EmployeeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T18:26:49.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "IEmployeeRepository.cs",
               "DocumentMoniker": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\IEmployeeRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\IEmployeeRepository.cs",
-              "ToolTip": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\IEmployeeRepository.cs*",
-              "RelativeToolTip": "Repositories\\IEmployeeRepository.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA5AAAAAAAAAA==",
+              "ToolTip": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\IEmployeeRepository.cs",
+              "RelativeToolTip": "Repositories\\IEmployeeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-29T18:26:16.923Z",
               "EditorCaption": ""
@@ -90,57 +207,369 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "IAccountRepository.cs",
-              "DocumentMoniker": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\IAccountRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\IAccountRepository.cs",
-              "ToolTip": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\IAccountRepository.cs",
-              "RelativeToolTip": "Repositories\\IAccountRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Title": "IEmployeeService.cs",
+              "DocumentMoniker": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Services\\IEmployeeService.cs",
+              "RelativeDocumentMoniker": "Services\\IEmployeeService.cs",
+              "ToolTip": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Services\\IEmployeeService.cs",
+              "RelativeToolTip": "Services\\IEmployeeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T18:25:43.96Z",
+              "WhenOpened": "2024-10-29T18:41:30.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmployeeService.cs",
+              "DocumentMoniker": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Services\\EmployeeService.cs",
+              "RelativeDocumentMoniker": "Services\\EmployeeService.cs",
+              "ToolTip": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Services\\EmployeeService.cs",
+              "RelativeToolTip": "Services\\EmployeeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T18:42:12.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Employee.cs",
+              "RelativeDocumentMoniker": "Objects\\Employee.cs",
+              "ToolTip": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Employee.cs",
+              "RelativeToolTip": "Objects\\Employee.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwB0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T19:02:11.335Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "FuhrmContext.cs",
-              "DocumentMoniker": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\DataAccessLayer\\FuhrmContext.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\FuhrmContext.cs",
-              "ToolTip": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\DataAccessLayer\\FuhrmContext.cs",
-              "RelativeToolTip": "DataAccessLayer\\FuhrmContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "IPositionService.cs",
+              "DocumentMoniker": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Services\\IPositionService.cs",
+              "RelativeDocumentMoniker": "Services\\IPositionService.cs",
+              "ToolTip": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Services\\IPositionService.cs",
+              "RelativeToolTip": "Services\\IPositionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T17:52:31.68Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AccountDAO.cs",
-              "DocumentMoniker": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\DataAccessLayer\\AccountDAO.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\AccountDAO.cs",
-              "ToolTip": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\DataAccessLayer\\AccountDAO.cs*",
-              "RelativeToolTip": "DataAccessLayer\\AccountDAO.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T18:00:51.018Z",
+              "WhenOpened": "2024-10-29T21:38:58.252Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "DepartmentService.cs",
+              "DocumentMoniker": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Services\\DepartmentService.cs",
+              "RelativeDocumentMoniker": "Services\\DepartmentService.cs",
+              "ToolTip": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Services\\DepartmentService.cs",
+              "RelativeToolTip": "Services\\DepartmentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T21:39:33.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "EmployeeDAO.cs",
               "DocumentMoniker": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\DataAccessLayer\\EmployeeDAO.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\EmployeeDAO.cs",
-              "ToolTip": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\DataAccessLayer\\EmployeeDAO.cs*",
-              "RelativeToolTip": "DataAccessLayer\\EmployeeDAO.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAKAAAAAAAAAA==",
+              "ToolTip": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\DataAccessLayer\\EmployeeDAO.cs",
+              "RelativeToolTip": "DataAccessLayer\\EmployeeDAO.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAwwFgAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-29T18:00:16.618Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
+              "Title": "PositionService.cs",
+              "DocumentMoniker": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Services\\PositionService.cs",
+              "RelativeDocumentMoniker": "Services\\PositionService.cs",
+              "ToolTip": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Services\\PositionService.cs",
+              "RelativeToolTip": "Services\\PositionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T21:39:47.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IDepartmentService.cs",
+              "DocumentMoniker": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Services\\IDepartmentService.cs",
+              "RelativeDocumentMoniker": "Services\\IDepartmentService.cs",
+              "ToolTip": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Services\\IDepartmentService.cs",
+              "RelativeToolTip": "Services\\IDepartmentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T21:39:18.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RoleService.cs",
+              "DocumentMoniker": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Services\\RoleService.cs",
+              "RelativeDocumentMoniker": "Services\\RoleService.cs",
+              "ToolTip": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Services\\RoleService.cs",
+              "RelativeToolTip": "Services\\RoleService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T20:47:42.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IRoleService.cs",
+              "DocumentMoniker": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Services\\IRoleService.cs",
+              "RelativeDocumentMoniker": "Services\\IRoleService.cs",
+              "ToolTip": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Services\\IRoleService.cs",
+              "RelativeToolTip": "Services\\IRoleService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T20:47:25.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DepartmentRepository.cs",
+              "DocumentMoniker": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\DepartmentRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\DepartmentRepository.cs",
+              "ToolTip": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\DepartmentRepository.cs",
+              "RelativeToolTip": "Repositories\\DepartmentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T21:37:03.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PositionRepository.cs",
+              "DocumentMoniker": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\PositionRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\PositionRepository.cs",
+              "ToolTip": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\PositionRepository.cs",
+              "RelativeToolTip": "Repositories\\PositionRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T21:38:08.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IRoleRepository.cs",
+              "DocumentMoniker": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\IRoleRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\IRoleRepository.cs",
+              "ToolTip": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\IRoleRepository.cs",
+              "RelativeToolTip": "Repositories\\IRoleRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T20:46:37.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IPositionRepository.cs",
+              "DocumentMoniker": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\IPositionRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\IPositionRepository.cs",
+              "ToolTip": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\IPositionRepository.cs",
+              "RelativeToolTip": "Repositories\\IPositionRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T21:36:52.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "RoleRepository.cs",
+              "DocumentMoniker": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\RoleRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\RoleRepository.cs",
+              "ToolTip": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\RoleRepository.cs",
+              "RelativeToolTip": "Repositories\\RoleRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T20:46:57.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IDepartmentRepository.cs",
+              "DocumentMoniker": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\IDepartmentRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\IDepartmentRepository.cs",
+              "ToolTip": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\IDepartmentRepository.cs",
+              "RelativeToolTip": "Repositories\\IDepartmentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T21:36:35.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AccountService.cs",
+              "DocumentMoniker": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Services\\AccountService.cs",
+              "RelativeDocumentMoniker": "Services\\AccountService.cs",
+              "ToolTip": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Services\\AccountService.cs",
+              "RelativeToolTip": "Services\\AccountService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T18:42:01.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "PositionDAO.cs",
+              "DocumentMoniker": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\DataAccessLayer\\PositionDAO.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\PositionDAO.cs",
+              "ToolTip": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\DataAccessLayer\\PositionDAO.cs",
+              "RelativeToolTip": "DataAccessLayer\\PositionDAO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T21:32:31.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "DepartmentDAO.cs",
+              "DocumentMoniker": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\DataAccessLayer\\DepartmentDAO.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\DepartmentDAO.cs",
+              "ToolTip": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\DataAccessLayer\\DepartmentDAO.cs",
+              "RelativeToolTip": "DataAccessLayer\\DepartmentDAO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T21:32:16.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Position.cs",
+              "DocumentMoniker": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Position.cs",
+              "RelativeDocumentMoniker": "Objects\\Position.cs",
+              "ToolTip": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Position.cs",
+              "RelativeToolTip": "Objects\\Position.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T21:31:59.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Department.cs",
+              "DocumentMoniker": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Department.cs",
+              "RelativeDocumentMoniker": "Objects\\Department.cs",
+              "ToolTip": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Department.cs",
+              "RelativeToolTip": "Objects\\Department.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T21:31:52.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Role.cs",
+              "DocumentMoniker": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Role.cs",
+              "RelativeDocumentMoniker": "Objects\\Role.cs",
+              "ToolTip": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Role.cs",
+              "RelativeToolTip": "Objects\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T21:07:15.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "RoleDAO.cs",
+              "DocumentMoniker": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\DataAccessLayer\\RoleDAO.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\RoleDAO.cs",
+              "ToolTip": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\DataAccessLayer\\RoleDAO.cs",
+              "RelativeToolTip": "DataAccessLayer\\RoleDAO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T20:45:07.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "FuhrmContext.cs",
+              "DocumentMoniker": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\DataAccessLayer\\FuhrmContext.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\FuhrmContext.cs",
+              "ToolTip": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\DataAccessLayer\\FuhrmContext.cs",
+              "RelativeToolTip": "DataAccessLayer\\FuhrmContext.cs",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAqwLYAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T17:52:31.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "IAccountService.cs",
+              "DocumentMoniker": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Services\\IAccountService.cs",
+              "RelativeDocumentMoniker": "Services\\IAccountService.cs",
+              "ToolTip": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Services\\IAccountService.cs",
+              "RelativeToolTip": "Services\\IAccountService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T18:41:49.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "AccountDAO.cs",
+              "DocumentMoniker": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\DataAccessLayer\\AccountDAO.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\AccountDAO.cs",
+              "ToolTip": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\DataAccessLayer\\AccountDAO.cs",
+              "RelativeToolTip": "DataAccessLayer\\AccountDAO.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T18:00:51.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "IAccountRepository.cs",
+              "DocumentMoniker": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\IAccountRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\IAccountRepository.cs",
+              "ToolTip": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\IAccountRepository.cs",
+              "RelativeToolTip": "Repositories\\IAccountRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T18:25:43.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\WpfApp\\App.xaml",
+              "RelativeDocumentMoniker": "WpfApp\\App.xaml",
+              "ToolTip": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\WpfApp\\App.xaml",
+              "RelativeToolTip": "WpfApp\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-29T18:51:38.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\WpfApp\\appsettings.json",
               "RelativeDocumentMoniker": "WpfApp\\appsettings.json",
@@ -148,7 +577,8 @@
               "RelativeToolTip": "WpfApp\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-29T17:52:19.63Z"
+              "WhenOpened": "2024-10-29T17:52:19.63Z",
+              "EditorCaption": ""
             }
           ]
         },
@@ -159,6 +589,39 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "71cbb089-21ff-4285-8a95-d88f0462e529",
+        "Display": 1,
+        "X": -5,
+        "Y": 12,
+        "Width": 1290,
+        "Height": 745,
+        "WindowState": 2
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmployeeManagementWindow.xaml",
+              "DocumentMoniker": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\WpfApp\\EmployeeManagementWindow.xaml",
+              "RelativeDocumentMoniker": "WpfApp\\EmployeeManagementWindow.xaml",
+              "ToolTip": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\WpfApp\\EmployeeManagementWindow.xaml",
+              "RelativeToolTip": "WpfApp\\EmployeeManagementWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-29T18:48:23.943Z",
+              "EditorCaption": ""
             }
           ]
         }

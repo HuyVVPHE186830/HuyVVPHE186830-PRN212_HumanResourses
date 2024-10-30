@@ -16,5 +16,6 @@ namespace Repositories
         List<Employee> SearchEmployee(string keyword);
 
         Employee GetEmployeeByEmployeeId(int employeeId);
+        Employee GetEmployeeByAccountId(int accountId);
     }
 }

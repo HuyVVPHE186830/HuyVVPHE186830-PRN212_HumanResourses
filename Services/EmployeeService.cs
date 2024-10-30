@@ -39,5 +39,9 @@ namespace Services
         {
             return iEmployeeRepository.GetEmployeeByEmployeeId(employeeId);
         }
+        public Employee GetEmployeeByAccountId(int accountId)
+        {
+            return iEmployeeRepository.GetEmployeeByEmployeeId(accountId);
+        }
     }
 }

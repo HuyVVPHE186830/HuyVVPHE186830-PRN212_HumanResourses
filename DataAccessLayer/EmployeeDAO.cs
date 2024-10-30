@@ -83,6 +83,10 @@ namespace DataAccessLayer
             using var db = new FuhrmContext();
             return db.Employees.FirstOrDefault(b => b.EmployeeId.Equals(employeeId));
         }
-
+        public static Employee GetEmployeeByAccountId(int accountId)
+        {
+            using var db = new FuhrmContext();
+            return db.Employees.FirstOrDefault(b => b.AccountId.Equals(accountId));
+        }
     }
 }

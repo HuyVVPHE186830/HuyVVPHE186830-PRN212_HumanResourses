@@ -8,7 +8,7 @@ using Objects;
 
 namespace Services
 {
-    public class AccountService
+    public class AccountService : IAccountService
     {
         private readonly IAccountRepository iAccountRepository;
         public AccountService()
