@@ -17,5 +17,6 @@ namespace Repositories
 
         Employee GetEmployeeByEmployeeId(int employeeId);
         Employee GetEmployeeByAccountId(int accountId);
+        void AddEmployees(List<Employee> employees);
     }
 }

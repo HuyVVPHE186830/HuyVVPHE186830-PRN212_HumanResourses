@@ -88,5 +88,13 @@ namespace DataAccessLayer
             using var db = new FuhrmContext();
             return db.Employees.FirstOrDefault(b => b.AccountId.Equals(accountId));
         }
+        public static void AddEmployees(List<Employee> employees)
+        {
+            using (var context = new FuhrmContext())
+            {
+                context.Employees.AddRange(employees);
+                context.SaveChanges();
+            }
+        }
     }
 }

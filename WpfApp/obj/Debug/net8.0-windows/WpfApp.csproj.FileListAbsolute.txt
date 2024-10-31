@@ -446,3 +446,4 @@ D:\Workspace\PRN212_Project\HuyVVPHE186830-PRN212_HumanResourses\WpfApp\obj\Debu
 D:\Workspace\PRN212_Project\HuyVVPHE186830-PRN212_HumanResourses\WpfApp\obj\Debug\net8.0-windows\ref\WpfApp.dll
 D:\Workspace\PRN212_Project\HuyVVPHE186830-PRN212_HumanResourses\WpfApp\obj\Debug\net8.0-windows\LeaveRequestsManagement.g.cs
 D:\Workspace\PRN212_Project\HuyVVPHE186830-PRN212_HumanResourses\WpfApp\obj\Debug\net8.0-windows\LeaveRequestsManagement.baml
+D:\Workspace\PRN212_Project\HuyVVPHE186830-PRN212_HumanResourses\WpfApp\bin\Debug\net8.0-windows\System.Text.Json.dll
