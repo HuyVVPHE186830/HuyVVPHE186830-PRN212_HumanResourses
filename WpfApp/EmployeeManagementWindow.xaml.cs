@@ -32,7 +32,7 @@ namespace WpfApp
         private readonly IRoleService iRoleService;
         private readonly IDepartmentService iDepartmentService;
         private readonly IPositionService iPositionService;
-      
+
         public EmployeeManagementWindow()
         {
             InitializeComponent();
@@ -357,7 +357,7 @@ namespace WpfApp
             txtUsername.Text = "";
             txtPassword.Text = "";
             txtFullname.Text = "";
-            txtDob.SelectedDate = null; 
+            txtDob.SelectedDate = null;
             txtPhoneNumber.Text = "";
             txtAddress.Text = "";
             txtSalary.Text = "";
@@ -436,7 +436,7 @@ namespace WpfApp
         private void btnSave_Click(object sender, RoutedEventArgs e)
         {
             var employees = iEmployeeService.GetEmployees();
-            BackupEmployees(employees, "employees_backup.json"); 
+            BackupEmployees(employees, "employees_backup.json");
         }
 
         private void btnRestore_Click(object sender, RoutedEventArgs e)
@@ -457,7 +457,7 @@ namespace WpfApp
                 Debug.WriteLine(employee.FullName);
             }
             // Cập nhật danh sách nhân viên trong ứng dụng của bạn
-            
+
         }
         public void BackupEmployees(List<Employee> employees, string filePath)
         {
@@ -486,6 +486,12 @@ namespace WpfApp
             var employees = JsonSerializer.Deserialize<List<Employee>>(json);
 
             return employees ?? new List<Employee>();
+        }
+        private void btnHome_Click(object sender, RoutedEventArgs e)
+        {
+            HomeWindow homeWindow = new HomeWindow();
+            homeWindow.Show();
+            this.Close();
         }
     }
 }
