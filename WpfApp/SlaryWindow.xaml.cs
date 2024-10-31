@@ -70,32 +70,32 @@ namespace WpfApp
 
         private void AddSalaryButton_Click(object sender, RoutedEventArgs e)
         {
-            // Lấy nhân viên từ bảng Employees
-            var employee = context.Employees.FirstOrDefault(e => e.EmployeeId == _employeeID);
+        //    // Lấy nhân viên từ bảng Employees
+        //    var employee = context.Employees.FirstOrDefault(e => e.EmployeeId == _employeeID);
 
-            // Nếu nhân viên tồn tại, sử dụng Salary làm BaseSalary
-            double baseSalary = employee?.Salary ?? 0; // Gán 0 nếu không tìm thấy
+        //    // Nếu nhân viên tồn tại, sử dụng Salary làm BaseSalary
+        //    double baseSalary = employee?.Salary ?? 0; // Gán 0 nếu không tìm thấy
 
-            // Tạo cửa sổ thêm lương
-            AddSlaWindow addSlaWindow = new AddSlaWindow(_employeeID, baseSalary);
-            addSlaWindow.SalaryUpdated += LoadData;
+        //    // Tạo cửa sổ thêm lương
+        //    AddSlaWindow addSlaWindow = new AddSlaWindow(_employeeID, baseSalary);
+        //    addSlaWindow.SalaryUpdated += LoadData;
 
-            if (addSlaWindow.ShowDialog() == true)
-            {
-                Salary newSalary = new Salary
-                {
-                    EmployeeId = _employeeID,
-                    BaseSalary = double.Parse(addSlaWindow.BaseSalaryTextBox.Text),
-                    Allowance = string.IsNullOrWhiteSpace(addSlaWindow.AllowanceTextBox.Text) ? (double?)null : double.Parse(addSlaWindow.AllowanceTextBox.Text),
-                    Bonus = string.IsNullOrWhiteSpace(addSlaWindow.BonusTextBox.Text) ? (double?)null : double.Parse(addSlaWindow.BonusTextBox.Text),
-                    Penalty = string.IsNullOrWhiteSpace(addSlaWindow.PenaltyTextBox.Text) ? (double?)null : double.Parse(addSlaWindow.PenaltyTextBox.Text),
-                    PaymentDate = DateOnly.FromDateTime(DateTime.Now)
-                };
+        //    if (addSlaWindow.ShowDialog() == true)
+        //    {
+        //        Salary newSalary = new Salary
+        //        {
+        //            EmployeeId = _employeeID,
+        //            BaseSalary = double.Parse(addSlaWindow.BaseSalaryTextBox.Text),
+        //            Allowance = string.IsNullOrWhiteSpace(addSlaWindow.AllowanceTextBox.Text) ? (double?)null : double.Parse(addSlaWindow.AllowanceTextBox.Text),
+        //            Bonus = string.IsNullOrWhiteSpace(addSlaWindow.BonusTextBox.Text) ? (double?)null : double.Parse(addSlaWindow.BonusTextBox.Text),
+        //            Penalty = string.IsNullOrWhiteSpace(addSlaWindow.PenaltyTextBox.Text) ? (double?)null : double.Parse(addSlaWindow.PenaltyTextBox.Text),
+        //            PaymentDate = DateOnly.FromDateTime(DateTime.Now)
+        //        };
 
-                context.Salaries.Add(newSalary);
-                context.SaveChanges();
-                LoadData();
-            }
+        //        context.Salaries.Add(newSalary);
+        //        context.SaveChanges();
+        //        LoadData();
+        //    }
         }
 
         private void EditSalaryButton_Click(object sender, RoutedEventArgs e)
