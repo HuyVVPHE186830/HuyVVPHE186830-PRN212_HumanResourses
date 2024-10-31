@@ -1,4 +1,5 @@
-﻿using Services;
+﻿using Objects;
+using Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,5 +35,52 @@ namespace WpfApp
             LeaveRequestsDataGrid.ItemsSource = leaveRequests;
         }
 
+        private void DataGridLeaveRequest_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var leaveRequest = LeaveRequestsDataGrid.SelectedItem as LeaveRequest;
+            DisplayLeaveRequestDetails(leaveRequest);
+        }
+        private void DisplayLeaveRequestDetails(LeaveRequest leaveRequest)
+        {
+            if (leaveRequest != null)
+            {
+                TextBoxEmployee.Text = leaveRequest.Employee.FullName;
+                TextBoxStartDate.Text = leaveRequest.StartDate.ToString();
+                TextBoxEndDate.Text = leaveRequest.EndDate.ToString();
+                TextBoxLeaveType.Text = leaveRequest.LeaveType.ToString();
+                if (leaveRequest.Status == "Pending")
+                {
+                    ComboBoxStatus.SelectedIndex = 0;
+                }
+                else if (leaveRequest.Status == "Approved")
+                {
+                    ComboBoxStatus.SelectedIndex = 1;
+                }
+                else
+                {
+                    ComboBoxStatus.SelectedIndex = 2;
+                }
+            }
+        }
+
+        private void UpdateLeaveRequest_Click(object sender, RoutedEventArgs e)
+        {
+            var leaveRequest = LeaveRequestsDataGrid.SelectedItem as LeaveRequest;
+            if (leaveRequest == null)
+            {
+                MessageBox.Show("Please select a leave request to update.");
+            }
+            else
+            {
+                leaveRequest.Status = ComboBoxStatus.Text;
+                leaveRequestService.UpdateLeaveRequest(leaveRequest);
+                LoadLeaveRequests();
+            }
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

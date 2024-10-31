@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp"
         mc:Ignorable="d"
-        Title="Leave Management" Height="600" Width="800">
+        Title="Leave Management" Height="644" Width="846">
     <Grid Margin="10">
         <StackPanel Orientation="Vertical">
             <TextBlock Text="Leave Management" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,10,0,10" />
@@ -14,9 +14,10 @@
                     <ComboBoxItem IsEnabled="False">All</ComboBoxItem>
                 </ComboBox>
                 <ComboBox Width="120" Margin="5"/>
-                <ComboBox Width="120" Margin="5"/>
+                <ComboBox Width="120" Margin="5" />
+                <TextBox Width="158" TextChanged="TextBox_TextChanged" />
             </StackPanel>
-            <DataGrid x:Name="LeaveRequestsDataGrid" AutoGenerateColumns="False" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="200" Margin="0,0,0,20">
+            <DataGrid x:Name="LeaveRequestsDataGrid" AutoGenerateColumns="False" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="200" Margin="0,0,0,20" SelectionChanged="DataGridLeaveRequest_SelectionChanged">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="LeaveRequestID" Binding="{Binding LeaveRequestId}" Width="*"/>
                     <DataGridTextColumn Header="EmployeeID" Binding="{Binding Employee.FullName}" Width="*"/>
@@ -27,20 +28,26 @@
                 </DataGrid.Columns>
             </DataGrid>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,20">
-                <Button Content="Add Leave Request" Width="120" Margin="5"/>
-                <Button Content="Edit Leave Request" Width="120" Margin="5"/>
+                <Button Content="Edit Leave Request" Width="120" Margin="5" Click="UpdateLeaveRequest_Click"/>
                 <Button Content="Delete Leave Request" Width="120" Margin="5"/>
             </StackPanel>
             <DockPanel Height="209" LastChildFill="False">
                 <StackPanel Width="358">
-                    <Label Content="Label" Width="295"/>
-                    <TextBox TextWrapping="Wrap" Text="TextBox" Width="288"/>
-                    <Label Content="Label"/>
-                    <TextBox TextWrapping="Wrap" Text="TextBox" Width="120"/>
-                    <Label Content="Label"/>
-                    <TextBox TextWrapping="Wrap" Text="TextBox" Width="120"/>
+                    <Label Content="Employee" Width="267"/>
+                    <TextBox TextWrapping="Wrap" Width="265" Name="TextBoxEmployee" IsEnabled="False"/>
+                    <Label Content="LeaveType" Width="272"/>
+                    <TextBox TextWrapping="Wrap" Width="262" Name="TextBoxLeaveType" IsEnabled="False"/>
+                    <Label Content="StartDate" Width="268"/>
+                    <TextBox TextWrapping="Wrap" Width="266" Name="TextBoxStartDate" IsEnabled="False"/>
+                    <Label Content="EndDate" Width="268"/>
+                    <TextBox TextWrapping="Wrap" Width="266" Margin="0 0 0 5" Name="TextBoxEndDate" IsEnabled="False"/>
+                    <ComboBox Width="266" Name="ComboBoxStatus">
+                        <ComboBoxItem Content="Pending"/>
+                        <ComboBoxItem Content="Approved"/>
+                        <ComboBoxItem Content="Rejected"/>
+                    </ComboBox>
                 </StackPanel>
-                <ListView Width="482" d:ItemsSource="{d:SampleData ItemCount=5}">
+                <ListView Width="452" d:ItemsSource="{d:SampleData ItemCount=5}">
                     <ListView.View>
                         <GridView>
                             <GridViewColumn/>
