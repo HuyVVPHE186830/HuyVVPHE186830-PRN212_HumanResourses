@@ -61,3 +61,21 @@ D:\Workspace\PRN212_Project\HuyVVPHE186830-PRN212_HumanResourses\DataAccessLayer
 D:\Workspace\PRN212_Project\HuyVVPHE186830-PRN212_HumanResourses\DataAccessLayer\obj\Debug\net8.0-windows\DataAccessLayer.genruntimeconfig.cache
 D:\Workspace\PRN212_Project\HuyVVPHE186830-PRN212_HumanResourses\DataAccessLayer\obj\Debug\net8.0-windows\ref\DataAccessLayer.dll
 >>>>>>> main
+D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\DataAccessLayer\bin\Debug\net8.0-windows\DataAccessLayer.deps.json
+D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\DataAccessLayer\bin\Debug\net8.0-windows\DataAccessLayer.runtimeconfig.json
+D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\DataAccessLayer\bin\Debug\net8.0-windows\DataAccessLayer.dll
+D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\DataAccessLayer\bin\Debug\net8.0-windows\DataAccessLayer.pdb
+D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\DataAccessLayer\bin\Debug\net8.0-windows\Objects.dll
+D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\DataAccessLayer\bin\Debug\net8.0-windows\Objects.pdb
+D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\DataAccessLayer\obj\Debug\net8.0-windows\DataAccessLayer.csproj.AssemblyReference.cache
+D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\DataAccessLayer\obj\Debug\net8.0-windows\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\DataAccessLayer\obj\Debug\net8.0-windows\DataAccessLayer.AssemblyInfoInputs.cache
+D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\DataAccessLayer\obj\Debug\net8.0-windows\DataAccessLayer.AssemblyInfo.cs
+D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\DataAccessLayer\obj\Debug\net8.0-windows\DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\DataAccessLayer\obj\Debug\net8.0-windows\DataAccessLayer.sourcelink.json
+D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\DataAccessLayer\obj\Debug\net8.0-windows\DataAcce.E67BD773.Up2Date
+D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\DataAccessLayer\obj\Debug\net8.0-windows\DataAccessLayer.dll
+D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\DataAccessLayer\obj\Debug\net8.0-windows\refint\DataAccessLayer.dll
+D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\DataAccessLayer\obj\Debug\net8.0-windows\DataAccessLayer.pdb
+D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\DataAccessLayer\obj\Debug\net8.0-windows\DataAccessLayer.genruntimeconfig.cache
+D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\DataAccessLayer\obj\Debug\net8.0-windows\ref\DataAccessLayer.dll
