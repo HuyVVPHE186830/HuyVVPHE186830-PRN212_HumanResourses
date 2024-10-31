@@ -32,6 +32,7 @@ namespace WpfApp
         private readonly IRoleService iRoleService;
         private readonly IDepartmentService iDepartmentService;
         private readonly IPositionService iPositionService;
+      
         public EmployeeManagementWindow()
         {
             InitializeComponent();

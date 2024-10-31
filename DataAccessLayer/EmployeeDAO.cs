@@ -88,12 +88,52 @@ namespace DataAccessLayer
             using var db = new FuhrmContext();
             return db.Employees.FirstOrDefault(b => b.AccountId.Equals(accountId));
         }
+<<<<<<< HEAD
+
+
+        public static List<string> GetEmployeeNames()
+        {
+            try
+            {
+                using var db = new FuhrmContext();
+                return db.Employees.Select(e => e.FullName).ToList(); // Giả sử Employee có thuộc tính Name
+            }
+            catch (Exception e)
+            {
+                throw new Exception("Error retrieving employee names: " + e.Message);
+            }
+        }
+        public static List<string> GetAvailableEmployeeNames()
+        {
+            try
+            {
+                using var db = new FuhrmContext();
+
+                // Lấy danh sách nhân viên
+                var allEmployees = db.Employees.ToList();
+
+                // Lấy danh sách nhân viên đã có bảng lương
+                var employeesWithSalaries = db.Salaries.Select(s => s.EmployeeId).ToList();
+
+                // Lọc những nhân viên chưa có bảng lương
+                var availableEmployees = allEmployees
+                    .Where(e => !employeesWithSalaries.Contains(e.EmployeeId))
+                    .Select(e => e.FullName) // Giả sử Employee có thuộc tính FullName
+                    .ToList();
+
+                return availableEmployees;
+            }
+            catch (Exception e)
+            {
+                throw new Exception("Error retrieving available employee names: " + e.Message);
+=======
         public static void AddEmployees(List<Employee> employees)
         {
             using (var context = new FuhrmContext())
             {
                 context.Employees.AddRange(employees);
                 context.SaveChanges();
+>>>>>>> main
             }
         }
     }

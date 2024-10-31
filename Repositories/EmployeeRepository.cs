@@ -17,6 +17,15 @@ namespace Repositories
         public List<Employee> SearchEmployee(string keyword) => EmployeeDAO.SearchEmployee(keyword);
         public Employee GetEmployeeByEmployeeId(int employeeId) => EmployeeDAO.GetEmployeeByEmployeeId(employeeId);
         public Employee GetEmployeeByAccountId(int accountId) => EmployeeDAO.GetEmployeeByAccountId(accountId);
+<<<<<<< HEAD
+
+        public List<string> GetAvailableEmployeeNames()=>EmployeeDAO.GetAvailableEmployeeNames();
+       
+
+        public List<string> GetEmployeeNames()=>EmployeeDAO.GetEmployeeNames();
+        
+=======
         public void AddEmployees(List<Employee> employees) => EmployeeDAO.AddEmployees(employees);
+>>>>>>> main
     }
 }

@@ -43,9 +43,21 @@ namespace Services
         {
             return iEmployeeRepository.GetEmployeeByEmployeeId(accountId);
         }
+<<<<<<< HEAD
+
+        public List<string> GetAvailableEmployeeNames()
+        {
+            return iEmployeeRepository.GetAvailableEmployeeNames();
+        }
+
+        public List<string> GetEmployeeNames()
+        {
+            return iEmployeeRepository.GetEmployeeNames();
+=======
         public void AddEmployees(List<Employee> employees)
         {
             iEmployeeRepository.AddEmployees(employees);
+>>>>>>> main
         }
     }
 }
