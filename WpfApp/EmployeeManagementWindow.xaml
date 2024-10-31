@@ -41,8 +41,8 @@
         <Button Content="Chọn ảnh" Width="100" Height="23" Click="SelectImage_Click"
                 VerticalAlignment="Top" HorizontalAlignment="Left" Margin="205,111,0,0"/>
 
-        <Image x:Name="avatarImage" Width="169" Height="92" 
-               VerticalAlignment="Top" HorizontalAlignment="Left" Margin="136,116,0,0" />
+        <Image x:Name="avatarImage" Width="166" Height="87" 
+               VerticalAlignment="Top" HorizontalAlignment="Left" Margin="136,139,0,0" />
         <Label Content="Department" HorizontalAlignment="Left" Margin="336,111,0,0" VerticalAlignment="Top" Width="68" FontSize="10" Height="23"/>
         <ComboBox x:Name="cboDepartment" Width="139" Height="23" IsEnabled="True" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="404,111,0,0"/>
         <Label Content="Position" HorizontalAlignment="Left" Margin="559,111,0,0" VerticalAlignment="Top" Width="64" FontSize="10" Height="23"/>
