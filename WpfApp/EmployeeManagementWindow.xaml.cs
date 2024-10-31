@@ -454,10 +454,24 @@ namespace WpfApp
             var employees = RestoreEmployees(filePath);
             foreach (var employee in employees)
             {
-                Debug.WriteLine(employee.FullName);
+                Employee newEmployee = new Employee
+                {
+                    FullName = employee.FullName,
+                    DateOfBirth = employee.DateOfBirth,
+                    Gender = employee.Gender,
+                    Address = employee.Address,
+                    PhoneNumber = employee.PhoneNumber,
+                    DepartmentId = employee.DepartmentId,
+                    PositionId = employee.PositionId,
+                    AccountId = employee.AccountId,
+                    Salary = employee.Salary,
+                    StartDate = employee.StartDate,
+                    ProfilePicture = employee.ProfilePicture
+                };
+                iEmployeeService.AddEmployee(newEmployee);
             }
             // Cập nhật danh sách nhân viên trong ứng dụng của bạn
-            
+            LoadEmployeeList();
         }
         public void BackupEmployees(List<Employee> employees, string filePath)
         {
