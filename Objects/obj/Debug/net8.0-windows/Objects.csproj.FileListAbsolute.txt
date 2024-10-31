@@ -49,3 +49,15 @@ D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\Objects\obj\D
 D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\Objects\obj\Debug\net8.0-windows\refint\Objects.dll
 D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\Objects\obj\Debug\net8.0-windows\Objects.pdb
 D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\Objects\obj\Debug\net8.0-windows\ref\Objects.dll
+D:\HuyVVPHE186830-PRN212_HumanResourses\Objects\bin\Debug\net8.0-windows\Objects.deps.json
+D:\HuyVVPHE186830-PRN212_HumanResourses\Objects\bin\Debug\net8.0-windows\Objects.dll
+D:\HuyVVPHE186830-PRN212_HumanResourses\Objects\bin\Debug\net8.0-windows\Objects.pdb
+D:\HuyVVPHE186830-PRN212_HumanResourses\Objects\obj\Debug\net8.0-windows\Objects.GeneratedMSBuildEditorConfig.editorconfig
+D:\HuyVVPHE186830-PRN212_HumanResourses\Objects\obj\Debug\net8.0-windows\Objects.AssemblyInfoInputs.cache
+D:\HuyVVPHE186830-PRN212_HumanResourses\Objects\obj\Debug\net8.0-windows\Objects.AssemblyInfo.cs
+D:\HuyVVPHE186830-PRN212_HumanResourses\Objects\obj\Debug\net8.0-windows\Objects.csproj.CoreCompileInputs.cache
+D:\HuyVVPHE186830-PRN212_HumanResourses\Objects\obj\Debug\net8.0-windows\Objects.sourcelink.json
+D:\HuyVVPHE186830-PRN212_HumanResourses\Objects\obj\Debug\net8.0-windows\Objects.dll
+D:\HuyVVPHE186830-PRN212_HumanResourses\Objects\obj\Debug\net8.0-windows\refint\Objects.dll
+D:\HuyVVPHE186830-PRN212_HumanResourses\Objects\obj\Debug\net8.0-windows\Objects.pdb
+D:\HuyVVPHE186830-PRN212_HumanResourses\Objects\obj\Debug\net8.0-windows\ref\Objects.dll

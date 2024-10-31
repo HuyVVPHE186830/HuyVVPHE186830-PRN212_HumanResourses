@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\WpfApp\obj\Debug\net8.0-windows\
+D:\HuyVVPHE186830-PRN212_HumanResourses\WpfApp\obj\Debug\net8.0-windows\
 WpfApp
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\WpfApp\App.xaml
-6-1496409253
+D:\HuyVVPHE186830-PRN212_HumanResourses\WpfApp\App.xaml
+71642571716
 
-122059701151
-248531259803
-AddSlaWindow.xaml;EditSlaWindow.xaml;EmployeeManagementWindow.xaml;LeaveRequestsManagement.xaml;MainWindow.xaml;SlaryWindow.xaml;
+13-1351145102
+248788245567
+AddSlaWindow.xaml;EditSlaWindow.xaml;EmployeeManagementWindow.xaml;HomeWindow.xaml;LeaveRequestsManagement.xaml;MainWindow.xaml;SlaryWindow.xaml;
 
 True
 

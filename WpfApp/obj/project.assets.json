@@ -4578,19 +4578,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\yeuda\\.nuget\\packages\\": {}
+    "C:\\Users\\FPT SHOP\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\FALL 2024\\PRN212\\GroupAss4\\HuyVVPHE186830-PRN212_HumanResourses\\WpfApp\\WpfApp.csproj",
+      "projectUniqueName": "D:\\HuyVVPHE186830-PRN212_HumanResourses\\WpfApp\\WpfApp.csproj",
       "projectName": "WpfApp",
-      "projectPath": "D:\\FALL 2024\\PRN212\\GroupAss4\\HuyVVPHE186830-PRN212_HumanResourses\\WpfApp\\WpfApp.csproj",
-      "packagesPath": "C:\\Users\\yeuda\\.nuget\\packages\\",
-      "outputPath": "D:\\FALL 2024\\PRN212\\GroupAss4\\HuyVVPHE186830-PRN212_HumanResourses\\WpfApp\\obj\\",
+      "projectPath": "D:\\HuyVVPHE186830-PRN212_HumanResourses\\WpfApp\\WpfApp.csproj",
+      "packagesPath": "C:\\Users\\FPT SHOP\\.nuget\\packages\\",
+      "outputPath": "D:\\HuyVVPHE186830-PRN212_HumanResourses\\WpfApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\yeuda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\FPT SHOP\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4605,11 +4605,11 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "D:\\FALL 2024\\PRN212\\GroupAss4\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Objects.csproj": {
-              "projectPath": "D:\\FALL 2024\\PRN212\\GroupAss4\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Objects.csproj"
+            "D:\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Objects.csproj": {
+              "projectPath": "D:\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Objects.csproj"
             },
-            "D:\\FALL 2024\\PRN212\\GroupAss4\\HuyVVPHE186830-PRN212_HumanResourses\\Services\\Services.csproj": {
-              "projectPath": "D:\\FALL 2024\\PRN212\\GroupAss4\\HuyVVPHE186830-PRN212_HumanResourses\\Services\\Services.csproj"
+            "D:\\HuyVVPHE186830-PRN212_HumanResourses\\Services\\Services.csproj": {
+              "projectPath": "D:\\HuyVVPHE186830-PRN212_HumanResourses\\Services\\Services.csproj"
             }
           }
         }
@@ -4667,7 +4667,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

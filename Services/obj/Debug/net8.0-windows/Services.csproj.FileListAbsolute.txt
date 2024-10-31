@@ -81,3 +81,23 @@ D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\Services\obj\
 D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\Services\obj\Debug\net8.0-windows\refint\Services.dll
 D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\Services\obj\Debug\net8.0-windows\Services.pdb
 D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\Services\obj\Debug\net8.0-windows\ref\Services.dll
+D:\HuyVVPHE186830-PRN212_HumanResourses\Services\bin\Debug\net8.0-windows\Services.deps.json
+D:\HuyVVPHE186830-PRN212_HumanResourses\Services\bin\Debug\net8.0-windows\Services.dll
+D:\HuyVVPHE186830-PRN212_HumanResourses\Services\bin\Debug\net8.0-windows\Services.pdb
+D:\HuyVVPHE186830-PRN212_HumanResourses\Services\bin\Debug\net8.0-windows\DataAccessLayer.dll
+D:\HuyVVPHE186830-PRN212_HumanResourses\Services\bin\Debug\net8.0-windows\Objects.dll
+D:\HuyVVPHE186830-PRN212_HumanResourses\Services\bin\Debug\net8.0-windows\Repositories.dll
+D:\HuyVVPHE186830-PRN212_HumanResourses\Services\bin\Debug\net8.0-windows\Objects.pdb
+D:\HuyVVPHE186830-PRN212_HumanResourses\Services\bin\Debug\net8.0-windows\Repositories.pdb
+D:\HuyVVPHE186830-PRN212_HumanResourses\Services\bin\Debug\net8.0-windows\DataAccessLayer.pdb
+D:\HuyVVPHE186830-PRN212_HumanResourses\Services\obj\Debug\net8.0-windows\Services.csproj.AssemblyReference.cache
+D:\HuyVVPHE186830-PRN212_HumanResourses\Services\obj\Debug\net8.0-windows\Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\HuyVVPHE186830-PRN212_HumanResourses\Services\obj\Debug\net8.0-windows\Services.AssemblyInfoInputs.cache
+D:\HuyVVPHE186830-PRN212_HumanResourses\Services\obj\Debug\net8.0-windows\Services.AssemblyInfo.cs
+D:\HuyVVPHE186830-PRN212_HumanResourses\Services\obj\Debug\net8.0-windows\Services.csproj.CoreCompileInputs.cache
+D:\HuyVVPHE186830-PRN212_HumanResourses\Services\obj\Debug\net8.0-windows\Services.sourcelink.json
+D:\HuyVVPHE186830-PRN212_HumanResourses\Services\obj\Debug\net8.0-windows\Services.csproj.Up2Date
+D:\HuyVVPHE186830-PRN212_HumanResourses\Services\obj\Debug\net8.0-windows\Services.dll
+D:\HuyVVPHE186830-PRN212_HumanResourses\Services\obj\Debug\net8.0-windows\refint\Services.dll
+D:\HuyVVPHE186830-PRN212_HumanResourses\Services\obj\Debug\net8.0-windows\Services.pdb
+D:\HuyVVPHE186830-PRN212_HumanResourses\Services\obj\Debug\net8.0-windows\ref\Services.dll

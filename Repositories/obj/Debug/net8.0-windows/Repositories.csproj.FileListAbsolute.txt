@@ -73,3 +73,21 @@ D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\Repositories\
 D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\Repositories\obj\Debug\net8.0-windows\refint\Repositories.dll
 D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\Repositories\obj\Debug\net8.0-windows\Repositories.pdb
 D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\Repositories\obj\Debug\net8.0-windows\ref\Repositories.dll
+D:\HuyVVPHE186830-PRN212_HumanResourses\Repositories\bin\Debug\net8.0-windows\Repositories.deps.json
+D:\HuyVVPHE186830-PRN212_HumanResourses\Repositories\bin\Debug\net8.0-windows\Repositories.dll
+D:\HuyVVPHE186830-PRN212_HumanResourses\Repositories\bin\Debug\net8.0-windows\Repositories.pdb
+D:\HuyVVPHE186830-PRN212_HumanResourses\Repositories\bin\Debug\net8.0-windows\DataAccessLayer.dll
+D:\HuyVVPHE186830-PRN212_HumanResourses\Repositories\bin\Debug\net8.0-windows\Objects.dll
+D:\HuyVVPHE186830-PRN212_HumanResourses\Repositories\bin\Debug\net8.0-windows\DataAccessLayer.pdb
+D:\HuyVVPHE186830-PRN212_HumanResourses\Repositories\bin\Debug\net8.0-windows\Objects.pdb
+D:\HuyVVPHE186830-PRN212_HumanResourses\Repositories\obj\Debug\net8.0-windows\Repositories.csproj.AssemblyReference.cache
+D:\HuyVVPHE186830-PRN212_HumanResourses\Repositories\obj\Debug\net8.0-windows\Repositories.GeneratedMSBuildEditorConfig.editorconfig
+D:\HuyVVPHE186830-PRN212_HumanResourses\Repositories\obj\Debug\net8.0-windows\Repositories.AssemblyInfoInputs.cache
+D:\HuyVVPHE186830-PRN212_HumanResourses\Repositories\obj\Debug\net8.0-windows\Repositories.AssemblyInfo.cs
+D:\HuyVVPHE186830-PRN212_HumanResourses\Repositories\obj\Debug\net8.0-windows\Repositories.csproj.CoreCompileInputs.cache
+D:\HuyVVPHE186830-PRN212_HumanResourses\Repositories\obj\Debug\net8.0-windows\Repositories.sourcelink.json
+D:\HuyVVPHE186830-PRN212_HumanResourses\Repositories\obj\Debug\net8.0-windows\Reposito.787EC4B2.Up2Date
+D:\HuyVVPHE186830-PRN212_HumanResourses\Repositories\obj\Debug\net8.0-windows\Repositories.dll
+D:\HuyVVPHE186830-PRN212_HumanResourses\Repositories\obj\Debug\net8.0-windows\refint\Repositories.dll
+D:\HuyVVPHE186830-PRN212_HumanResourses\Repositories\obj\Debug\net8.0-windows\Repositories.pdb
+D:\HuyVVPHE186830-PRN212_HumanResourses\Repositories\obj\Debug\net8.0-windows\ref\Repositories.dll

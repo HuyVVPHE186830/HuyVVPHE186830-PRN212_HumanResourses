@@ -79,3 +79,21 @@ D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\DataAccessLay
 D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\DataAccessLayer\obj\Debug\net8.0-windows\DataAccessLayer.pdb
 D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\DataAccessLayer\obj\Debug\net8.0-windows\DataAccessLayer.genruntimeconfig.cache
 D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\DataAccessLayer\obj\Debug\net8.0-windows\ref\DataAccessLayer.dll
+D:\HuyVVPHE186830-PRN212_HumanResourses\DataAccessLayer\bin\Debug\net8.0-windows\DataAccessLayer.deps.json
+D:\HuyVVPHE186830-PRN212_HumanResourses\DataAccessLayer\bin\Debug\net8.0-windows\DataAccessLayer.runtimeconfig.json
+D:\HuyVVPHE186830-PRN212_HumanResourses\DataAccessLayer\bin\Debug\net8.0-windows\DataAccessLayer.dll
+D:\HuyVVPHE186830-PRN212_HumanResourses\DataAccessLayer\bin\Debug\net8.0-windows\DataAccessLayer.pdb
+D:\HuyVVPHE186830-PRN212_HumanResourses\DataAccessLayer\bin\Debug\net8.0-windows\Objects.dll
+D:\HuyVVPHE186830-PRN212_HumanResourses\DataAccessLayer\bin\Debug\net8.0-windows\Objects.pdb
+D:\HuyVVPHE186830-PRN212_HumanResourses\DataAccessLayer\obj\Debug\net8.0-windows\DataAccessLayer.csproj.AssemblyReference.cache
+D:\HuyVVPHE186830-PRN212_HumanResourses\DataAccessLayer\obj\Debug\net8.0-windows\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\HuyVVPHE186830-PRN212_HumanResourses\DataAccessLayer\obj\Debug\net8.0-windows\DataAccessLayer.AssemblyInfoInputs.cache
+D:\HuyVVPHE186830-PRN212_HumanResourses\DataAccessLayer\obj\Debug\net8.0-windows\DataAccessLayer.AssemblyInfo.cs
+D:\HuyVVPHE186830-PRN212_HumanResourses\DataAccessLayer\obj\Debug\net8.0-windows\DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\HuyVVPHE186830-PRN212_HumanResourses\DataAccessLayer\obj\Debug\net8.0-windows\DataAccessLayer.sourcelink.json
+D:\HuyVVPHE186830-PRN212_HumanResourses\DataAccessLayer\obj\Debug\net8.0-windows\DataAcce.E67BD773.Up2Date
+D:\HuyVVPHE186830-PRN212_HumanResourses\DataAccessLayer\obj\Debug\net8.0-windows\DataAccessLayer.dll
+D:\HuyVVPHE186830-PRN212_HumanResourses\DataAccessLayer\obj\Debug\net8.0-windows\refint\DataAccessLayer.dll
+D:\HuyVVPHE186830-PRN212_HumanResourses\DataAccessLayer\obj\Debug\net8.0-windows\DataAccessLayer.pdb
+D:\HuyVVPHE186830-PRN212_HumanResourses\DataAccessLayer\obj\Debug\net8.0-windows\DataAccessLayer.genruntimeconfig.cache
+D:\HuyVVPHE186830-PRN212_HumanResourses\DataAccessLayer\obj\Debug\net8.0-windows\ref\DataAccessLayer.dll
