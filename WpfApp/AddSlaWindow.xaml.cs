@@ -17,14 +17,11 @@ namespace WpfApp
         private readonly IEmployeeService iEmployeeService;
         private string _selectedEmployeeName;
 
-        public AddSlaWindow(string employeeName = null)
+        public AddSlaWindow(int employeeId, double baseSalary)
         {
             InitializeComponent();
-            iSalaryService = new SalaryService(); 
-            iEmployeeService = new EmployeeService(); 
-            _selectedEmployeeName = employeeName;
-            LoadEmployeeNames();
-            LoadSelectedEmployee();
+            BaseSalaryTextBox.Text = baseSalary.ToString();
+            
         }
 
         private void LoadEmployeeNames()

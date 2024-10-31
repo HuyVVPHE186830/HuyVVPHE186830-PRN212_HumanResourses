@@ -92,7 +92,7 @@ namespace WpfApp {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WpfApp;component/editslawindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WpfApp;V1.0.0.0;component/editslawindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\EditSlaWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

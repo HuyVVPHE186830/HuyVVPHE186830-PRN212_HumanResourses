@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\FALL 2024\PRN212\GroupAss2\HuyVVPHE186830-PRN212_HumanResourses\WpfApp\obj\Release\net8.0-windows\
+D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\WpfApp\obj\Release\net8.0-windows\
 WpfApp
 none
 false
 TRACE;RELEASE;NET;NET8_0;NETCOREAPP
-D:\FALL 2024\PRN212\GroupAss2\HuyVVPHE186830-PRN212_HumanResourses\WpfApp\App.xaml
-3-1938903143
+D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\WpfApp\App.xaml
+6-1496409253
 
-6-681870735
-2481950711776
-EmployeeManagementWindow.xaml;MainWindow.xaml;Window1.xaml;
+10-929147709
+248-728813692
+AddSlaWindow.xaml;EditSlaWindow.xaml;EmployeeManagementWindow.xaml;LeaveRequestsManagement.xaml;MainWindow.xaml;SlaryWindow.xaml;
 
 True
 

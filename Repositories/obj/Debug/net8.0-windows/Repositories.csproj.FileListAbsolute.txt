@@ -55,3 +55,21 @@ D:\Workspace\PRN212_Project\HuyVVPHE186830-PRN212_HumanResourses\Repositories\ob
 D:\Workspace\PRN212_Project\HuyVVPHE186830-PRN212_HumanResourses\Repositories\obj\Debug\net8.0-windows\Repositories.pdb
 D:\Workspace\PRN212_Project\HuyVVPHE186830-PRN212_HumanResourses\Repositories\obj\Debug\net8.0-windows\ref\Repositories.dll
 >>>>>>> main
+D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\Repositories\bin\Debug\net8.0-windows\Repositories.deps.json
+D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\Repositories\bin\Debug\net8.0-windows\Repositories.dll
+D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\Repositories\bin\Debug\net8.0-windows\Repositories.pdb
+D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\Repositories\bin\Debug\net8.0-windows\DataAccessLayer.dll
+D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\Repositories\bin\Debug\net8.0-windows\Objects.dll
+D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\Repositories\bin\Debug\net8.0-windows\DataAccessLayer.pdb
+D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\Repositories\bin\Debug\net8.0-windows\Objects.pdb
+D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\Repositories\obj\Debug\net8.0-windows\Repositories.csproj.AssemblyReference.cache
+D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\Repositories\obj\Debug\net8.0-windows\Repositories.GeneratedMSBuildEditorConfig.editorconfig
+D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\Repositories\obj\Debug\net8.0-windows\Repositories.AssemblyInfoInputs.cache
+D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\Repositories\obj\Debug\net8.0-windows\Repositories.AssemblyInfo.cs
+D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\Repositories\obj\Debug\net8.0-windows\Repositories.csproj.CoreCompileInputs.cache
+D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\Repositories\obj\Debug\net8.0-windows\Repositories.sourcelink.json
+D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\Repositories\obj\Debug\net8.0-windows\Reposito.787EC4B2.Up2Date
+D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\Repositories\obj\Debug\net8.0-windows\Repositories.dll
+D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\Repositories\obj\Debug\net8.0-windows\refint\Repositories.dll
+D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\Repositories\obj\Debug\net8.0-windows\Repositories.pdb
+D:\FALL 2024\PRN212\GroupAss4\HuyVVPHE186830-PRN212_HumanResourses\Repositories\obj\Debug\net8.0-windows\ref\Repositories.dll
