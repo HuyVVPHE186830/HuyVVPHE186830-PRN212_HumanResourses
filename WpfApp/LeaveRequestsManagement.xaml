@@ -5,13 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp"
         mc:Ignorable="d"
-        Title="Leave Management" Height="505" Width="800">
+        Title="Leave Management" Height="600" Width="800">
     <Grid Margin="10">
         <StackPanel Orientation="Vertical">
             <TextBlock Text="Leave Management" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,10,0,10" />
-            <TextBlock Text="Manage annual leave, sick leave, and unpaid leave of employees. Track and display the remaining leave days of each employee."
-                       HorizontalAlignment="Center" TextAlignment="Center" Margin="0,0,0,20" />
-
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,5">
+                <ComboBox Width="120" Margin="5" SelectedIndex="0">
+                    <ComboBoxItem IsEnabled="False">All</ComboBoxItem>
+                </ComboBox>
+                <ComboBox Width="120" Margin="5"/>
+                <ComboBox Width="120" Margin="5"/>
+            </StackPanel>
             <DataGrid x:Name="LeaveRequestsDataGrid" AutoGenerateColumns="False" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="200" Margin="0,0,0,20">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="LeaveRequestID" Binding="{Binding LeaveRequestId}" Width="*"/>
@@ -22,25 +26,30 @@
                     <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="*"/>
                 </DataGrid.Columns>
             </DataGrid>
-
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,20">
                 <Button Content="Add Leave Request" Width="120" Margin="5"/>
                 <Button Content="Edit Leave Request" Width="120" Margin="5"/>
                 <Button Content="Delete Leave Request" Width="120" Margin="5"/>
             </StackPanel>
+            <DockPanel Height="209" LastChildFill="False">
+                <StackPanel Width="358">
+                    <Label Content="Label" Width="295"/>
+                    <TextBox TextWrapping="Wrap" Text="TextBox" Width="288"/>
+                    <Label Content="Label"/>
+                    <TextBox TextWrapping="Wrap" Text="TextBox" Width="120"/>
+                    <Label Content="Label"/>
+                    <TextBox TextWrapping="Wrap" Text="TextBox" Width="120"/>
+                </StackPanel>
+                <ListView Width="482" d:ItemsSource="{d:SampleData ItemCount=5}">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </DockPanel>
 
-            <TextBlock Text="Remaining Leave Days:" FontSize="14" FontWeight="Bold" HorizontalAlignment="Left" Margin="0,10,0,0"/>
-            <!-- ListView to display remaining leave days for each employee -->
-            <ListView x:Name="RemainingLeaveListView" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="0,10,0,0">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="{Binding Name}" Margin="5"/>
-                            <TextBlock Text="{Binding Age}" Margin="5"/>
-                        </StackPanel>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+
         </StackPanel>
     </Grid>
 </Window>
