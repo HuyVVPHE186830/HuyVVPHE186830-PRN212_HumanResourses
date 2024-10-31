@@ -16,7 +16,11 @@
     <Compile Update="EmployeeManagementWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+<<<<<<< HEAD
     <Compile Update="SlaryWindow.xaml.cs">
+=======
+    <Compile Update="LeaveRequestsManagement.xaml.cs">
+>>>>>>> main
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

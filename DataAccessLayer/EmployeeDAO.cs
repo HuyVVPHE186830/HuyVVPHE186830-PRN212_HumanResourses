@@ -88,6 +88,7 @@ namespace DataAccessLayer
             using var db = new FuhrmContext();
             return db.Employees.FirstOrDefault(b => b.AccountId.Equals(accountId));
         }
+<<<<<<< HEAD
 
 
         public static List<string> GetEmployeeNames()
@@ -125,6 +126,14 @@ namespace DataAccessLayer
             catch (Exception e)
             {
                 throw new Exception("Error retrieving available employee names: " + e.Message);
+=======
+        public static void AddEmployees(List<Employee> employees)
+        {
+            using (var context = new FuhrmContext())
+            {
+                context.Employees.AddRange(employees);
+                context.SaveChanges();
+>>>>>>> main
             }
         }
     }

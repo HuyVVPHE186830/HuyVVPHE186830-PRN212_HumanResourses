@@ -16,6 +16,9 @@ using System.Xml.Linq;
 using Microsoft.Win32;
 using Objects;
 using Services;
+using System.IO;
+using System.Text.Json;
+using System.Diagnostics;
 
 namespace WpfApp
 {
@@ -428,6 +431,61 @@ namespace WpfApp
             cboPosition.SelectedIndex = 0;
 
             avatarImage.Source = null;
+        }
+
+        private void btnSave_Click(object sender, RoutedEventArgs e)
+        {
+            var employees = iEmployeeService.GetEmployees();
+            BackupEmployees(employees, "employees_backup.json"); 
+        }
+
+        private void btnRestore_Click(object sender, RoutedEventArgs e)
+        {
+            string filePath = "employees_backup.json";
+
+            // Kiểm tra xem file có tồn tại không
+            if (!File.Exists(filePath))
+            {
+                MessageBox.Show("File sao lưu không tồn tại.");
+                return;
+            }
+
+            // Nếu file tồn tại, phục hồi dữ liệu
+            var employees = RestoreEmployees(filePath);
+            foreach (var employee in employees)
+            {
+                Debug.WriteLine(employee.FullName);
+            }
+            // Cập nhật danh sách nhân viên trong ứng dụng của bạn
+            
+        }
+        public void BackupEmployees(List<Employee> employees, string filePath)
+        {
+            try
+            {
+                // Serialize the employee list to JSON
+                var json = JsonSerializer.Serialize(employees);
+
+                // Write the JSON to a file (automatically creates the file if it doesn't exist)
+                File.WriteAllText(filePath, json);
+
+                MessageBox.Show("Sao lưu dữ liệu thành công!");
+            }
+            catch (Exception ex)
+            {
+                // Xử lý lỗi nếu có
+                MessageBox.Show($"Lỗi trong quá trình sao lưu: {ex.Message}");
+            }
+        }
+        public List<Employee> RestoreEmployees(string filePath)
+        {
+            // Read the JSON from the file
+            var json = File.ReadAllText(filePath);
+
+            // Deserialize the JSON back to a list of employees
+            var employees = JsonSerializer.Deserialize<List<Employee>>(json);
+
+            return employees ?? new List<Employee>();
         }
     }
 }
