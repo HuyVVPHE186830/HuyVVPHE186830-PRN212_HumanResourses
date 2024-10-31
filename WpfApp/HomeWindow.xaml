@@ -6,7 +6,19 @@
         xmlns:local="clr-namespace:WpfApp"
         mc:Ignorable="d"
         Title="HomeWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid Margin="0,-1,0,1">
+        <Button Name="btnEmployeeManagement" Content="Employee Management" 
+                Width="200" Height="50" Click="btnEmployeeManagement_Click" 
+                HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,69,0,0"/>
+
+        <Button Name="btnLeaveRequests" Content="Leave Requests Management" 
+                Width="200" Height="50" Click="btnLeaveRequests_Click" 
+                HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,70,0,0"/>
+
+        <Label  HorizontalAlignment="Center" VerticalAlignment="Top" Height="37" Width="800" Foreground="#FFDE8110" Background="#FFFF9008"/>
+        <Button x:Name="btnLogout" Content="Log Out" 
+    Width="76" Height="27" Click="btnLogout_Click" 
+    HorizontalAlignment="Left" VerticalAlignment="Top" Margin="714,5,0,0"/>
+        <Label Content="FPT" HorizontalAlignment="Left" Margin="10,6,0,0" VerticalAlignment="Top" Background="#FF1703FF" Foreground="#FFFBFBFB" FontWeight="Bold" FontStyle="Italic"/>
     </Grid>
 </Window>
