@@ -43,7 +43,6 @@ namespace Services
         {
             return iEmployeeRepository.GetEmployeeByEmployeeId(accountId);
         }
-<<<<<<< HEAD
 
         public List<string> GetAvailableEmployeeNames()
         {
@@ -53,11 +52,10 @@ namespace Services
         public List<string> GetEmployeeNames()
         {
             return iEmployeeRepository.GetEmployeeNames();
-=======
+        }
         public void AddEmployees(List<Employee> employees)
         {
             iEmployeeRepository.AddEmployees(employees);
->>>>>>> main
         }
     }
 }

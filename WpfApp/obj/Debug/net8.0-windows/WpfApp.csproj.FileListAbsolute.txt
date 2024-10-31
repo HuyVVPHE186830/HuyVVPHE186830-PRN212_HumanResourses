@@ -608,3 +608,9 @@ D:\Workspace\PRN212_Project\HuyVVPHE186830-PRN212_HumanResourses\WpfApp\obj\Debu
 D:\Workspace\PRN212_Project\HuyVVPHE186830-PRN212_HumanResourses\WpfApp\obj\Debug\net8.0-windows\LeaveRequestsManagement.baml
 D:\Workspace\PRN212_Project\HuyVVPHE186830-PRN212_HumanResourses\WpfApp\bin\Debug\net8.0-windows\System.Text.Json.dll
 >>>>>>> main
+D:\Workspace\PRN212_Project\HuyVVPHE186830-PRN212_HumanResourses\WpfApp\obj\Debug\net8.0-windows\AddSlaWindow.baml
+D:\Workspace\PRN212_Project\HuyVVPHE186830-PRN212_HumanResourses\WpfApp\obj\Debug\net8.0-windows\EditSlaWindow.baml
+D:\Workspace\PRN212_Project\HuyVVPHE186830-PRN212_HumanResourses\WpfApp\obj\Debug\net8.0-windows\SlaryWindow.baml
+D:\Workspace\PRN212_Project\HuyVVPHE186830-PRN212_HumanResourses\WpfApp\obj\Debug\net8.0-windows\AddSlaWindow.g.cs
+D:\Workspace\PRN212_Project\HuyVVPHE186830-PRN212_HumanResourses\WpfApp\obj\Debug\net8.0-windows\EditSlaWindow.g.cs
+D:\Workspace\PRN212_Project\HuyVVPHE186830-PRN212_HumanResourses\WpfApp\obj\Debug\net8.0-windows\SlaryWindow.g.cs

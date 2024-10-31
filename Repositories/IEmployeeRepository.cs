@@ -17,11 +17,11 @@ namespace Repositories
 
         Employee GetEmployeeByEmployeeId(int employeeId);
         Employee GetEmployeeByAccountId(int accountId);
-<<<<<<< HEAD
+
         List<string> GetAvailableEmployeeNames();
         List<string> GetEmployeeNames();
-=======
+
         void AddEmployees(List<Employee> employees);
->>>>>>> main
+
     }
 }

@@ -2,11 +2,8 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:WpfApp"
-<<<<<<< HEAD
              StartupUri="LeaveRequestsManagement.xaml">
-=======
-             StartupUri="SlaryWindow.xaml">
->>>>>>> 38e9dce17b955c576d9fd159e95558482e5a8525
+
     <Application.Resources>
          
     </Application.Resources>

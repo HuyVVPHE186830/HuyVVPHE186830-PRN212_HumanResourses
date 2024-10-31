@@ -12,14 +12,9 @@
       }
     ],
     "additionalProbingPaths": [
-<<<<<<< HEAD
-      "C:\\Users\\yeuda\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\yeuda\\.nuget\\packages"
-=======
       "C:\\Users\\FPT SHOP\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\FPT SHOP\\.nuget\\packages",
       "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
->>>>>>> main
     ],
     "configProperties": {
       "System.Reflection.NullabilityInfoContext.IsSupported": true,
