@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +20,19 @@ namespace WpfApp
     /// </summary>
     public partial class LeaveRequestsManagement : Window
     {
+        private readonly LeaveRequestService leaveRequestService;
         public LeaveRequestsManagement()
         {
             InitializeComponent();
+            leaveRequestService = new LeaveRequestService();
+            LoadLeaveRequests();
         }
+
+        public void LoadLeaveRequests()
+        {
+            var leaveRequests = leaveRequestService.GetLeaveRequests();
+            LeaveRequestsDataGrid.ItemsSource = leaveRequests;
+        }
+
     }
 }

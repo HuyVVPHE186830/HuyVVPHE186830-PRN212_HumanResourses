@@ -14,8 +14,8 @@
 
             <DataGrid x:Name="LeaveRequestsDataGrid" AutoGenerateColumns="False" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="200" Margin="0,0,0,20">
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="LeaveRequestID" Binding="{Binding LeaveRequestID}" Width="*"/>
-                    <DataGridTextColumn Header="EmployeeID" Binding="{Binding EmployeeID}" Width="*"/>
+                    <DataGridTextColumn Header="LeaveRequestID" Binding="{Binding LeaveRequestId}" Width="*"/>
+                    <DataGridTextColumn Header="EmployeeID" Binding="{Binding Employee.FullName}" Width="*"/>
                     <DataGridTextColumn Header="LeaveType" Binding="{Binding LeaveType}" Width="*"/>
                     <DataGridTextColumn Header="StartDate" Binding="{Binding StartDate}" Width="*"/>
                     <DataGridTextColumn Header="EndDate" Binding="{Binding EndDate}" Width="*"/>
