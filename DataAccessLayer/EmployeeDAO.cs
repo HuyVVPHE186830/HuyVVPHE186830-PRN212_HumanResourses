@@ -1,4 +1,5 @@
-﻿using Objects;
+﻿using Microsoft.EntityFrameworkCore;
+using Objects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,6 +34,15 @@ namespace DataAccessLayer
             {
                 throw new Exception(e.Message);
             }
+        }
+        public static List<Employee> GetEmployeesByDepartmentId(int departmentId)
+        {
+            using var db = new FuhrmContext();
+            return db.Employees
+                     .Where(employee => employee.DepartmentId == departmentId)
+                     .Include(employee => employee.Position)
+                     .Include(employee => employee.Department)
+                     .ToList();
         }
         public static void UpdateEmployee(Employee employee)
         {

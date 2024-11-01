@@ -10,5 +10,8 @@ namespace Repositories
     public class DepartmentRepository : IDepartmentRepository
     {
         public List<Department> GetDepartments() => DepartmentDAO.GetDepartments();
+        public void AddDepartment(Department employee) => DepartmentDAO.AddDepartment(employee);
+        public void UpdateDepartment(Department employee) => DepartmentDAO.UpdateDepartment(employee);
+        public void DeleteDepartment(Department employee) => DepartmentDAO.DeleteDepartment(employee);
     }
 }

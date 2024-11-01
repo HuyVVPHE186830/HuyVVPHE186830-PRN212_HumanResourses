@@ -27,6 +27,10 @@ namespace Services
         {
             iEmployeeRepository.DeleteEmployee(employee);
         }
+        public List<Employee> GetEmployeesByDepartmentId(int keyword)
+        {
+            return iEmployeeRepository.GetEmployeesByDepartmentId(keyword);
+        }
         public List<Employee> GetEmployees()
         {
             return iEmployeeRepository.GetEmployees();

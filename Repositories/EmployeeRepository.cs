@@ -22,7 +22,8 @@ namespace Repositories
        
 
         public List<string> GetEmployeeNames()=>EmployeeDAO.GetEmployeeNames();
-        
+        public List<Employee> GetEmployeesByDepartmentId(int employeeId) => EmployeeDAO.GetEmployeesByDepartmentId(employeeId);
+
         public void AddEmployees(List<Employee> employees) => EmployeeDAO.AddEmployees(employees);
     }
 }
