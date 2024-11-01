@@ -21,5 +21,45 @@ namespace DataAccessLayer
             catch (Exception e) { }
             return listDepartments;
         }
+        public static void AddDepartment(Department employee)
+        {
+            try
+            {
+                using var db = new FuhrmContext();
+                db.Departments.Add(employee);
+                db.SaveChanges();
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
+        public static void UpdateDepartment(Department employee)
+        {
+            try
+            {
+                using var db = new FuhrmContext();
+                db.Entry<Department>(employee).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+                db.SaveChanges();
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
+        public static void DeleteDepartment(Department employee)
+        {
+            try
+            {
+                using var db = new FuhrmContext();
+                var b1 = db.Departments.SingleOrDefault(b => b.DepartmentId == employee.DepartmentId);
+                db.Departments.Remove(b1);
+                db.SaveChanges();
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
     }
 }

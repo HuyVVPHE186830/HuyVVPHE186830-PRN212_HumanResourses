@@ -10,6 +10,9 @@
     <Compile Update="AddSlaWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="DepartmentManagement.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="EditSlaWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -17,14 +20,17 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="SlaryWindow.xaml.cs">
-		<SubType>Code</SubType>
-	</Compile>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="LeaveRequestsManagement.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="AddSlaWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DepartmentManagement.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="EditSlaWindow.xaml">

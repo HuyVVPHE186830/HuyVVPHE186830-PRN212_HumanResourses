@@ -55,6 +55,13 @@ namespace WpfApp
         {
             this.Close();
         }
+
+        private void btnDepartmentManagement_Click(object sender, RoutedEventArgs e)
+        {
+            DepartmentManagement departmentManagement = new DepartmentManagement();
+            departmentManagement.Show();
+            this.Close();
+        }
     }
 }
 
