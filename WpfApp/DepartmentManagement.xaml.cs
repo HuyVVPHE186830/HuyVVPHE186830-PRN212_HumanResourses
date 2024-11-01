@@ -11,16 +11,16 @@ namespace WpfApp
     {
         private readonly DepartmentService _departmentService;
         private readonly EmployeeService _employeeService;
-
+        private Objects.Account _account;
         public ObservableCollection<Department> Departments { get; set; }
         public ObservableCollection<Employee> Employees { get; set; }
 
-        public DepartmentManagement()
+        public DepartmentManagement(Objects.Account account)
         {
             InitializeComponent();
             _departmentService = new DepartmentService();
             _employeeService = new EmployeeService();
-
+            _account = account;
             Departments = new ObservableCollection<Department>();
             Employees = new ObservableCollection<Employee>();
 
@@ -111,29 +111,15 @@ namespace WpfApp
             }
         }
 
-        private void ChangeDepartment_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            if (sender is ComboBox comboBox && comboBox.SelectedValue is int selectedDepartmentId)
-            {
-                if (dgEmployees.SelectedItem is Employee selectedEmployee)
-                {
-                    selectedEmployee.DepartmentId = selectedDepartmentId;
-                    selectedEmployee.Department = Departments.FirstOrDefault(d => d.DepartmentId == selectedDepartmentId);
-
-                    _employeeService.UpdateEmployee(selectedEmployee);
-                    MessageBox.Show($"Employee {selectedEmployee.FullName}'s department updated successfully!");
-                }
-            }
-        }
+        
 
         private void dgEmployees_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            // Handle selection changes if necessary, e.g., to display additional employee details
         }
 
         private void BackToHome_Click(object sender, RoutedEventArgs e)
         {
-            HomeWindow home = new HomeWindow();
+            HomeWindow home = new HomeWindow(_account);
             home.Show();
             this.Close();
         }

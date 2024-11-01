@@ -13,5 +13,6 @@ namespace Repositories
         void UpdateNotis(Notification employee);
         void DeleteNotis(Notification employee);
         List<Notification> GetNotis();
+        List<Notification> GetNotisByDepartId(int id);
     }
 }

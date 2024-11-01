@@ -104,18 +104,6 @@
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
-
-                    <DataGridTemplateColumn Header="Change Department" Width="150">
-                        <DataGridTemplateColumn.CellTemplate>
-                            <DataTemplate>
-                                <ComboBox ItemsSource="{Binding DataContext.Departments, RelativeSource={RelativeSource AncestorType=Window}}"
-                              DisplayMemberPath="DepartmentName"
-                              SelectedValuePath="DepartmentId"
-                              SelectedValue="{Binding DepartmentId, Mode=TwoWay}"
-                              SelectionChanged="ChangeDepartment_SelectionChanged"/>
-                            </DataTemplate>
-                        </DataGridTemplateColumn.CellTemplate>
-                    </DataGridTemplateColumn>
                 </DataGrid.Columns>
             </DataGrid>
 

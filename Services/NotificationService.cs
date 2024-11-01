@@ -32,5 +32,9 @@ namespace Services
         {
             return iEmployeeRepository.GetNotis();
         }
+        public List<Notification> GetNotisByDepartId(int id)
+        {
+            return iEmployeeRepository.GetNotisByDepartId(id);
+        }
     }
 }

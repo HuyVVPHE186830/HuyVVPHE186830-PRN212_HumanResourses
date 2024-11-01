@@ -14,5 +14,6 @@ namespace Repositories
         public void UpdateNotis(Notification employee) => NotifyDAO.UpdateNotis(employee);
         public void DeleteNotis(Notification employee) => NotifyDAO.DeleteNotis(employee);
         public List<Notification> GetNotis() => NotifyDAO.GetNotis();
+        public List<Notification> GetNotisByDepartId(int id) => NotifyDAO.GetNotisByDepartId(id);
     }
 }

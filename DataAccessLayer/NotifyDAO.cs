@@ -1,4 +1,5 @@
-﻿using Objects;
+﻿using Microsoft.EntityFrameworkCore;
+using Objects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,15 +13,37 @@ namespace DataAccessLayer
         private static List<Notification> listNotis;
         public static List<Notification> GetNotis()
         {
-            listNotis = new List<Notification>();
+            List<Notification> listNotis = new List<Notification>();
             try
             {
                 using var db = new FuhrmContext();
-                listNotis = db.Notifications.ToList();
+                listNotis = db.Notifications.Include(n => n.Department).ToList(); 
             }
-            catch (Exception e) { }
+            catch (Exception e)
+            {
+               
+            }
             return listNotis;
         }
+        public static List<Notification> GetNotisByDepartId(int departmentId)
+        {
+            List<Notification> listNotis = new List<Notification>();
+            try
+            {
+                using var db = new FuhrmContext();
+                listNotis = db.Notifications
+                    .Include(n => n.Department)
+                    .Where(n => n.DepartmentId == departmentId) 
+                    .ToList();
+            }
+            catch (Exception e)
+            {
+               
+            }
+            return listNotis;
+        }
+
+
         public static void AddNotis(Notification account)
         {
             try

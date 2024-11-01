@@ -1,53 +1,42 @@
-﻿﻿using System;
+﻿using Objects;
+using Services;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using WpfApp.View;
 
 namespace WpfApp
 {
-    /// <summary>
-    /// Interaction logic for HomeWindow.xaml
-    /// </summary>
     public partial class HomeWindow : Window
     {
         private Objects.Account _account;
-        public HomeWindow()
-        {
-            InitializeComponent();
-        }
-
+        private readonly NotificationService notificationService;
+        private readonly EmployeeService employeeService;
         public HomeWindow(Objects.Account account)
         {
             InitializeComponent();
             _account = account;
+            notificationService = new NotificationService();
+            employeeService = new EmployeeService(); 
             CheckPermissions();
+            LoadNotificationsByDepartmentId();
         }
 
-        private void SetButtonVisibility()
+        private void LoadNotificationsByDepartmentId()
         {
-            //if (currentUser.RoleId == 2) 
-            //{
-            //    btnEmployeeManagement.Visibility = Visibility.Collapsed; 
-            //    btnLeaveRequests.Visibility = Visibility.Collapsed; 
-            //    btnSalary.Visibility = Visibility.Collapsed; 
-            //}
-            //else if (currentUser.RoleId == 1)
-            //{
-            //    btnEmployeeManagement.Visibility = Visibility.Visible;
-            //    btnLeaveRequests.Visibility = Visibility.Visible;
-            //    btnSalary.Visibility = Visibility.Visible;
-            //}
+            Employee employee = employeeService.GetEmployeeByAccountId(_account.AccountId);
+
+            if (employee != null)
+            {
+                List<Notification> notifications = notificationService.GetNotisByDepartId(employee.DepartmentId);
+                DepartmentNotificationsListBox.ItemsSource = notifications; 
+            }
+            else
+            {
+                MessageBox.Show("Employee not found.");
+            }
         }
+
         private void btnEmployeeManagement_Click(object sender, RoutedEventArgs e)
         {
             EmployeeManagementWindow empWindow = new EmployeeManagementWindow();
@@ -61,6 +50,7 @@ namespace WpfApp
             leaveWindow.Show();
             this.Close();
         }
+
         private void btnReport_Click(object sender, RoutedEventArgs e)
         {
             ReportWindow reportWindow = new ReportWindow();
@@ -89,10 +79,16 @@ namespace WpfApp
 
         private void btnDepartmentManagement_Click(object sender, RoutedEventArgs e)
         {
-            DepartmentManagement departmentManagement = new DepartmentManagement();
+            DepartmentManagement departmentManagement = new DepartmentManagement(_account);
             departmentManagement.Show();
+            this.Close();
+        }
+
+        private void btnNotificationManagement_Click(object sender, RoutedEventArgs e)
+        {
+            NotificationManagement notificationManagement = new NotificationManagement(_account);
+            notificationManagement.Show();
             this.Close();
         }
     }
 }
-
