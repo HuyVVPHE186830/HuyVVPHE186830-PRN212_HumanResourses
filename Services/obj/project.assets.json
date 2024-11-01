@@ -3251,11 +3251,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\FALL 2024\\PRN212\\GroupAss4\\HuyVVPHE186830-PRN212_HumanResourses\\Services\\Services.csproj",
+      "projectUniqueName": "D:\\FALL 2024\\PRN212\\GroupAss2\\HuyVVPHE186830-PRN212_HumanResourses\\Services\\Services.csproj",
       "projectName": "Services",
-      "projectPath": "D:\\FALL 2024\\PRN212\\GroupAss4\\HuyVVPHE186830-PRN212_HumanResourses\\Services\\Services.csproj",
+      "projectPath": "D:\\FALL 2024\\PRN212\\GroupAss2\\HuyVVPHE186830-PRN212_HumanResourses\\Services\\Services.csproj",
       "packagesPath": "C:\\Users\\yeuda\\.nuget\\packages\\",
-      "outputPath": "D:\\FALL 2024\\PRN212\\GroupAss4\\HuyVVPHE186830-PRN212_HumanResourses\\Services\\obj\\",
+      "outputPath": "D:\\FALL 2024\\PRN212\\GroupAss2\\HuyVVPHE186830-PRN212_HumanResourses\\Services\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\yeuda\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3273,11 +3273,11 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "D:\\FALL 2024\\PRN212\\GroupAss4\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Objects.csproj": {
-              "projectPath": "D:\\FALL 2024\\PRN212\\GroupAss4\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Objects.csproj"
+            "D:\\FALL 2024\\PRN212\\GroupAss2\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Objects.csproj": {
+              "projectPath": "D:\\FALL 2024\\PRN212\\GroupAss2\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Objects.csproj"
             },
-            "D:\\FALL 2024\\PRN212\\GroupAss4\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\Repositories.csproj": {
-              "projectPath": "D:\\FALL 2024\\PRN212\\GroupAss4\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\Repositories.csproj"
+            "D:\\FALL 2024\\PRN212\\GroupAss2\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\Repositories.csproj": {
+              "projectPath": "D:\\FALL 2024\\PRN212\\GroupAss2\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\Repositories.csproj"
             }
           }
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DFva6reRsps=",
+  "dgSpecHash": "AkO9BN6MT9k=",
   "success": true,
-  "projectFilePath": "D:\\FALL 2024\\PRN212\\GroupAss4\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\Repositories.csproj",
+  "projectFilePath": "D:\\FALL 2024\\PRN212\\GroupAss2\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\Repositories.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\yeuda\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\yeuda\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

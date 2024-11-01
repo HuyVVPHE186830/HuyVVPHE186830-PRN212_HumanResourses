@@ -15,32 +15,27 @@ namespace WpfApp
 
         private readonly ISalaryService iSalaryService;
         private readonly IEmployeeService iEmployeeService;
-        private string _selectedEmployeeName;
+        private int employeeID;
 
-        public AddSlaWindow(int employeeId, double baseSalary)
+        public AddSlaWindow(int employeeID, double baseSalary)
         {
             InitializeComponent();
+            iSalaryService = new SalaryService();
+            iEmployeeService = new EmployeeService();
+
+            this.employeeID = employeeID;
             BaseSalaryTextBox.Text = baseSalary.ToString();
-            
-        }
 
-        private void LoadEmployeeNames()
-        {
-
-            List<string> employeeNames = iEmployeeService.GetAvailableEmployeeNames();
-            EmployeeComboBox.ItemsSource = employeeNames;
-        }
-
-        private void LoadSelectedEmployee()
-        {
-            if (!string.IsNullOrEmpty(_selectedEmployeeName))
+            // Lấy tên nhân viên từ ID
+            var employee = iEmployeeService.GetEmployeeByEmployeeId(employeeID);
+            if (employee != null)
             {
-                EmployeeComboBox.SelectedItem = _selectedEmployeeName;
-                var employee = iEmployeeService.GetEmployees().FirstOrDefault(e => e.FullName == _selectedEmployeeName);
-                if (employee != null)
-                {
-                    LoadSalaryInfo(employee.EmployeeId);
-                }
+                EmployeeNameTextBlock.Text = employee.FullName; // Hiển thị tên nhân viên
+                LoadSalaryInfo(employeeID); // Tải thông tin lương
+            }
+            else
+            {
+                MessageBox.Show("Không tìm thấy nhân viên.", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
         }
 
@@ -58,30 +53,21 @@ namespace WpfApp
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
-            string selectedEmployeeName = EmployeeComboBox.SelectedItem as string;
             double baseSalary, allowance, bonus, penalty;
 
-            if (string.IsNullOrEmpty(selectedEmployeeName) ||
-               !double.TryParse(BaseSalaryTextBox.Text, out baseSalary) ||
-               !double.TryParse(AllowanceTextBox.Text, out allowance) ||
-               !double.TryParse(BonusTextBox.Text, out bonus) ||
-               !double.TryParse(PenaltyTextBox.Text, out penalty))
+            if (!double.TryParse(BaseSalaryTextBox.Text, out baseSalary) ||
+                !double.TryParse(AllowanceTextBox.Text, out allowance) ||
+                !double.TryParse(BonusTextBox.Text, out bonus) ||
+                !double.TryParse(PenaltyTextBox.Text, out penalty))
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin hợp lệ.", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Warning);
-                return;
-            }
-
-            var employee = EmployeeDAO.GetEmployees().FirstOrDefault(e => e.FullName == selectedEmployeeName);
-            if (employee == null)
-            {
-                MessageBox.Show("Không tìm thấy nhân viên.", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
 
             // Tạo đối tượng Salary
             var salary = new Salary
             {
-                EmployeeId = employee.EmployeeId,
+                EmployeeId = employeeID,
                 BaseSalary = baseSalary,
                 Allowance = allowance,
                 Bonus = bonus,
@@ -92,7 +78,7 @@ namespace WpfApp
             // Lưu thông tin lương vào cơ sở dữ liệu
             try
             {
-                iSalaryService.AddSalary(salary); ; // Giả sử bạn đã có phương thức này trong SalaryDAO
+                iSalaryService.AddSalary(salary);
                 MessageBox.Show("Thêm lương thành công!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
                 SalaryUpdated?.Invoke();
                 this.Close(); // Đóng cửa sổ sau khi lưu
@@ -102,7 +88,6 @@ namespace WpfApp
                 MessageBox.Show($"Có lỗi xảy ra: {ex.Message}", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
-
         private void CancelButton_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
