@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WpfApp.View;
 
 namespace WpfApp
 {
@@ -19,10 +20,19 @@ namespace WpfApp
     /// </summary>
     public partial class HomeWindow : Window
     {
+        private Objects.Account _account;
         public HomeWindow()
         {
             InitializeComponent();
         }
+
+        public HomeWindow(Objects.Account account)
+        {
+            InitializeComponent();
+            _account = account;
+            CheckPermissions();
+        }
+
         private void SetButtonVisibility()
         {
             //if (currentUser.RoleId == 2) 
@@ -51,9 +61,30 @@ namespace WpfApp
             leaveWindow.Show();
             this.Close();
         }
+        private void btnReport_Click(object sender, RoutedEventArgs e)
+        {
+            ReportWindow reportWindow = new ReportWindow();
+            reportWindow.Show();
+            this.Close();
+        }
+
         private void btnLogout_Click(object sender, RoutedEventArgs e)
         {
+            LoginWindow loginWindow = new LoginWindow();
+            loginWindow.Show();
             this.Close();
+        }
+
+        private void CheckPermissions()
+        {
+            if (_account.RoleId == 1 || _account.RoleId == 2)
+            {
+                btnReport.Visibility = Visibility.Visible;
+            }
+            else if (_account.RoleId == 3)
+            {
+                btnReport.Visibility = Visibility.Collapsed;
+            }
         }
 
         private void btnDepartmentManagement_Click(object sender, RoutedEventArgs e)

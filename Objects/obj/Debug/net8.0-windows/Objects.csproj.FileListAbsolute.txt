@@ -1,0 +1,12 @@
+C:\Users\RAZER\OneDrive\Máy tính\my_project\Assignment\HuyVVPHE186830-PRN212_HumanResourses\Objects\bin\Debug\net8.0-windows\Objects.deps.json
+C:\Users\RAZER\OneDrive\Máy tính\my_project\Assignment\HuyVVPHE186830-PRN212_HumanResourses\Objects\bin\Debug\net8.0-windows\Objects.dll
+C:\Users\RAZER\OneDrive\Máy tính\my_project\Assignment\HuyVVPHE186830-PRN212_HumanResourses\Objects\bin\Debug\net8.0-windows\Objects.pdb
+C:\Users\RAZER\OneDrive\Máy tính\my_project\Assignment\HuyVVPHE186830-PRN212_HumanResourses\Objects\obj\Debug\net8.0-windows\Objects.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RAZER\OneDrive\Máy tính\my_project\Assignment\HuyVVPHE186830-PRN212_HumanResourses\Objects\obj\Debug\net8.0-windows\Objects.AssemblyInfoInputs.cache
+C:\Users\RAZER\OneDrive\Máy tính\my_project\Assignment\HuyVVPHE186830-PRN212_HumanResourses\Objects\obj\Debug\net8.0-windows\Objects.AssemblyInfo.cs
+C:\Users\RAZER\OneDrive\Máy tính\my_project\Assignment\HuyVVPHE186830-PRN212_HumanResourses\Objects\obj\Debug\net8.0-windows\Objects.csproj.CoreCompileInputs.cache
+C:\Users\RAZER\OneDrive\Máy tính\my_project\Assignment\HuyVVPHE186830-PRN212_HumanResourses\Objects\obj\Debug\net8.0-windows\Objects.sourcelink.json
+C:\Users\RAZER\OneDrive\Máy tính\my_project\Assignment\HuyVVPHE186830-PRN212_HumanResourses\Objects\obj\Debug\net8.0-windows\Objects.dll
+C:\Users\RAZER\OneDrive\Máy tính\my_project\Assignment\HuyVVPHE186830-PRN212_HumanResourses\Objects\obj\Debug\net8.0-windows\refint\Objects.dll
+C:\Users\RAZER\OneDrive\Máy tính\my_project\Assignment\HuyVVPHE186830-PRN212_HumanResourses\Objects\obj\Debug\net8.0-windows\Objects.pdb
+C:\Users\RAZER\OneDrive\Máy tính\my_project\Assignment\HuyVVPHE186830-PRN212_HumanResourses\Objects\obj\Debug\net8.0-windows\ref\Objects.dll
