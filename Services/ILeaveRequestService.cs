@@ -14,5 +14,8 @@ namespace Services
         void AddLeaveRequest(LeaveRequest leaveRequest);
         void UpdateLeaveRequest(LeaveRequest leaveRequest);
         void DeleteLeaveRequest(LeaveRequest leaveRequest);
+        List<LeaveRequest> SearchLeaveRequest(string search);
+        List<LeaveRequest> GetLeaveRequestsByYear(int year);
+        List<LeaveRequest> GetLeaveRequestsByStatus(string status);
     }
 }

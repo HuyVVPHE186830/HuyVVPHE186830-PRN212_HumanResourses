@@ -80,7 +80,39 @@ namespace WpfApp
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-
+            var leaveRequests = leaveRequestService.SearchLeaveRequest(SearchLeaveTextBox.Text);
+            LeaveRequestsDataGrid.ItemsSource = leaveRequests;
         }
+
+        private void ComboBoxYearFilter_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (ComboBoxYearFilter.SelectedItem is ComboBoxItem selectedItem && int.TryParse(selectedItem.Content.ToString(), out int selectedYear))
+            {
+                var leaveRequests = leaveRequestService.GetLeaveRequestsByYear(selectedYear);
+                LeaveRequestsDataGrid.ItemsSource = leaveRequests;
+            }
+        }
+
+        private void ComboBoxStatusFilter_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var selectedStatus = ComboBoxStatusFilter.SelectedIndex;
+            if (selectedStatus == 1)
+            {
+                var leaveRequests = leaveRequestService.GetLeaveRequestsByStatus("Approved");
+                LeaveRequestsDataGrid.ItemsSource = leaveRequests;
+            }
+            else if (selectedStatus == 2)
+            {
+                var leaveRequests = leaveRequestService.GetLeaveRequestsByStatus("Pending");
+                LeaveRequestsDataGrid.ItemsSource = leaveRequests;
+            }
+            else if (selectedStatus == 3)
+            {
+                var leaveRequests = leaveRequestService.GetLeaveRequestsByStatus("Rejected");
+                LeaveRequestsDataGrid.ItemsSource = leaveRequests;
+            }
+        }
+
+        
     }
 }

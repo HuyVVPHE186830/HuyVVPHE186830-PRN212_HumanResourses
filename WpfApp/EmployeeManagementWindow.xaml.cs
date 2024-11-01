@@ -27,12 +27,13 @@ namespace WpfApp
     /// </summary>
     public partial class EmployeeManagementWindow : Window
     {
+        public event Action SalaryUpdated;
         private readonly IAccountService iAccountService;
         private readonly IEmployeeService iEmployeeService;
         private readonly IRoleService iRoleService;
         private readonly IDepartmentService iDepartmentService;
         private readonly IPositionService iPositionService;
-      
+
         public EmployeeManagementWindow()
         {
             InitializeComponent();
@@ -82,6 +83,7 @@ namespace WpfApp
                                        Salary = employee.Salary,
                                        DepartmentName = department.DepartmentName,
                                        PositionName = position.PositionName,
+                                       EmployeeID = employee.EmployeeId
                                    };
 
                 dgData.ItemsSource = combinedList;
@@ -228,6 +230,26 @@ namespace WpfApp
             }
         }
 
+        private void resetInput()
+        {
+            txtAccountId.Text = "";
+            txtUsername.Text = "";
+            txtPassword.Text = "";
+            txtFullname.Text = "";
+            txtDob.SelectedDate = null;
+            txtPhoneNumber.Text = "";
+            txtAddress.Text = "";
+            txtSalary.Text = "";
+
+            cboRole.SelectedIndex = -1; // Đặt về mặc định không chọn
+            cboGender.SelectedIndex = -1; // Đặt về mặc định không chọn
+            cboDepartment.SelectedIndex = -1; // Đặt về mặc định không chọn
+            cboPosition.SelectedIndex = -1; // Đặt về mặc định không chọn
+
+            avatarImage.Source = null;
+        }
+
+
         private void txtSearch_TextChanged(object sender, RoutedEventArgs e)
         {
             try
@@ -357,7 +379,7 @@ namespace WpfApp
             txtUsername.Text = "";
             txtPassword.Text = "";
             txtFullname.Text = "";
-            txtDob.SelectedDate = null; 
+            txtDob.SelectedDate = null;
             txtPhoneNumber.Text = "";
             txtAddress.Text = "";
             txtSalary.Text = "";
@@ -414,29 +436,32 @@ namespace WpfApp
             }
 
         }
-        public void resetInput()
+        private void ViewSalaryHistory_Click(object sender, RoutedEventArgs e)
         {
-            txtAccountId.Text = "";
-            txtUsername.Text = "";
-            txtPassword.Text = "";
-            txtFullname.Text = "";
-            txtDob.SelectedDate = null;
-            txtPhoneNumber.Text = "";
-            txtAddress.Text = "";
-            txtSalary.Text = "";
-
-            cboRole.SelectedIndex = 0;
-            cboGender.SelectedIndex = 0;
-            cboDepartment.SelectedIndex = 0;
-            cboPosition.SelectedIndex = 0;
-
-            avatarImage.Source = null;
+            Button button = sender as Button;
+            if (button != null && button.Tag != null)
+            {
+                try
+                {
+                    int employeeId = int.Parse(button.Tag.ToString()); // Chuyển đổi Tag thành int
+                    SlaryWindow salaryWindow = new SlaryWindow(employeeId);
+                    salaryWindow.Show(); // Mở cửa sổ SlaryWindow
+                }
+                catch (FormatException ex)
+                {
+                    MessageBox.Show("Invalid Employee ID.", "Error");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Error");
+                }
+            }
         }
 
         private void btnSave_Click(object sender, RoutedEventArgs e)
         {
             var employees = iEmployeeService.GetEmployees();
-            BackupEmployees(employees, "employees_backup.json"); 
+            BackupEmployees(employees, "employees_backup.json");
         }
 
         private void btnRestore_Click(object sender, RoutedEventArgs e)
@@ -500,6 +525,12 @@ namespace WpfApp
             var employees = JsonSerializer.Deserialize<List<Employee>>(json);
 
             return employees ?? new List<Employee>();
+        }
+        private void btnHome_Click(object sender, RoutedEventArgs e)
+        {
+            HomeWindow homeWindow = new HomeWindow();
+            homeWindow.Show();
+            this.Close();
         }
     }
 }

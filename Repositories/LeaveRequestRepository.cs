@@ -15,5 +15,8 @@ namespace Repositories
         public void AddLeaveRequest(LeaveRequest leaveRequest) => LeaveRequestDAO.AddLeaveRequest(leaveRequest);
         public void UpdateLeaveRequest(LeaveRequest leaveRequest) => LeaveRequestDAO.UpdateLeaveRequest(leaveRequest);
         public void DeleteLeaveRequest(LeaveRequest leaveRequest) => LeaveRequestDAO.DeleteLeaveRequest(leaveRequest);
+        public List<LeaveRequest> SearchLeaveRequest(string search) => LeaveRequestDAO.SearchLeaveRequest(search);
+        public List<LeaveRequest> GetLeaveRequestsByYear(int year) => LeaveRequestDAO.GetLeaveRequestsByYear(year);
+        public List<LeaveRequest> GetLeaveRequestsByStatus(string status) => LeaveRequestDAO.GetLeaveRequestsByStatus(status);
     }
 }

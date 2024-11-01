@@ -87,5 +87,61 @@ namespace DataAccessLayer
                 throw new Exception(e.Message);
             }
         }
+        public static List<LeaveRequest> SearchLeaveRequest(string search)
+        {
+            try
+            {
+                using (var context = new FuhrmContext())
+                {
+                    var employees = context.LeaveRequests
+                .Include(l => l.Employee)
+                .Where(l => l.LeaveType.Contains(search) ||
+                            l.Status.Contains(search) ||
+                            l.Employee.FullName.Contains(search))
+                .ToList();
+                    return employees;
+                }
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
+        public static List<LeaveRequest> GetLeaveRequestsByYear(int year)
+        {
+            try
+            {
+                using (var context = new FuhrmContext())
+                {
+                    var leaveRequests = context.LeaveRequests
+                .Include(l => l.Employee)
+                .Where(l => l.StartDate.Year == year)
+                .ToList();
+                    return leaveRequests;
+                }
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
+        public static List<LeaveRequest> GetLeaveRequestsByStatus(string status)
+        {
+            try
+            {
+                using (var context = new FuhrmContext())
+                {
+                    var leaveRequests = context.LeaveRequests
+                .Include(l => l.Employee)
+                .Where(l => l.Status == status)
+                .ToList();
+                    return leaveRequests;
+                }
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
     }
 }

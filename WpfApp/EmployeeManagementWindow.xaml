@@ -70,6 +70,16 @@
                 <DataGridTextColumn Header="Salary" Binding="{Binding Salary}"/>
                 <DataGridTextColumn Header="Department" Binding="{Binding DepartmentName}"/>
                 <DataGridTextColumn Header="Position" Binding="{Binding PositionName}"/>
+
+                <DataGridTemplateColumn Header="Action">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="View Salary History" 
+                        Click="ViewSalaryHistory_Click" 
+                        Tag="{Binding EmployeeID}" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
             </DataGrid.Columns>
         </DataGrid>
         <Button Content="Save Data" HorizontalAlignment="Left" Margin="39,159,0,0" VerticalAlignment="Top" Click="btnSave_Click"/>

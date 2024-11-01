@@ -5,7 +5,7 @@
     <Grid Margin="10">
         <StackPanel>
             <TextBlock Text="Nhân viên:"/>
-            <ComboBox x:Name="EmployeeComboBox" Margin="0,5,0,10"/>
+            <TextBlock x:Name="EmployeeNameTextBlock" Margin="0,5,0,10" FontWeight="Bold"/>
 
             <TextBlock Text="Lương Cơ Bản:"/>
             <TextBox x:Name="BaseSalaryTextBox" Margin="0,5,0,10"/>

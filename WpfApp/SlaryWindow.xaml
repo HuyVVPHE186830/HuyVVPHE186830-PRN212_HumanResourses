@@ -26,10 +26,8 @@
 
         <!-- StackPanel cho các nút -->
         <StackPanel Orientation="Horizontal" Grid.Row="2" HorizontalAlignment="Center" Margin="10">
-            <Button x:Name="AddSalaryButton" Content="Thêm Bản Ghi" Click="AddSalaryButton_Click" Margin="5"/>
-            <Button x:Name="EditSalaryButton" Content="Chỉnh Bản Ghi" Click="EditSalaryButton_Click" Margin="5"/>
-            
-
+            <Button x:Name="AddSalaryButton" Content="Thêm Lương" Click="AddSalaryButton_Click" Margin="5"/>
+            <Button x:Name="EditSalaryButton" Content="Chỉnh Sửa Lương" Click="EditSalaryButton_Click" Margin="5"/>
         </StackPanel>
     </Grid>
 </Window>

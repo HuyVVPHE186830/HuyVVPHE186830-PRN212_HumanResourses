@@ -22,9 +22,8 @@ namespace WpfApp
     /// </summary>
     public partial class SlaryWindow : Window
     {
-        private double _salary;
-        private int _employeeID;
         FuhrmContext context = new FuhrmContext();
+        int _employeeID;
         public int SalaryId { get; set; }
 
         public int EmployeeId { get; set; }
@@ -44,23 +43,23 @@ namespace WpfApp
         {
             InitializeComponent();
             _employeeID = employeeID;
-            //_salary = salary;
             LoadData();
         }
         private void LoadData()
         {
-            
+            // Thay thế YourDbContext bằng tên DbContext của bạn
+            // Tìm nhân viên theo EmployeeId
             var employee = context.Employees.FirstOrDefault(e => e.EmployeeId == _employeeID);
 
             if (employee != null)
             {
-                
+                // Lấy các bản ghi lương cho nhân viên này
                 var salaries = context.Salaries
-                    .Where(s => s.EmployeeId == _employeeID)
+                    .Where(s => s.EmployeeId == _employeeID) // Chỉ lấy bản ghi lương cho nhân viên cụ thể
                     .Include("Employee")
                     .ToList();
 
-                SalaryDataGrid.ItemsSource = salaries; 
+                SalaryDataGrid.ItemsSource = salaries; // Gán các bản ghi lương vào DataGrid
             }
             else
             {
@@ -70,39 +69,66 @@ namespace WpfApp
 
         private void AddSalaryButton_Click(object sender, RoutedEventArgs e)
         {
-        //    // Lấy nhân viên từ bảng Employees
-        //    var employee = context.Employees.FirstOrDefault(e => e.EmployeeId == _employeeID);
+            var employee = context.Employees.FirstOrDefault(e => e.EmployeeId == _employeeID);
 
-        //    // Nếu nhân viên tồn tại, sử dụng Salary làm BaseSalary
-        //    double baseSalary = employee?.Salary ?? 0; // Gán 0 nếu không tìm thấy
+            if (employee != null)
+            {
+                double baseSalary = employee.Salary; // Lấy lương cơ bản từ nhân viên
 
-        //    // Tạo cửa sổ thêm lương
-        //    AddSlaWindow addSlaWindow = new AddSlaWindow(_employeeID, baseSalary);
-        //    addSlaWindow.SalaryUpdated += LoadData;
+                // Mở cửa sổ để thêm lương
+                AddSlaWindow addSlaWindow = new AddSlaWindow(employee.EmployeeId, baseSalary);
 
-        //    if (addSlaWindow.ShowDialog() == true)
-        //    {
-        //        Salary newSalary = new Salary
-        //        {
-        //            EmployeeId = _employeeID,
-        //            BaseSalary = double.Parse(addSlaWindow.BaseSalaryTextBox.Text),
-        //            Allowance = string.IsNullOrWhiteSpace(addSlaWindow.AllowanceTextBox.Text) ? (double?)null : double.Parse(addSlaWindow.AllowanceTextBox.Text),
-        //            Bonus = string.IsNullOrWhiteSpace(addSlaWindow.BonusTextBox.Text) ? (double?)null : double.Parse(addSlaWindow.BonusTextBox.Text),
-        //            Penalty = string.IsNullOrWhiteSpace(addSlaWindow.PenaltyTextBox.Text) ? (double?)null : double.Parse(addSlaWindow.PenaltyTextBox.Text),
-        //            PaymentDate = DateOnly.FromDateTime(DateTime.Now)
-        //        };
+                // Đặt giá trị baseSalary vào BaseSalaryTextBox trong AddSlaWindow
+                addSlaWindow.BaseSalaryTextBox.Text = baseSalary.ToString();
 
-        //        context.Salaries.Add(newSalary);
-        //        context.SaveChanges();
-        //        LoadData();
-        //    }
+                // Để các trường khác trống
+                addSlaWindow.AllowanceTextBox.Text = string.Empty;
+                addSlaWindow.BonusTextBox.Text = string.Empty;
+                addSlaWindow.PenaltyTextBox.Text = string.Empty;
+
+                addSlaWindow.SalaryUpdated += LoadData;
+
+                if (addSlaWindow.ShowDialog() == true)
+                {
+                    // Lưu thông tin lương đã thêm
+                    try
+                    {
+                        Salary newSalary = new Salary
+                        {
+                            EmployeeId = employee.EmployeeId,
+                            BaseSalary = double.Parse(addSlaWindow.BaseSalaryTextBox.Text),
+                            Allowance = string.IsNullOrWhiteSpace(addSlaWindow.AllowanceTextBox.Text) ? (double?)null : double.Parse(addSlaWindow.AllowanceTextBox.Text),
+                            Bonus = string.IsNullOrWhiteSpace(addSlaWindow.BonusTextBox.Text) ? (double?)null : double.Parse(addSlaWindow.BonusTextBox.Text),
+                            Penalty = string.IsNullOrWhiteSpace(addSlaWindow.PenaltyTextBox.Text) ? (double?)null : double.Parse(addSlaWindow.PenaltyTextBox.Text),
+                            PaymentDate = DateOnly.FromDateTime(DateTime.Now)
+                        };
+
+                        context.Salaries.Add(newSalary);
+                        context.SaveChanges();
+                        LoadData();
+                    }
+                    catch (FormatException)
+                    {
+                        MessageBox.Show("Vui lòng nhập đúng định dạng số.");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"Có lỗi xảy ra: {ex.Message}");
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Không tìm thấy nhân viên.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
+
 
         private void EditSalaryButton_Click(object sender, RoutedEventArgs e)
         {
             if (SalaryDataGrid.SelectedItem is Salary selectedSalary)
             {
-              
+                // Mở cửa sổ chỉnh sửa và truyền dữ liệu hiện tại vào
                 EditSlaWindow editSlaWindow = new EditSlaWindow(selectedSalary);
                 {
 
@@ -116,16 +142,16 @@ namespace WpfApp
                 editSlaWindow.SalaryUpdated += LoadData;
                 if (editSlaWindow.ShowDialog() == true)
                 {
-                   
+                    // Cập nhật thông tin lương
 
                     selectedSalary.BaseSalary = double.Parse(editSlaWindow.BaseSalaryTextBox.Text);
                     selectedSalary.Allowance = string.IsNullOrWhiteSpace(editSlaWindow.AllowanceTextBox.Text) ? (double?)null : double.Parse(editSlaWindow.AllowanceTextBox.Text);
                     selectedSalary.Bonus = string.IsNullOrWhiteSpace(editSlaWindow.BonusTextBox.Text) ? (double?)null : double.Parse(editSlaWindow.BonusTextBox.Text);
                     selectedSalary.Penalty = string.IsNullOrWhiteSpace(editSlaWindow.PenaltyTextBox.Text) ? (double?)null : double.Parse(editSlaWindow.PenaltyTextBox.Text);
-                    selectedSalary.PaymentDate = DateOnly.FromDateTime(DateTime.Now);
+                    selectedSalary.PaymentDate = DateOnly.FromDateTime(DateTime.Now); // Hoặc lấy từ dialog
 
-                    context.SaveChanges(); 
-                    LoadData();
+                    context.SaveChanges(); // Lưu thay đổi vào cơ sở dữ liệu
+                    LoadData(); // Cập nhật DataGrid
                 }
             }
             else

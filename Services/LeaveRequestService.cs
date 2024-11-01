@@ -35,5 +35,18 @@ namespace Services
         {
             return leaveRequestRepository.GetLeaveRequestById(leaveRequestId);
         }
+        public List<LeaveRequest> SearchLeaveRequest(string search)
+        {
+            return leaveRequestRepository.SearchLeaveRequest(search);
+        }
+        public List<LeaveRequest> GetLeaveRequestsByYear(int year)
+        {
+            return leaveRequestRepository.GetLeaveRequestsByYear(year);
+        }
+        public List<LeaveRequest> GetLeaveRequestsByStatus(string status)
+        {
+            return leaveRequestRepository.GetLeaveRequestsByStatus(status);
+        }
+
     }
 }
