@@ -21,9 +21,11 @@ namespace WpfApp
     /// </summary>
     public partial class LeaveRequestsManagement : Window
     {
+        private Objects.Account _account;
         private readonly LeaveRequestService leaveRequestService;
-        public LeaveRequestsManagement()
+        public LeaveRequestsManagement(Objects.Account account)
         {
+            _account = account;
             InitializeComponent();
             leaveRequestService = new LeaveRequestService();
             LoadLeaveRequests();
@@ -77,7 +79,12 @@ namespace WpfApp
                 LoadLeaveRequests();
             }
         }
-
+        private void BacktoHome_Click(object sender, RoutedEventArgs e)
+        {
+            HomeWindow home = new HomeWindow(_account);
+            home.Show();
+            this.Close();
+        }
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 

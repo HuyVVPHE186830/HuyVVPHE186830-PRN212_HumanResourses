@@ -1,4 +1,5 @@
-﻿using Objects;
+﻿using Microsoft.EntityFrameworkCore;
+using Objects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +11,15 @@ namespace DataAccessLayer
     public class EmployeeDAO
     {
         private static List<Employee> listEmployees;
+        public static List<Employee> GetEmployeesByDepartmentId(int departmentId)
+        {
+            using var db = new FuhrmContext();
+            return db.Employees
+                     .Where(employee => employee.DepartmentId == departmentId)
+                     .Include(employee => employee.Position)
+                     .Include(employee => employee.Department)
+                     .ToList();
+        }
         public static List<Employee> GetEmployees()
         {
             listEmployees = new List<Employee>();

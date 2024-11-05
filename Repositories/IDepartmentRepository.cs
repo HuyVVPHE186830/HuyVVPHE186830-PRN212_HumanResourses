@@ -10,6 +10,9 @@ namespace Repositories
     public interface IDepartmentRepository
     {
         List<Department> GetDepartments();
+        void AddDepartment(Department department);
+        void UpdateDepartment(Department department);
+        void DeleteDepartment(Department department);
 
     }
 }

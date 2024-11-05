@@ -22,6 +22,9 @@
     <Compile Update="EmployeeManagementWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="NotificationManagement.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="OvertimeDialog.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -49,6 +52,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="NotificationManagement.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="OvertimeDialog.xaml">

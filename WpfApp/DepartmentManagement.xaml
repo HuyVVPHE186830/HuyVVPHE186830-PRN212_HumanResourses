@@ -1,0 +1,112 @@
+﻿<Window x:Class="WpfApp.DepartmentManagement"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        Title="DepartmentManagement" Height="500" Width="777">
+    <Grid>
+
+        <TextBlock Text="Department Management" 
+                   FontSize="20" FontWeight="Bold" 
+                   HorizontalAlignment="Center" 
+                   VerticalAlignment="Top" Margin="0,10,0,0" />
+
+        <TextBlock Text="Select Department:" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Top" Margin="20,60,0,0"/>
+        <ComboBox x:Name="cbDepartments" 
+                  Width="200" 
+                  HorizontalAlignment="Left" 
+                  VerticalAlignment="Top" Margin="20,90,0,0"
+                  SelectionChanged="cbDepartments_SelectionChanged"
+                  DisplayMemberPath="DepartmentName"/>
+
+
+        <TextBlock Text="Department Name:" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Top" Margin="20,150,0,0"/>
+        <TextBox x:Name="txtDepartmentName" 
+                 Width="200" 
+                 HorizontalAlignment="Left" 
+                 VerticalAlignment="Top" Margin="20,180,0,0"/>
+        <Button Content="Add Department" 
+                Width="150" 
+                HorizontalAlignment="Left" 
+                VerticalAlignment="Top" Margin="20,212,0,0"
+                Click="AddDepartment_Click"/>
+        <Button Content="Update Department" 
+            Width="150" 
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Top" Margin="20,242,0,0"
+            Click="UpdateDepartment_Click"/>
+        <Button Content="Delete Department" 
+                Width="150" 
+                HorizontalAlignment="Left" 
+                VerticalAlignment="Top" Margin="20,272,0,0"
+                Click="DeleteDepartment_Click"/>
+        <Button Content="Back to Home" 
+                Width="150" 
+                HorizontalAlignment="Left" 
+                VerticalAlignment="Top" Margin="20,302,0,0"
+                Click="BackToHome_Click"/>
+        <GroupBox Header="Employees in Selected Department" 
+                  VerticalAlignment="Top" Margin="225,60,6,0" Height="400">
+            <DataGrid x:Name="dgEmployees" 
+                      AutoGenerateColumns="False" 
+                      HeadersVisibility="Column"
+                      CanUserAddRows="False" 
+                      Margin="5,0,-2,0" SelectionChanged="dgEmployees_SelectionChanged">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Full Name" 
+                            Binding="{Binding FullName}" 
+                            Width="100"/>
+
+                    <DataGridTextColumn Header="Date of Birth" 
+                            Binding="{Binding DateOfBirth, StringFormat=dd/MM/yyyy}" 
+                            Width="100"/>
+
+                    <DataGridTextColumn Header="Gender" 
+                            Binding="{Binding Gender}" 
+                            Width="70"/>
+
+                    <DataGridTextColumn Header="Address" 
+                            Binding="{Binding Address}" 
+                            Width="150"/>
+
+                    <DataGridTextColumn Header="Phone Number" 
+                            Binding="{Binding PhoneNumber}" 
+                            Width="100"/>
+
+                    <DataGridTextColumn Header="Position" 
+                            Binding="{Binding Position.PositionName}" 
+                            Width="100"/>
+
+                    <DataGridTextColumn Header="Department" 
+                            Binding="{Binding Department.DepartmentName}" 
+                            Width="100"/>
+
+                    <DataGridTextColumn Header="Salary" 
+                            Binding="{Binding Salary, StringFormat=C}" 
+                            Width="100"/>
+
+                    <DataGridTextColumn Header="Start Date" 
+                            Binding="{Binding StartDate, StringFormat=dd/MM/yyyy}" 
+                            Width="100"/>
+
+                    <DataGridTemplateColumn Header="Profile Picture" Width="80">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Image Source="{Binding ProfilePicture}" 
+                           Width="50" Height="30" 
+                           Stretch="Uniform"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+
+        </GroupBox>
+    </Grid>
+</Window>

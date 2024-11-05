@@ -19,6 +19,10 @@ namespace Services
         {
             iEmployeeRepository.AddEmployee(employee);
         }
+        public List<Employee> GetEmployeesByDepartmentId(int keyword)
+        {
+            return iEmployeeRepository.GetEmployeesByDepartmentId(keyword);
+        }
         public void UpdateEmployee(Employee employee)
         {
             iEmployeeRepository.UpdateEmployee(employee);

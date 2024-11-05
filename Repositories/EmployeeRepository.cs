@@ -19,7 +19,8 @@ namespace Repositories
         public Employee GetEmployeeByAccountId(int accountId) => EmployeeDAO.GetEmployeeByAccountId(accountId);
 
         public List<string> GetAvailableEmployeeNames()=>EmployeeDAO.GetAvailableEmployeeNames();
-       
+
+        public List<Employee> GetEmployeesByDepartmentId(int employeeId) => EmployeeDAO.GetEmployeesByDepartmentId(employeeId);
 
         public List<string> GetEmployeeNames()=>EmployeeDAO.GetEmployeeNames();
         

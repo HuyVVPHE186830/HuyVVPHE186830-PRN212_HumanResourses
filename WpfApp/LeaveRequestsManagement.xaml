@@ -28,6 +28,7 @@
                 </DataGrid.Columns>
             </DataGrid>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,20">
+                <Button Content="Back to home" Width="120" Margin="5" Click="BacktoHome_Click"/>
                 <Button Content="Edit Leave Request" Width="120" Margin="5" Click="UpdateLeaveRequest_Click"/>
                 <Button Content="Delete Leave Request" Width="120" Margin="5"/>
             </StackPanel>

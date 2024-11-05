@@ -1,4 +1,5 @@
 ﻿using Objects;
+using Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,6 +24,8 @@ namespace WpfApp
     {
         private Account currentUser;
         private Objects.Account _account;
+        private readonly NotificationService notificationService;
+        private readonly EmployeeService employeeService;
         public HomeWindow()
         {
             InitializeComponent();
@@ -33,6 +36,8 @@ namespace WpfApp
             InitializeComponent();
             _account = account;
             currentUser = account;
+            notificationService = new NotificationService();
+            employeeService = new EmployeeService();
             CheckPermissions();
             SetButtonVisibility();
 
@@ -68,10 +73,22 @@ namespace WpfApp
             empWindow.Show();
             this.Close();
         }
+        private void LoadNotificationsByDepartmentId()
+        {
+            Employee employee = employeeService.GetEmployeeByAccountId(_account.AccountId);
 
+            if (employee != null)
+            {
+                List<Notification> notifications = notificationService.GetNotisByDepartId(employee.DepartmentId);
+                DepartmentNotificationsListBox.ItemsSource = notifications;
+            }
+            else
+            {
+            }
+        }
         private void btnLeaveRequests_Click(object sender, RoutedEventArgs e)
         {
-            LeaveRequestsManagement leaveWindow = new LeaveRequestsManagement();
+            LeaveRequestsManagement leaveWindow = new LeaveRequestsManagement(_account);
             leaveWindow.Show();
             this.Close();
         }
@@ -103,8 +120,15 @@ namespace WpfApp
 
         private void btnDepartmentManagement_Click(object sender, RoutedEventArgs e)
         {
-            DepartmentManagement departmentManagement = new DepartmentManagement();
+            DepartmentManagement departmentManagement = new DepartmentManagement(currentUser);
             departmentManagement.Show();
+            this.Close();
+        }
+
+        private void btnNotificationManagement_Click(object sender, RoutedEventArgs e)
+        {
+            NotificationManagement notificationManagement = new NotificationManagement(_account);
+            notificationManagement.Show();
             this.Close();
         }
     }

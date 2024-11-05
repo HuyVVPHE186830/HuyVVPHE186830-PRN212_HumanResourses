@@ -20,7 +20,7 @@ namespace Repositories
 
         List<string> GetAvailableEmployeeNames();
         List<string> GetEmployeeNames();
-
+        List<Employee> GetEmployeesByDepartmentId(int employeeId);
         void AddEmployees(List<Employee> employees);
 
     }

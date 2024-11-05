@@ -15,7 +15,9 @@
         <Button Name="btnEmployeeManagement" Content="Employee Management" 
                 Width="200" Height="50" Click="btnEmployeeManagement_Click" 
                 HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,69,0,0"/>
-
+        <Button x:Name="btnNotificationManagement" Content="Notification Management" 
+        Width="200" Height="50" Click="btnNotificationManagement_Click" 
+        HorizontalAlignment="Left" VerticalAlignment="Top" Margin="288,156,0,0"/>
         <Button Name="btnLeaveRequests" Content="Leave Requests Management" 
                 Width="200" Height="50" Click="btnLeaveRequests_Click" 
                 HorizontalAlignment="Left" VerticalAlignment="Top" Margin="288,69,0,0"/>
@@ -30,6 +32,21 @@
         HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,156,0,0"/>
         <Button x:Name="btnReport" Content="Report" 
 Width="200" Height="50" Click="btnReport_Click" 
-HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,293,0,0"/>
+HorizontalAlignment="Left" VerticalAlignment="Top" Margin="288,290,0,0"/>
+        <ListBox x:Name="DepartmentNotificationsListBox" 
+         HorizontalAlignment="Right" 
+         VerticalAlignment="Top" 
+         Width="279" 
+         Height="400" 
+         Margin="0,50,10,0">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBlock Text="{Binding Title}" FontWeight="Bold"/>
+                        <TextBlock Text="{Binding Content}" TextWrapping="Wrap" Margin="0,5,0,5"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
     </Grid>
 </Window>
