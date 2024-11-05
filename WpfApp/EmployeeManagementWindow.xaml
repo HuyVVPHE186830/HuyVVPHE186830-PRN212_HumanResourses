@@ -6,6 +6,7 @@
         xmlns:sys="clr-namespace:System;assembly=mscorlib"
         xmlns:local="clr-namespace:WpfApp"
         mc:Ignorable="d"
+                WindowStartupLocation="CenterScreen"
         Loaded="Window_Loaded"
         Title="EmployeeManagementWindow" Height="450" Width="800">
     <Grid>
@@ -58,18 +59,17 @@
 
         <DataGrid x:Name="dgData" Margin="10,232,10,10" AutoGenerateColumns="False" SelectionChanged="dgData_SelectionChanged" CanUserAddRows="False">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="AccountId" Binding="{Binding AccountId}" />
-                <DataGridTextColumn Header="Username" Binding="{Binding Username}"/>
-                <DataGridTextColumn Header="Password" Binding="{Binding Password}"/>
-                <DataGridTextColumn Header="Role Name" Binding="{Binding RoleName}"/>
-                <DataGridTextColumn Header="FullName" Binding="{Binding FullName}"/>
-                <DataGridTextColumn Header="Date Of Birth" Binding="{Binding DateOfBirth}"/>
-                <DataGridTextColumn Header="Gender" Binding="{Binding Gender}"/>
-                <DataGridTextColumn Header="Address" Binding="{Binding Address}"/>
-                <DataGridTextColumn Header="Phone Number" Binding="{Binding PhoneNumber}"/>
-                <DataGridTextColumn Header="Salary" Binding="{Binding Salary}"/>
-                <DataGridTextColumn Header="Department" Binding="{Binding DepartmentName}"/>
-                <DataGridTextColumn Header="Position" Binding="{Binding PositionName}"/>
+                <DataGridTextColumn Header="Account ID" Binding="{Binding AccountId}" />
+                <DataGridTextColumn Header="Username" Binding="{Binding Username}" />
+                <DataGridTextColumn Header="Full Name" Binding="{Binding FullName}" />
+                <DataGridTextColumn Header="Role" Binding="{Binding RoleName}" />
+                <DataGridTextColumn Header="Date of Birth" Binding="{Binding DateOfBirth}" />
+                <DataGridTextColumn Header="Gender" Binding="{Binding Gender}" />
+                <DataGridTextColumn Header="Address" Binding="{Binding Address}" />
+                <DataGridTextColumn Header="Phone Number" Binding="{Binding PhoneNumber}" />
+                <DataGridTextColumn Header="Salary" Binding="{Binding Salary}" />
+                <DataGridTextColumn Header="Department" Binding="{Binding DepartmentName}" />
+                <DataGridTextColumn Header="Position" Binding="{Binding PositionName}" />
 
                 <DataGridTemplateColumn Header="Action">
                     <DataGridTemplateColumn.CellTemplate>
@@ -82,10 +82,8 @@
                 </DataGridTemplateColumn>
             </DataGrid.Columns>
         </DataGrid>
-        <Button x:Name="btnAttendance" Content="Attendance" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="205,155,0,0" Click ="btnAttendance_Click" Width="90" Height="28" Background="#FF4CAF50" Foreground="White" />
-
         <Button Content="Save Data" HorizontalAlignment="Left" Margin="39,159,0,0" VerticalAlignment="Top" Click="btnSave_Click"/>
         <Button Content="Restore Data" HorizontalAlignment="Left" Margin="39,196,0,0" VerticalAlignment="Top" Click="btnRestore_Click"/>
-
+        <Button Content="Back To Home" HorizontalAlignment="Left" Margin="690,4,0,0" VerticalAlignment="Top" Click="btnHome_Click"/>
     </Grid>
 </Window>

@@ -19,7 +19,6 @@ using Services;
 using System.IO;
 using System.Text.Json;
 using System.Diagnostics;
-using Repositories;
 
 namespace WpfApp
 {
@@ -28,34 +27,27 @@ namespace WpfApp
     /// </summary>
     public partial class EmployeeManagementWindow : Window
     {
+        private Account currentUser;
+        private Objects.Account _account;
         public event Action SalaryUpdated;
         private readonly IAccountService iAccountService;
         private readonly IEmployeeService iEmployeeService;
         private readonly IRoleService iRoleService;
         private readonly IDepartmentService iDepartmentService;
         private readonly IPositionService iPositionService;
-        private readonly IAttendanceService iAttendanceService;
+        private readonly IActivityLogService iActivityLogService;
 
-
-        public EmployeeManagementWindow()
+        public EmployeeManagementWindow(Account account)
         {
             InitializeComponent();
-
-            // Khởi tạo các service
+            _account = account;
+            currentUser = account;
             iAccountService = new AccountService();
             iEmployeeService = new EmployeeService();
             iRoleService = new RoleService();
             iDepartmentService = new DepartmentService();
-            IAttendanceRepository attendanceRepository = new AttendanceRepository();
-            iAttendanceService = new AttendanceService(attendanceRepository);
             iPositionService = new PositionService();
-
-            // Lấy danh sách nhân viên sau khi đã khởi tạo các service
-            List<Employee> employees = iEmployeeService.GetEmployees();
-
-            // Mở cửa sổ Attendance
-            AttendanceWindow attendanceWindow = new AttendanceWindow(employees, iAttendanceService);
-            attendanceWindow.Show();
+            iActivityLogService = new ActivityLogService();
         }
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
@@ -97,7 +89,11 @@ namespace WpfApp
                                        Salary = employee.Salary,
                                        DepartmentName = department.DepartmentName,
                                        PositionName = position.PositionName,
-                                       EmployeeID = employee.EmployeeId
+                                       EmployeeID = employee.EmployeeId,
+                                       DepartmentId = employee.DepartmentId,
+                                       PositionId = employee.PositionId,
+                                       RoleId = account.RoleId,
+                                       AvatarImage = employee.ProfilePicture,
                                    };
 
                 dgData.ItemsSource = combinedList;
@@ -203,32 +199,95 @@ namespace WpfApp
         {
             try
             {
-                Account account = new Account();
-                account.Username = txtUsername.Text;
-                account.Password = txtPassword.Text;
-                account.RoleId = Int32.Parse(cboRole.SelectedValue.ToString());
-                iAccountService.AddAccount(account);
-                Employee employee = new Employee();
-
-                employee.AccountId = account.AccountId;
-                employee.FullName = txtFullname.Text;
-                if (txtDob.SelectedDate.HasValue)
+                if (txtAccountId == null)
                 {
-                    employee.DateOfBirth = txtDob.SelectedDate.Value;
-                }
-                else
-                {
-                    MessageBox.Show("Please select Date of Birth.");
+                    MessageBox.Show("Cannot Add Duplicate Employee");
+                    resetInput();
                     return;
                 }
-                employee.Gender = cboGender.SelectedValue.ToString();
-                employee.PhoneNumber = txtPhoneNumber.Text;
-                employee.Address = txtAddress.Text;
-                employee.Salary = double.Parse(txtSalary.Text);
-                employee.DepartmentId = (int)cboDepartment.SelectedValue;
-                employee.PositionId = (int)cboPosition.SelectedValue;
-                employee.ProfilePicture = avatarImage.Source != null ? avatarImage.Source.ToString() : null;
+                if (string.IsNullOrWhiteSpace(txtUsername.Text))
+                {
+                    MessageBox.Show("Please enter a username.");
+                    return;
+                }
+                if (string.IsNullOrWhiteSpace(txtPassword.Text))
+                {
+                    MessageBox.Show("Please enter a password.");
+                    return;
+                }
+                if (cboRole.SelectedValue == null)
+                {
+                    MessageBox.Show("Please select a role.");
+                    return;
+                }
+                if (string.IsNullOrWhiteSpace(txtFullname.Text))
+                {
+                    MessageBox.Show("Please enter a full name.");
+                    return;
+                }
+                if (!txtDob.SelectedDate.HasValue)
+                {
+                    MessageBox.Show("Please select a date of birth.");
+                    return;
+                }
+                if (cboGender.SelectedValue == null)
+                {
+                    MessageBox.Show("Please select a gender.");
+                    return;
+                }
+                if (string.IsNullOrWhiteSpace(txtPhoneNumber.Text))
+                {
+                    MessageBox.Show("Please enter a phone number.");
+                    return;
+                }
+                if (string.IsNullOrWhiteSpace(txtAddress.Text))
+                {
+                    MessageBox.Show("Please enter an address.");
+                    return;
+                }
+                if (string.IsNullOrWhiteSpace(txtSalary.Text) || !double.TryParse(txtSalary.Text, out double salary))
+                {
+                    MessageBox.Show("Please enter a valid salary.");
+                    return;
+                }
+                if (cboDepartment.SelectedValue == null)
+                {
+                    MessageBox.Show("Please select a department.");
+                    return;
+                }
+                if (cboPosition.SelectedValue == null)
+                {
+                    MessageBox.Show("Please select a position.");
+                    return;
+                }
+
+                Account account = new Account
+                {
+                    Username = txtUsername.Text,
+                    Password = txtPassword.Text,
+                    RoleId = Int32.Parse(cboRole.SelectedValue.ToString())
+                };
+                iAccountService.AddAccount(account);
+
+                Employee employee = new Employee
+                {
+                    AccountId = account.AccountId,
+                    FullName = txtFullname.Text,
+                    DateOfBirth = txtDob.SelectedDate.Value,
+                    Gender = cboGender.SelectedValue.ToString(),
+                    PhoneNumber = txtPhoneNumber.Text,
+                    Address = txtAddress.Text,
+                    Salary = salary,
+                    DepartmentId = (int)cboDepartment.SelectedValue,
+                    PositionId = (int)cboPosition.SelectedValue,
+                    ProfilePicture = avatarImage.Source != null ? avatarImage.Source.ToString() : null
+                };
                 iEmployeeService.AddEmployee(employee);
+                ActivityLog activityLog = new ActivityLog();
+                activityLog.AccountId = currentUser.AccountId;
+                activityLog.Action = "Add Employee";
+                activityLog.Timestamp = DateTime.Now;
+                iActivityLogService.AddActivityLog(activityLog);
             }
             catch (Exception ex)
             {
@@ -333,6 +392,11 @@ namespace WpfApp
                     employee.ProfilePicture = avatarImage.Source != null ? avatarImage.Source.ToString() : null;
                     iAccountService.UpdateAccount(account);
                     iEmployeeService.UpdateEmployee(employee);
+                    ActivityLog activityLog = new ActivityLog();
+                    activityLog.AccountId = currentUser.AccountId;
+                    activityLog.Action = "Update Employee";
+                    activityLog.Timestamp = DateTime.Now;
+                    iActivityLogService.AddActivityLog(activityLog);
                 }
                 else
                 {
@@ -366,6 +430,11 @@ namespace WpfApp
                     var employee = employeeList.FirstOrDefault(a => a.AccountId == accountId);
                     iEmployeeService.DeleteEmployee(employee);
                     iAccountService.DeleteAccount(account);
+                    ActivityLog activityLog = new ActivityLog();
+                    activityLog.AccountId = currentUser.AccountId;
+                    activityLog.Action = "Delete Employee";
+                    activityLog.Timestamp = DateTime.Now;
+                    iActivityLogService.AddActivityLog(activityLog);
                 }
                 else
                 {
@@ -408,44 +477,28 @@ namespace WpfApp
 
         private void dgData_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (dgData.SelectedIndex >= 0)
+            dynamic selectedItem = dgData.SelectedItem;
+            if (selectedItem != null)
             {
-
-                DataGrid dataGrid = sender as DataGrid;
-                DataGridRow row =
-                    (DataGridRow)dataGrid.ItemContainerGenerator.ContainerFromIndex(dgData.SelectedIndex);
-                if (row != null)
-
+                txtAccountId.Text = selectedItem.AccountId.ToString();
+                txtUsername.Text = selectedItem.Username;
+                txtPassword.Text = selectedItem.Password;
+                cboRole.SelectedValue = selectedItem.RoleId;
+                txtFullname.Text = selectedItem.FullName;
+                txtDob.Text = selectedItem.DateOfBirth.ToString();
+                cboGender.SelectedValue = selectedItem.Gender;
+                txtPhoneNumber.Text = selectedItem.PhoneNumber;
+                txtAddress.Text = selectedItem.Address;
+                txtSalary.Text = selectedItem.Salary.ToString();
+                cboDepartment.SelectedValue = selectedItem.DepartmentId;
+                cboPosition.SelectedValue = selectedItem.PositionId;
+                if (!string.IsNullOrEmpty(selectedItem.AvatarImage))
                 {
-                    DataGridCell RowColumn =
-                    dataGrid.Columns[0].GetCellContent(row).Parent as DataGridCell;
-                    string id = ((TextBlock)RowColumn.Content).Text;
-                    Account account = iAccountService.GetAccountByAccountId(Int32.Parse(id));
-                    Employee employee = iEmployeeService.GetEmployeeByAccountId(account.AccountId);
-                    txtAccountId.Text = account.AccountId.ToString();
-                    txtUsername.Text = account.Username;
-                    txtPassword.Text = account.Password;
-                    cboRole.SelectedValue = account.RoleId;
-                    txtFullname.Text = employee.FullName;
-                    txtDob.Text = employee.DateOfBirth.ToString();
-                    cboGender.SelectedValue = employee.Gender;
-                    txtPhoneNumber.Text = employee.PhoneNumber;
-                    txtAddress.Text = employee.Address;
-                    txtSalary.Text = employee.Salary.ToString();
-                    cboDepartment.SelectedValue = employee.DepartmentId;
-                    cboPosition.SelectedValue = employee.PositionId;
-                    if (!string.IsNullOrEmpty(employee.ProfilePicture))
-                    {
-                        avatarImage.Source = new BitmapImage(new Uri(employee.ProfilePicture, UriKind.RelativeOrAbsolute));
-                    }
-                    else
-                    {
-                        avatarImage.Source = null;
-                    }
+                    avatarImage.Source = new BitmapImage(new Uri(selectedItem.AvatarImage, UriKind.RelativeOrAbsolute));
                 }
                 else
                 {
-                    MessageBox.Show("Row has not been generated yet.");
+                    avatarImage.Source = null;
                 }
             }
 
@@ -457,9 +510,9 @@ namespace WpfApp
             {
                 try
                 {
-                    int employeeId = int.Parse(button.Tag.ToString()); 
+                    int employeeId = int.Parse(button.Tag.ToString()); // Chuyển đổi Tag thành int
                     SlaryWindow salaryWindow = new SlaryWindow(employeeId);
-                    salaryWindow.Show(); 
+                    salaryWindow.Show(); // Mở cửa sổ SlaryWindow
                 }
                 catch (FormatException ex)
                 {
@@ -482,35 +535,62 @@ namespace WpfApp
         {
             string filePath = "employees_backup.json";
 
+            // Kiểm tra xem file có tồn tại không
             if (!File.Exists(filePath))
             {
                 MessageBox.Show("File sao lưu không tồn tại.");
                 return;
             }
+
+            // Nếu file tồn tại, phục hồi dữ liệu
             var employees = RestoreEmployees(filePath);
             foreach (var employee in employees)
             {
-                Debug.WriteLine(employee.FullName);
+                Employee newEmployee = new Employee
+                {
+                    FullName = employee.FullName,
+                    DateOfBirth = employee.DateOfBirth,
+                    Gender = employee.Gender,
+                    Address = employee.Address,
+                    PhoneNumber = employee.PhoneNumber,
+                    DepartmentId = employee.DepartmentId,
+                    PositionId = employee.PositionId,
+                    AccountId = employee.AccountId,
+                    Salary = employee.Salary,
+                    StartDate = employee.StartDate,
+                    ProfilePicture = employee.ProfilePicture
+                };
+                iEmployeeService.AddEmployee(newEmployee);
             }
-
+            // Cập nhật danh sách nhân viên trong ứng dụng của bạn
+            LoadEmployeeList();
         }
         public void BackupEmployees(List<Employee> employees, string filePath)
         {
             try
             {
+                // Serialize the employee list to JSON
                 var json = JsonSerializer.Serialize(employees);
+
+                // Write the JSON to a file (automatically creates the file if it doesn't exist)
                 File.WriteAllText(filePath, json);
+
                 MessageBox.Show("Sao lưu dữ liệu thành công!");
             }
             catch (Exception ex)
             {
+                // Xử lý lỗi nếu có
                 MessageBox.Show($"Lỗi trong quá trình sao lưu: {ex.Message}");
             }
         }
         public List<Employee> RestoreEmployees(string filePath)
         {
+            // Read the JSON from the file
             var json = File.ReadAllText(filePath);
+
+            // Deserialize the JSON back to a list of employees
             var employees = JsonSerializer.Deserialize<List<Employee>>(json);
+
             return employees ?? new List<Employee>();
         }
         private void btnHome_Click(object sender, RoutedEventArgs e)
@@ -519,15 +599,5 @@ namespace WpfApp
             homeWindow.Show();
             this.Close();
         }
-
-        private void btnAttendance_Click(object sender, RoutedEventArgs e)
-        {
-            List<Employee> employees = iEmployeeService.GetEmployees();
-            IAttendanceRepository attendanceRepository = new AttendanceRepository();
-            IAttendanceService attendanceService = new AttendanceService(attendanceRepository); // Cần khởi tạo đối tượng của class implement IAttendanceService
-            AttendanceWindow attendanceWindow = new AttendanceWindow(employees, attendanceService);
-            attendanceWindow.ShowDialog();
-        }
-
     }
 }

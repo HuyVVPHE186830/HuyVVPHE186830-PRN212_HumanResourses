@@ -3,15 +3,15 @@
   "WorkspaceRootPath": "D:\\FALL 2024\\PRN212\\GroupAss4\\HuyVVPHE186830-PRN212_HumanResourses\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|d:\\fall 2024\\prn212\\groupass4\\huyvvphe186830-prn212_humanresourses\\wpfapp\\addslawindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|solutionrelative:wpfapp\\addslawindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|d:\\fall 2024\\prn212\\groupass4\\huyvvphe186830-prn212_humanresourses\\wpfapp\\slarywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|solutionrelative:wpfapp\\slarywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|d:\\fall 2024\\prn212\\groupass4\\huyvvphe186830-prn212_humanresourses\\wpfapp\\addslawindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|solutionrelative:wpfapp\\addslawindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|d:\\fall 2024\\prn212\\groupass4\\huyvvphe186830-prn212_humanresourses\\wpfapp\\wpfapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -25,7 +25,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -49,7 +49,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "AddSlaWindow.xaml.cs",
               "DocumentMoniker": "D:\\FALL 2024\\PRN212\\GroupAss4\\HuyVVPHE186830-PRN212_HumanResourses\\WpfApp\\AddSlaWindow.xaml.cs",
               "RelativeDocumentMoniker": "WpfApp\\AddSlaWindow.xaml.cs",
@@ -74,25 +74,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "SlaryWindow.xaml.cs",
               "DocumentMoniker": "D:\\FALL 2024\\PRN212\\GroupAss4\\HuyVVPHE186830-PRN212_HumanResourses\\WpfApp\\SlaryWindow.xaml.cs",
               "RelativeDocumentMoniker": "WpfApp\\SlaryWindow.xaml.cs",
               "ToolTip": "D:\\FALL 2024\\PRN212\\GroupAss4\\HuyVVPHE186830-PRN212_HumanResourses\\WpfApp\\SlaryWindow.xaml.cs",
               "RelativeToolTip": "WpfApp\\SlaryWindow.xaml.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAmwF4AAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAACsAAAAAAAAAAAAmwEkAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T15:11:39.796Z"
+              "WhenOpened": "2024-10-31T15:11:39.796Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Microsoft.Common.CurrentVersion.targets",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "ViewState": "AgIAALwVAAAAAAAAAAASwN4VAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAIYWAAAAAAAAAAASwLQWAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2024-10-31T15:09:13.857Z"
+              "WhenOpened": "2024-10-31T15:09:13.857Z",
+              "EditorCaption": ""
             }
           ]
         },

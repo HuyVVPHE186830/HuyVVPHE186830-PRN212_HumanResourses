@@ -3247,19 +3247,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\yeuda\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\FALL 2024\\PRN212\\GroupAss2\\HuyVVPHE186830-PRN212_HumanResourses\\Services\\Services.csproj",
+      "projectUniqueName": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Services\\Services.csproj",
       "projectName": "Services",
-      "projectPath": "D:\\FALL 2024\\PRN212\\GroupAss2\\HuyVVPHE186830-PRN212_HumanResourses\\Services\\Services.csproj",
-      "packagesPath": "C:\\Users\\yeuda\\.nuget\\packages\\",
-      "outputPath": "D:\\FALL 2024\\PRN212\\GroupAss2\\HuyVVPHE186830-PRN212_HumanResourses\\Services\\obj\\",
+      "projectPath": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Services\\Services.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Services\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\yeuda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3274,14 +3274,14 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "D:\\FALL 2024\\PRN212\\GroupAss2\\HuyVVPHE186830-PRN212_HumanResourses\\DataAccessLayer\\DataAccessLayer.csproj": {
-              "projectPath": "D:\\FALL 2024\\PRN212\\GroupAss2\\HuyVVPHE186830-PRN212_HumanResourses\\DataAccessLayer\\DataAccessLayer.csproj"
+            "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\DataAccessLayer\\DataAccessLayer.csproj": {
+              "projectPath": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\DataAccessLayer\\DataAccessLayer.csproj"
             },
-            "D:\\FALL 2024\\PRN212\\GroupAss2\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Objects.csproj": {
-              "projectPath": "D:\\FALL 2024\\PRN212\\GroupAss2\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Objects.csproj"
+            "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Objects.csproj": {
+              "projectPath": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Objects.csproj"
             },
-            "D:\\FALL 2024\\PRN212\\GroupAss2\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\Repositories.csproj": {
-              "projectPath": "D:\\FALL 2024\\PRN212\\GroupAss2\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\Repositories.csproj"
+            "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\Repositories.csproj": {
+              "projectPath": "D:\\DU LIEU\\KY 5 FALL2024\\PRN212\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\Repositories.csproj"
             }
           }
         }
