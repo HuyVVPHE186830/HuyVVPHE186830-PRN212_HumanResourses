@@ -41,6 +41,7 @@
         <Label Content="Position" HorizontalAlignment="Left" Margin="510,194,0,0" VerticalAlignment="Top" Width="64" FontSize="10" Height="23"/>
         <TextBox x:Name="cboPosition" Width="133" Height="23" IsEnabled="False" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="589,194,0,0" />
         <Button x:Name="btnUpdate" Content="Save Changes" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="265,241,0,0" Width="155" Height="28" Background="#FF0099FF" Foreground="White" Click="btnUpdate_Click" RenderTransformOrigin="0.5,0.697"/>
+        <Button Content="Back To Home" HorizontalAlignment="Left" Margin="690,4,0,0" VerticalAlignment="Top" Click="btnHome_Click"/>
 
         <Grid Margin="-78,319,-52,-100" RenderTransformOrigin="0.5,0.5" Background="#FFFF9411">
             <Grid.RenderTransform>
