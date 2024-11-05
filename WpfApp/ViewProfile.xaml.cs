@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using DataAccessLayer;
+using Microsoft.Win32;
 using Objects;
 using Services;
 
@@ -107,9 +108,26 @@ namespace WpfApp
         }
         private void btnHome_Click(object sender, RoutedEventArgs e)
         {
-            HomeWindow homeWindow = new HomeWindow();
+            HomeWindow homeWindow = new HomeWindow(currentUser);
             homeWindow.Show();
             this.Close();
+        }
+
+        private void SelectImage_Click(object sender, RoutedEventArgs e)
+        {
+            // Mở hộp thoại chọn file ảnh
+            OpenFileDialog openFileDialog = new OpenFileDialog
+            {
+                Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp",
+                Title = "Chọn ảnh avatar"
+            };
+
+            // Kiểm tra nếu người dùng chọn OK
+            if (openFileDialog.ShowDialog() == true)
+            {
+                // Nạp ảnh vào Image control
+                avatarImage.Source = new BitmapImage(new Uri(openFileDialog.FileName));
+            }
         }
     }
 }

@@ -52,6 +52,7 @@ namespace WpfApp
                 btnLeaveRequests.Visibility = Visibility.Collapsed;
                 btnDepartmentManagement.Visibility = Visibility.Collapsed;
                 btnViewProfile.Visibility = Visibility.Visible;
+                btnNotificationManagement.Visibility = Visibility.Collapsed;
             }
             else if (currentUser.RoleId == 1)
             {
@@ -59,6 +60,7 @@ namespace WpfApp
                 btnLeaveRequests.Visibility = Visibility.Visible;
                 btnDepartmentManagement.Visibility = Visibility.Visible;
                 btnViewProfile.Visibility = Visibility.Collapsed;
+                btnNotificationManagement.Visibility = Visibility.Visible;
             }
         }
         private void btnViewProfile_Click(object sender, RoutedEventArgs e)

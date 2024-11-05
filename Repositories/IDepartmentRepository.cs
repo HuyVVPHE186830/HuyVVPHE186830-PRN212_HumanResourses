@@ -13,6 +13,6 @@ namespace Repositories
         void AddDepartment(Department department);
         void UpdateDepartment(Department department);
         void DeleteDepartment(Department department);
-
+        public List<Employee> GetEmployeesByDepartmentId(int departmentId);
     }
 }

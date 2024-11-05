@@ -14,5 +14,6 @@ namespace Services
         void AddDepartment(Department department);
         void UpdateDepartment(Department department);
         void DeleteDepartment(Department department);
+        List<Employee> GetEmployeesByDepartmentId(int departmentId);
     }
 }

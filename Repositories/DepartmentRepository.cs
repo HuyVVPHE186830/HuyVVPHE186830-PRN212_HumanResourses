@@ -13,5 +13,10 @@ namespace Repositories
         public void AddDepartment(Department employee) => DepartmentDAO.AddDepartment(employee);
         public void UpdateDepartment(Department employee) => DepartmentDAO.UpdateDepartment(employee);
         public void DeleteDepartment(Department employee) => DepartmentDAO.DeleteDepartment(employee);
+        public List<Employee> GetEmployeesByDepartmentId(int departmentId)
+        {
+            using var db = new FuhrmContext();
+            return db.Employees.Where(e => e.DepartmentId == departmentId).ToList();
+        }
     }
 }

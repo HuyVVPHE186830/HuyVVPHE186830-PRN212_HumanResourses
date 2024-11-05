@@ -2,31 +2,27 @@
 using Objects;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace DataAccessLayer
 {
     public class EmployeeDAO
     {
         private static List<Employee> listEmployees;
-        public static List<Employee> GetEmployeesByDepartmentId(int departmentId)
-        {
-            using var db = new FuhrmContext();
-            return db.Employees
-                     .Where(employee => employee.DepartmentId == departmentId)
-                     .Include(employee => employee.Position)
-                     .Include(employee => employee.Department)
-                     .ToList();
-        }
         public static List<Employee> GetEmployees()
         {
             listEmployees = new List<Employee>();
             try
             {
                 using var db = new FuhrmContext();
-                listEmployees = db.Employees.ToList();
+                listEmployees = db.Employees
+            .Include(e => e.Department)
+            .Include(e => e.Position)
+            .ToList();
             }
             catch (Exception e) { }
             return listEmployees;
@@ -43,6 +39,15 @@ namespace DataAccessLayer
             {
                 throw new Exception(e.Message);
             }
+        }
+        public static List<Employee> GetEmployeesByDepartmentId(int departmentId)
+        {
+            using var db = new FuhrmContext();
+            return db.Employees
+                     .Where(employee => employee.DepartmentId == departmentId)
+                     .Include(employee => employee.Position)
+                     .Include(employee => employee.Department)
+                     .ToList();
         }
         public static void UpdateEmployee(Employee employee)
         {
@@ -103,7 +108,7 @@ namespace DataAccessLayer
             try
             {
                 using var db = new FuhrmContext();
-                return db.Employees.Select(e => e.FullName).ToList(); // Giả sử Employee có thuộc tính Name
+                return db.Employees.Select(e => e.FullName).ToList();
             }
             catch (Exception e)
             {
@@ -115,17 +120,11 @@ namespace DataAccessLayer
             try
             {
                 using var db = new FuhrmContext();
-
-                // Lấy danh sách nhân viên
                 var allEmployees = db.Employees.ToList();
-
-                // Lấy danh sách nhân viên đã có bảng lương
                 var employeesWithSalaries = db.Salaries.Select(s => s.EmployeeId).ToList();
-
-                // Lọc những nhân viên chưa có bảng lương
                 var availableEmployees = allEmployees
                     .Where(e => !employeesWithSalaries.Contains(e.EmployeeId))
-                    .Select(e => e.FullName) // Giả sử Employee có thuộc tính FullName
+                    .Select(e => e.FullName)
                     .ToList();
 
                 return availableEmployees;

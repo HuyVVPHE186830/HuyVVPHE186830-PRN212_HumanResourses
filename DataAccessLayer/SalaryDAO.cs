@@ -1,4 +1,5 @@
-﻿using Objects;
+﻿using Microsoft.EntityFrameworkCore;
+using Objects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -50,6 +51,19 @@ namespace DataAccessLayer
                 }
             }
         }
-
+        public static List<Salary> GetSalaries()
+        {
+            try
+            {
+                using var db = new FuhrmContext();
+                return db.Salaries
+                    .Include(s => s.Employee)
+                    .ToList();
+            }
+            catch (Exception ex)
+            {
+                return new List<Salary>();
+            }
+        }
     }
 }

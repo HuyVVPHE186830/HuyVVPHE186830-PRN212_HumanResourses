@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\FPT SHOP\\HuyVVPHE186830-PRN212_HumanResourses\\Services\\Services.csproj": {}
+    "C:\\PEPRN\\new\\HuyVVPHE186830-PRN212_HumanResourses\\Services\\Services.csproj": {}
   },
   "projects": {
-    "C:\\Users\\FPT SHOP\\HuyVVPHE186830-PRN212_HumanResourses\\DataAccessLayer\\DataAccessLayer.csproj": {
+    "C:\\PEPRN\\new\\HuyVVPHE186830-PRN212_HumanResourses\\DataAccessLayer\\DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\FPT SHOP\\HuyVVPHE186830-PRN212_HumanResourses\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectUniqueName": "C:\\PEPRN\\new\\HuyVVPHE186830-PRN212_HumanResourses\\DataAccessLayer\\DataAccessLayer.csproj",
         "projectName": "DataAccessLayer",
-        "projectPath": "C:\\Users\\FPT SHOP\\HuyVVPHE186830-PRN212_HumanResourses\\DataAccessLayer\\DataAccessLayer.csproj",
-        "packagesPath": "C:\\Users\\FPT SHOP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\FPT SHOP\\HuyVVPHE186830-PRN212_HumanResourses\\DataAccessLayer\\obj\\",
+        "projectPath": "C:\\PEPRN\\new\\HuyVVPHE186830-PRN212_HumanResourses\\DataAccessLayer\\DataAccessLayer.csproj",
+        "packagesPath": "C:\\Users\\RAZER\\.nuget\\packages\\",
+        "outputPath": "C:\\PEPRN\\new\\HuyVVPHE186830-PRN212_HumanResourses\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\FPT SHOP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\RAZER\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -29,8 +29,8 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\FPT SHOP\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Objects.csproj": {
-                "projectPath": "C:\\Users\\FPT SHOP\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Objects.csproj"
+              "C:\\PEPRN\\new\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Objects.csproj": {
+                "projectPath": "C:\\PEPRN\\new\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Objects.csproj"
               }
             }
           }
@@ -84,21 +84,21 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\FPT SHOP\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Objects.csproj": {
+    "C:\\PEPRN\\new\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Objects.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\FPT SHOP\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Objects.csproj",
+        "projectUniqueName": "C:\\PEPRN\\new\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Objects.csproj",
         "projectName": "Objects",
-        "projectPath": "C:\\Users\\FPT SHOP\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Objects.csproj",
-        "packagesPath": "C:\\Users\\FPT SHOP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\FPT SHOP\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\obj\\",
+        "projectPath": "C:\\PEPRN\\new\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Objects.csproj",
+        "packagesPath": "C:\\Users\\RAZER\\.nuget\\packages\\",
+        "outputPath": "C:\\PEPRN\\new\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\FPT SHOP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\RAZER\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -148,21 +148,21 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\FPT SHOP\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\Repositories.csproj": {
+    "C:\\PEPRN\\new\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\Repositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\FPT SHOP\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\Repositories.csproj",
+        "projectUniqueName": "C:\\PEPRN\\new\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\Repositories.csproj",
         "projectName": "Repositories",
-        "projectPath": "C:\\Users\\FPT SHOP\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\Repositories.csproj",
-        "packagesPath": "C:\\Users\\FPT SHOP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\FPT SHOP\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\obj\\",
+        "projectPath": "C:\\PEPRN\\new\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\Repositories.csproj",
+        "packagesPath": "C:\\Users\\RAZER\\.nuget\\packages\\",
+        "outputPath": "C:\\PEPRN\\new\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\FPT SHOP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\RAZER\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -177,11 +177,11 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\FPT SHOP\\HuyVVPHE186830-PRN212_HumanResourses\\DataAccessLayer\\DataAccessLayer.csproj": {
-                "projectPath": "C:\\Users\\FPT SHOP\\HuyVVPHE186830-PRN212_HumanResourses\\DataAccessLayer\\DataAccessLayer.csproj"
+              "C:\\PEPRN\\new\\HuyVVPHE186830-PRN212_HumanResourses\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "C:\\PEPRN\\new\\HuyVVPHE186830-PRN212_HumanResourses\\DataAccessLayer\\DataAccessLayer.csproj"
               },
-              "C:\\Users\\FPT SHOP\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Objects.csproj": {
-                "projectPath": "C:\\Users\\FPT SHOP\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Objects.csproj"
+              "C:\\PEPRN\\new\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Objects.csproj": {
+                "projectPath": "C:\\PEPRN\\new\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Objects.csproj"
               }
             }
           }
@@ -219,21 +219,21 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\FPT SHOP\\HuyVVPHE186830-PRN212_HumanResourses\\Services\\Services.csproj": {
+    "C:\\PEPRN\\new\\HuyVVPHE186830-PRN212_HumanResourses\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\FPT SHOP\\HuyVVPHE186830-PRN212_HumanResourses\\Services\\Services.csproj",
+        "projectUniqueName": "C:\\PEPRN\\new\\HuyVVPHE186830-PRN212_HumanResourses\\Services\\Services.csproj",
         "projectName": "Services",
-        "projectPath": "C:\\Users\\FPT SHOP\\HuyVVPHE186830-PRN212_HumanResourses\\Services\\Services.csproj",
-        "packagesPath": "C:\\Users\\FPT SHOP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\FPT SHOP\\HuyVVPHE186830-PRN212_HumanResourses\\Services\\obj\\",
+        "projectPath": "C:\\PEPRN\\new\\HuyVVPHE186830-PRN212_HumanResourses\\Services\\Services.csproj",
+        "packagesPath": "C:\\Users\\RAZER\\.nuget\\packages\\",
+        "outputPath": "C:\\PEPRN\\new\\HuyVVPHE186830-PRN212_HumanResourses\\Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\FPT SHOP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\RAZER\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -248,14 +248,14 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\FPT SHOP\\HuyVVPHE186830-PRN212_HumanResourses\\DataAccessLayer\\DataAccessLayer.csproj": {
-                "projectPath": "C:\\Users\\FPT SHOP\\HuyVVPHE186830-PRN212_HumanResourses\\DataAccessLayer\\DataAccessLayer.csproj"
+              "C:\\PEPRN\\new\\HuyVVPHE186830-PRN212_HumanResourses\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "C:\\PEPRN\\new\\HuyVVPHE186830-PRN212_HumanResourses\\DataAccessLayer\\DataAccessLayer.csproj"
               },
-              "C:\\Users\\FPT SHOP\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Objects.csproj": {
-                "projectPath": "C:\\Users\\FPT SHOP\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Objects.csproj"
+              "C:\\PEPRN\\new\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Objects.csproj": {
+                "projectPath": "C:\\PEPRN\\new\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Objects.csproj"
               },
-              "C:\\Users\\FPT SHOP\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\Repositories.csproj": {
-                "projectPath": "C:\\Users\\FPT SHOP\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\Repositories.csproj"
+              "C:\\PEPRN\\new\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\Repositories.csproj": {
+                "projectPath": "C:\\PEPRN\\new\\HuyVVPHE186830-PRN212_HumanResourses\\Repositories\\Repositories.csproj"
               }
             }
           }
@@ -293,7 +293,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

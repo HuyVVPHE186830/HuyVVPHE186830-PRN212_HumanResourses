@@ -18,12 +18,12 @@ namespace Repositories
         public Employee GetEmployeeByEmployeeId(int employeeId) => EmployeeDAO.GetEmployeeByEmployeeId(employeeId);
         public Employee GetEmployeeByAccountId(int accountId) => EmployeeDAO.GetEmployeeByAccountId(accountId);
 
-        public List<string> GetAvailableEmployeeNames()=>EmployeeDAO.GetAvailableEmployeeNames();
+        public List<string> GetAvailableEmployeeNames() => EmployeeDAO.GetAvailableEmployeeNames();
 
+
+        public List<string> GetEmployeeNames() => EmployeeDAO.GetEmployeeNames();
         public List<Employee> GetEmployeesByDepartmentId(int employeeId) => EmployeeDAO.GetEmployeesByDepartmentId(employeeId);
 
-        public List<string> GetEmployeeNames()=>EmployeeDAO.GetEmployeeNames();
-        
         public void AddEmployees(List<Employee> employees) => EmployeeDAO.AddEmployees(employees);
     }
 }

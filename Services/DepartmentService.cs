@@ -31,5 +31,9 @@ namespace Services
         {
             iDepartmentRepository.DeleteDepartment(employee);
         }
+        public List<Employee> GetEmployeesByDepartmentId(int departmentId)
+        {
+            return iDepartmentRepository.GetEmployeesByDepartmentId(departmentId);
+        }
     }
 }
