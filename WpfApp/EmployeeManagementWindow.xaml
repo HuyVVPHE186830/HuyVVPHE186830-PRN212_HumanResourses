@@ -82,6 +82,8 @@
                 </DataGridTemplateColumn>
             </DataGrid.Columns>
         </DataGrid>
+        <Button x:Name="btnAttendance" Content="Attendance" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="205,155,0,0" Click ="btnAttendance_Click" Width="90" Height="28" Background="#FF4CAF50" Foreground="White" />
+
         <Button Content="Save Data" HorizontalAlignment="Left" Margin="39,159,0,0" VerticalAlignment="Top" Click="btnSave_Click"/>
         <Button Content="Restore Data" HorizontalAlignment="Left" Margin="39,196,0,0" VerticalAlignment="Top" Click="btnRestore_Click"/>
 

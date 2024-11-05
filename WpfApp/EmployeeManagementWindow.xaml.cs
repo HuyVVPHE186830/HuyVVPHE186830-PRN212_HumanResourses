@@ -19,6 +19,7 @@ using Services;
 using System.IO;
 using System.Text.Json;
 using System.Diagnostics;
+using Repositories;
 
 namespace WpfApp
 {
@@ -33,15 +34,28 @@ namespace WpfApp
         private readonly IRoleService iRoleService;
         private readonly IDepartmentService iDepartmentService;
         private readonly IPositionService iPositionService;
+        private readonly IAttendanceService iAttendanceService;
+
 
         public EmployeeManagementWindow()
         {
             InitializeComponent();
+
+            // Khởi tạo các service
             iAccountService = new AccountService();
             iEmployeeService = new EmployeeService();
             iRoleService = new RoleService();
             iDepartmentService = new DepartmentService();
+            IAttendanceRepository attendanceRepository = new AttendanceRepository();
+            iAttendanceService = new AttendanceService(attendanceRepository);
             iPositionService = new PositionService();
+
+            // Lấy danh sách nhân viên sau khi đã khởi tạo các service
+            List<Employee> employees = iEmployeeService.GetEmployees();
+
+            // Mở cửa sổ Attendance
+            AttendanceWindow attendanceWindow = new AttendanceWindow(employees, iAttendanceService);
+            attendanceWindow.Show();
         }
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
@@ -443,9 +457,9 @@ namespace WpfApp
             {
                 try
                 {
-                    int employeeId = int.Parse(button.Tag.ToString()); // Chuyển đổi Tag thành int
+                    int employeeId = int.Parse(button.Tag.ToString()); 
                     SlaryWindow salaryWindow = new SlaryWindow(employeeId);
-                    salaryWindow.Show(); // Mở cửa sổ SlaryWindow
+                    salaryWindow.Show(); 
                 }
                 catch (FormatException ex)
                 {
@@ -468,48 +482,35 @@ namespace WpfApp
         {
             string filePath = "employees_backup.json";
 
-            // Kiểm tra xem file có tồn tại không
             if (!File.Exists(filePath))
             {
                 MessageBox.Show("File sao lưu không tồn tại.");
                 return;
             }
-
-            // Nếu file tồn tại, phục hồi dữ liệu
             var employees = RestoreEmployees(filePath);
             foreach (var employee in employees)
             {
                 Debug.WriteLine(employee.FullName);
             }
-            // Cập nhật danh sách nhân viên trong ứng dụng của bạn
 
         }
         public void BackupEmployees(List<Employee> employees, string filePath)
         {
             try
             {
-                // Serialize the employee list to JSON
                 var json = JsonSerializer.Serialize(employees);
-
-                // Write the JSON to a file (automatically creates the file if it doesn't exist)
                 File.WriteAllText(filePath, json);
-
                 MessageBox.Show("Sao lưu dữ liệu thành công!");
             }
             catch (Exception ex)
             {
-                // Xử lý lỗi nếu có
                 MessageBox.Show($"Lỗi trong quá trình sao lưu: {ex.Message}");
             }
         }
         public List<Employee> RestoreEmployees(string filePath)
         {
-            // Read the JSON from the file
             var json = File.ReadAllText(filePath);
-
-            // Deserialize the JSON back to a list of employees
             var employees = JsonSerializer.Deserialize<List<Employee>>(json);
-
             return employees ?? new List<Employee>();
         }
         private void btnHome_Click(object sender, RoutedEventArgs e)
@@ -518,5 +519,15 @@ namespace WpfApp
             homeWindow.Show();
             this.Close();
         }
+
+        private void btnAttendance_Click(object sender, RoutedEventArgs e)
+        {
+            List<Employee> employees = iEmployeeService.GetEmployees();
+            IAttendanceRepository attendanceRepository = new AttendanceRepository();
+            IAttendanceService attendanceService = new AttendanceService(attendanceRepository); // Cần khởi tạo đối tượng của class implement IAttendanceService
+            AttendanceWindow attendanceWindow = new AttendanceWindow(employees, attendanceService);
+            attendanceWindow.ShowDialog();
+        }
+
     }
 }

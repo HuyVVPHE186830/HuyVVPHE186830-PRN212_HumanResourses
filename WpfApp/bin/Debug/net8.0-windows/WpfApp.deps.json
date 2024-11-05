@@ -1006,6 +1006,7 @@
       },
       "Services/1.0.0": {
         "dependencies": {
+          "DataAccessLayer": "1.0.0",
           "Objects": "1.0.0",
           "Repositories": "1.0.0"
         },

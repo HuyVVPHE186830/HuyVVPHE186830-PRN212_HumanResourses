@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\FALL 2024\PRN212\GroupAss2\HuyVVPHE186830-PRN212_HumanResourses\WpfApp\App.xaml
-71642571716
+10-194005144
 
-11-556276364
+141048990551
 2481225089889
-AddSlaWindow.xaml;EditSlaWindow.xaml;EmployeeManagementWindow.xaml;HomeWindow.xaml;LeaveRequestsManagement.xaml;MainWindow.xaml;SlaryWindow.xaml;
+AddSlaWindow.xaml;AttendanceListDialog.xaml;AttendanceWindow.xaml;EditSlaWindow.xaml;EmployeeManagementWindow.xaml;HomeWindow.xaml;LeaveRequestsManagement.xaml;MainWindow.xaml;OvertimeDialog.xaml;SlaryWindow.xaml;
 
 False
 

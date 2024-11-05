@@ -10,21 +10,36 @@
     <Compile Update="AddSlaWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="AttendanceListDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AttendanceWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="EditSlaWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="EmployeeManagementWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="OvertimeDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="SlaryWindow.xaml.cs">
-		<SubType>Code</SubType>
-	</Compile>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="LeaveRequestsManagement.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="AddSlaWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AttendanceListDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AttendanceWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="EditSlaWindow.xaml">
@@ -34,6 +49,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="OvertimeDialog.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="SlaryWindow.xaml">

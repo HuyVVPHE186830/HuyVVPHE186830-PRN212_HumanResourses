@@ -248,6 +248,9 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
+              "D:\\FALL 2024\\PRN212\\GroupAss2\\HuyVVPHE186830-PRN212_HumanResourses\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "D:\\FALL 2024\\PRN212\\GroupAss2\\HuyVVPHE186830-PRN212_HumanResourses\\DataAccessLayer\\DataAccessLayer.csproj"
+              },
               "D:\\FALL 2024\\PRN212\\GroupAss2\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Objects.csproj": {
                 "projectPath": "D:\\FALL 2024\\PRN212\\GroupAss2\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Objects.csproj"
               },

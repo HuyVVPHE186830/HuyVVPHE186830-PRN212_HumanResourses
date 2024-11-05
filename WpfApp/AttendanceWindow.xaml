@@ -1,0 +1,27 @@
+﻿<Window x:Class="WpfApp.AttendanceWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Attendance" Height="400" Width="600">
+    <Grid>
+        <!-- DataGrid để hiển thị danh sách nhân viên -->
+        <DataGrid x:Name="dgAttendanceList" Margin="10,10,10,80" AutoGenerateColumns="False" SelectionChanged="dgAttendanceList_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="FullName" Binding="{Binding FullName}"/>
+                <DataGridTextColumn Header="Date Of Birth" Binding="{Binding DateOfBirth}"/>
+                <DataGridTextColumn Header="Gender" Binding="{Binding Gender}"/>
+                <DataGridTextColumn Header="Address" Binding="{Binding Address}"/>
+                <DataGridTextColumn Header="Phone Number" Binding="{Binding PhoneNumber}"/>
+                <DataGridTextColumn Header="Salary" Binding="{Binding Salary}"/>
+                <DataGridTextColumn Header="Department" Binding="{Binding DepartmentName}"/>
+                <DataGridTextColumn Header="Position" Binding="{Binding PositionName}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <!-- Các nút Present và Absent dưới bảng -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10">
+            <Button x:Name="PresentButton" Content="Present" Width="75" Margin="5" Click="PresentButton_Click" IsEnabled="False"/>
+            <Button x:Name="AbsentButton" Content="Absent" Width="75" Margin="5" Click="AbsentButton_Click" IsEnabled="False"/>
+            <Button x:Name="ViewButton" Content="View" Width="75" Margin="5" Click="ViewAttendanceButton_Click" IsEnabled="False"/>
+        </StackPanel>
+    </Grid>
+</Window>
