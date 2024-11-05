@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp"
+        Loaded="LoadNotificationsByDepartmentId"
         mc:Ignorable="d"
                 WindowStartupLocation="CenterScreen"
         Title="HomeWindow" Height="450" Width="800">
@@ -38,7 +39,7 @@ HorizontalAlignment="Left" VerticalAlignment="Top" Margin="288,290,0,0"/>
          VerticalAlignment="Top" 
          Width="279" 
          Height="400" 
-         Margin="0,50,10,0">
+         Margin="0,50,10,0" >
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>

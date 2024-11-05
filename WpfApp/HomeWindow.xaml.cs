@@ -75,7 +75,7 @@ namespace WpfApp
             empWindow.Show();
             this.Close();
         }
-        private void LoadNotificationsByDepartmentId()
+        private void LoadNotificationsByDepartmentId(object sender, RoutedEventArgs e)
         {
             Employee employee = employeeService.GetEmployeeByAccountId(_account.AccountId);
 
@@ -86,6 +86,7 @@ namespace WpfApp
             }
             else
             {
+                MessageBox.Show("abc");
             }
         }
         private void btnLeaveRequests_Click(object sender, RoutedEventArgs e)
@@ -133,6 +134,8 @@ namespace WpfApp
             notificationManagement.Show();
             this.Close();
         }
+
+     
     }
 }
 

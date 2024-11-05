@@ -26,6 +26,8 @@ namespace WpfApp
         private readonly IAccountService iAccountService;
         private readonly IEmployeeService iEmployeeService;
         private readonly IActivityLogService iActivityLogService;
+        private readonly IDepartmentService iDepartmentService;
+        private readonly IPositionService iPositionService;
         private Account currentUser;
         private Objects.Account _account;
         public ViewProfile(Account account)
@@ -35,7 +37,9 @@ namespace WpfApp
             currentUser = account;
             iAccountService = new AccountService();
             iEmployeeService = new EmployeeService();
-            iActivityLogService = new ActivityLogService(); 
+            iActivityLogService = new ActivityLogService();
+            iDepartmentService = new DepartmentService();
+            iPositionService = new PositionService();
         }
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
@@ -43,6 +47,12 @@ namespace WpfApp
 
             if (employee != null)
             {
+                var departments = iDepartmentService.GetDepartments().ToList();
+                var department = departments.FirstOrDefault(d => d.DepartmentId == employee.DepartmentId);
+                string depName = department?.DepartmentName;
+                var positions = iPositionService.GetPositions().ToList();
+                var position = positions.FirstOrDefault(p => p.PositionId == employee.PositionId);
+                string posName = position?.PositionName;
                 txtAccountId.Text = currentUser.AccountId.ToString();
                 txtUsername.Text = currentUser.Username;
                 txtPassword.Password = currentUser.Password;
@@ -52,8 +62,8 @@ namespace WpfApp
                 txtAddress.Text = employee.Address;
                 txtSalary.Text = employee.Salary.ToString();
                 cboGender.SelectedValue = employee.Gender;
-                cboDepartment.Text = employee.Department?.DepartmentName ?? "N/A";
-                cboPosition.Text = employee.Position?.PositionName ?? "N/A";
+                cboDepartment.Text = depName;
+                cboPosition.Text = posName;
 
                 if (!string.IsNullOrEmpty(employee.ProfilePicture))
                 {

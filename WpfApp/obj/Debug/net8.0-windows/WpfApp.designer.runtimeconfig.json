@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\RAZER\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\RAZER\\.nuget\\packages"
+      "C:\\Users\\FPT SHOP\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\FPT SHOP\\.nuget\\packages"
     ],
     "configProperties": {
       "System.Reflection.NullabilityInfoContext.IsSupported": true,
