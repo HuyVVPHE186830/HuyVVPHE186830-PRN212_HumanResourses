@@ -49,11 +49,10 @@
         <Label Content="Position" HorizontalAlignment="Left" Margin="559,111,0,0" VerticalAlignment="Top" Width="64" FontSize="10" Height="23"/>
         <ComboBox x:Name="cboPosition" Width="133" Height="23" IsEnabled="True" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="628,111,0,0"/>
 
-        <Button x:Name="btnAdd" Content="Add" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="330,157,0,0" Width="70" Height="28" Background="#FF009688" Foreground="White" BorderBrush="Transparent" BorderThickness="1" Click="btnAdd_Click"  Padding="5,0"/>
-        <Button x:Name="btnUpdate" Content="Update" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="420,157,0,0" Width="70" Height="28" Background="#FF2196F3" Foreground="White" BorderBrush="Transparent" BorderThickness="1" Click="btnUpdate_Click" RenderTransformOrigin="0.5,0.697"  Padding="5,0"/>
-        <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="510,157,0,0" Width="70" Height="28" Background="#F44336" Foreground="White" BorderBrush="Transparent" BorderThickness="1" Click="btnDelete_Click"  Padding="5,0"/>
-        <Button x:Name="btnRefresh" Content="Refresh" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="600,157,0,0" Width="70" Height="28" Background="#FF4CAF50" Foreground="White" BorderBrush="Transparent" BorderThickness="1" Click="btnRefresh_Click"  Padding="5,0"/>
-        <Button x:Name="btnAttendance" Content="Attendance" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="690,157,0,0" Width="70" Height="28" Background="#FFC107" Foreground="White" BorderBrush="Transparent" BorderThickness="1" Click="btnAttendance_Click" Padding="5,0"/>
+        <Button x:Name="btnAdd" Content="Add" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="330,157,0,0" Width="70" Height="28" Background="Black" Foreground="White" Click="btnAdd_Click"/>
+        <Button x:Name="btnUpdate" Content="Update" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="420,157,0,0" Width="70" Height="28" Background="#FF0099FF" Foreground="White" Click="btnUpdate_Click" RenderTransformOrigin="0.5,0.697"/>
+        <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="510,157,0,0" Width="70" Height="28" Background="#FF1B7140" Foreground="White" Click="btnDelete_Click"/>
+        <Button x:Name="btnRefresh" Content="Refresh" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="600,157,0,0" Width="70" Height="28" Foreground="White" Background="#FFA2AA3D" Click="btnRefresh_Click"/>
 
         <Label Content="Search" HorizontalAlignment="Left" Margin="342,196,0,0" VerticalAlignment="Top" Width="56" FontSize="14" Height="33"/>
         <TextBox x:Name="txtSearch"  HorizontalAlignment="Left" Margin="411,199,0,0" VerticalAlignment="Top" Width="349" FontSize="10" Height="23" IsEnabled="True" TextChanged="txtSearch_TextChanged"/>
@@ -83,13 +82,11 @@
                 </DataGridTemplateColumn>
             </DataGrid.Columns>
         </DataGrid>
-        <StackPanel Margin="0,97,644,252">
-            <!-- Toggle Button -->
-
-            <!-- Panel containing the buttons -->
+        <Button x:Name="btnAttendance" Content="Attendance" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="690,157,0,0" Click ="btnAttendance_Click" Width="70" Height="28" Background="#FF4CAF50" Foreground="White" />
+        <StackPanel>
             <!-- Toggle Button -->
             <ToggleButton x:Name="btnExpand" Content="Data Options" 
-                  Width="87"
+                  HorizontalAlignment="Left" Margin="29,150,0,0" Width="87"
                   Checked="btnExpand_Checked" Unchecked="btnExpand_Unchecked"/>
 
             <!-- Panel containing the buttons -->

@@ -6,45 +6,58 @@
         xmlns:local="clr-namespace:WpfApp"
         Loaded="LoadNotificationsByDepartmentId"
         mc:Ignorable="d"
-                WindowStartupLocation="CenterScreen"
-        Title="HomeWindow" Height="450" Width="800">
-    <Grid Margin="0,-1,0,1">
-        <Button Name="btnViewProfile" Content="View Profile" 
-        Width="200" Height="50" Click="btnViewProfile_Click" 
-        HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,69,0,0"/>
+        WindowStartupLocation="CenterScreen"
+        Title="HomeWindow" Height="450" Width="800" Background="#F7F7F7">
 
-        <Button Name="btnEmployeeManagement" Content="Employee Management" 
-                Width="200" Height="50" Click="btnEmployeeManagement_Click" 
-                HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,69,0,0"/>
-        <Button x:Name="btnNotificationManagement" Content="Notification Management" 
-        Width="200" Height="50" Click="btnNotificationManagement_Click" 
-        HorizontalAlignment="Left" VerticalAlignment="Top" Margin="288,156,0,0"/>
-        <Button Name="btnLeaveRequests" Content="Leave Requests Management" 
-                Width="200" Height="50" Click="btnLeaveRequests_Click" 
-                HorizontalAlignment="Left" VerticalAlignment="Top" Margin="288,69,0,0"/>
+    <Grid Margin="10">
 
-        <Label  HorizontalAlignment="Center" VerticalAlignment="Top" Height="37" Width="823" Foreground="#FFDE8110" Background="#FFFF9008"/>
-        <Button x:Name="btnLogout" Content="Log Out" 
-    Width="76" Height="27" Click="btnLogout_Click" 
-    HorizontalAlignment="Left" VerticalAlignment="Top" Margin="709,5,0,0"/>
-        <Label Content="FPT" HorizontalAlignment="Left" Margin="10,6,0,0" VerticalAlignment="Top" Background="#FF1703FF" Foreground="#FFFBFBFB" FontWeight="Bold" FontStyle="Italic"/>
-        <Button x:Name="btnDepartmentManagement" Content="Department Management" 
-        Width="200" Height="50" Click="btnDepartmentManagement_Click" 
-        HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,156,0,0"/>
-        <Button x:Name="btnReport" Content="Report" 
-Width="200" Height="50" Click="btnReport_Click" 
-HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,237,0,0"/>
-        <ListBox x:Name="DepartmentNotificationsListBox" 
- HorizontalAlignment="Right" 
- VerticalAlignment="Top" 
- Width="279" 
- Height="400" 
- Margin="0,50,10,0" >
+        <!-- Define Columns -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="300"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <!-- Header Section -->
+        <Button x:Name="btnLogout" Content="Log Out" Width="90" Height="35" HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="12" Click="btnLogout_Click" Margin="0,8,10,0" Grid.Column="3"/>
+        <Border Padding="10">
+            <Grid Grid.Row="0" Grid.ColumnSpan="3" Background="Orange" Margin="0,0,0,25" >
+                <Label Content="FPT" HorizontalAlignment="Left" VerticalAlignment="Center" FontWeight="Bold" FontStyle="Italic" FontSize="18" Foreground="#FFFBFBFB"/>
+            </Grid>
+        </Border>
+
+        <!-- Button Section -->
+        <StackPanel VerticalAlignment="Center" Height="389" Grid.ColumnSpan="2" Margin="61,0,0,0">
+            <Label Content="MENU" HorizontalAlignment="Center" FontWeight="Bold" FontSize="14"/>
+            <Button Name="btnViewProfile" Content="View Profile" Width="200" Height="50" HorizontalAlignment="Center" Click="btnViewProfile_Click" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}"/>
+            <Button Name="btnEmployeeManagement" Content="Employee Management" Width="200" Height="50" HorizontalAlignment="Center" Click="btnEmployeeManagement_Click" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}"/>
+            <Button x:Name="btnNotificationManagement" Content="Notification Management" Width="200" Height="50" HorizontalAlignment="Center" Click="btnNotificationManagement_Click" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}"/>
+            <Button Name="btnLeaveRequests" Content="Leave Requests Management" Width="200" Height="50" HorizontalAlignment="Center" Click="btnLeaveRequests_Click" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}"/>
+            <Button x:Name="btnDepartmentManagement" Content="Department Management" Width="200" Height="50" HorizontalAlignment="Center" Click="btnDepartmentManagement_Click" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}"/>
+            <Button x:Name="btnReport" Content="Report" Width="200" Height="50" HorizontalAlignment="Center" Click="btnReport_Click" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}"/>
+            <StackPanel Height="30"></StackPanel>
+            <StackPanel Background="#FF0079FF" Height="33" RenderTransformOrigin="0.5,0.5">
+                <StackPanel.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </StackPanel.RenderTransform>
+            </StackPanel>
+        </StackPanel>
+
+        <!-- Notifications Section -->
+        <ListBox x:Name="DepartmentNotificationsListBox" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Top" Width="279" Height="400" Margin="10,50,10,0" BorderBrush="#D1D1D1" BorderThickness="1" Padding="10">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>
-                        <TextBlock Text="{Binding Title}" FontWeight="Bold"/>
-                        <TextBlock Text="{Binding Content}" TextWrapping="Wrap" Margin="0,5,0,5"/>
+                        <TextBlock Text="{Binding Title}" FontWeight="Bold" FontSize="14" Foreground="#333333"/>
+                        <TextBlock Text="{Binding Content}" TextWrapping="Wrap" Margin="0,5,0,5" Foreground="#666666"/>
                     </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>
