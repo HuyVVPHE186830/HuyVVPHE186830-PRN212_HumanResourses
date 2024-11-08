@@ -80,6 +80,39 @@ namespace WpfApp
         {
             try
             {
+                if (string.IsNullOrWhiteSpace(txtPassword.Password))
+                {
+                    MessageBox.Show("Please enter a password.");
+                    return;  // Dừng nếu password không hợp lệ
+                }
+                if (string.IsNullOrWhiteSpace(txtFullname.Text))
+                {
+                    MessageBox.Show("Please enter a full name.");
+                    return;  // Dừng nếu fullname không hợp lệ
+                }
+
+                if (!txtDob.SelectedDate.HasValue)
+                {
+                    MessageBox.Show("Please select a date of birth.");
+                    return;  // Dừng nếu không chọn ngày sinh
+                }
+
+                if (cboGender.SelectedValue == null || string.IsNullOrWhiteSpace(cboGender.SelectedValue.ToString()))
+                {
+                    MessageBox.Show("Please select a gender.");
+                    return;  // Dừng nếu không chọn giới tính
+                }
+                if (string.IsNullOrWhiteSpace(txtPhoneNumber.Text))
+                {
+                    MessageBox.Show("Please enter a phone number.");
+                    return;  // Dừng nếu không nhập số điện thoại
+                }
+
+                if (string.IsNullOrWhiteSpace(txtAddress.Text))
+                {
+                    MessageBox.Show("Please enter an address.");
+                    return;  // Dừng nếu không nhập địa chỉ
+                }
                 currentUser.AccountId = Int32.Parse(txtAccountId.Text);
                 currentUser.Username = txtUsername.Text;
                 currentUser.Password = txtPassword.Password;

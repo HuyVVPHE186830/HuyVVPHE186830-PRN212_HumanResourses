@@ -62,14 +62,24 @@ namespace WpfApp
         private void AddDepartment_Click(object sender, RoutedEventArgs e)
         {
             var newDepartmentName = txtDepartmentName.Text.Trim();
+
             if (string.IsNullOrEmpty(newDepartmentName))
             {
                 MessageBox.Show("Please enter a department name.");
                 return;
             }
 
+            var departments = _departmentService.GetDepartments();
+
+            if (departments.Any(d => d.DepartmentName.Equals(newDepartmentName, StringComparison.OrdinalIgnoreCase)))
+            {
+                MessageBox.Show("A department with this name already exists.");
+                return;
+            }
+
             var newDepartment = new Department { DepartmentName = newDepartmentName };
             _departmentService.AddDepartment(newDepartment);
+
             LoadDepartments();
             MessageBox.Show("Department added successfully!");
         }

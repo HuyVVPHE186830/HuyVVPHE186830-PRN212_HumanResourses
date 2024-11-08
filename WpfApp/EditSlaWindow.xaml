@@ -1,6 +1,7 @@
 ﻿<Window x:Class="WpfApp.EditSlaWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        WindowStartupLocation="CenterScreen"
         Title="Chỉnh Sửa Lương" Height="350" Width="400">
     <Grid Margin="10">
         <StackPanel>

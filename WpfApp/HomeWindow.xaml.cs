@@ -97,7 +97,7 @@ namespace WpfApp
         }
         private void btnReport_Click(object sender, RoutedEventArgs e)
         {
-            ReportWindow reportWindow = new ReportWindow();
+            ReportWindow reportWindow = new ReportWindow(_account);
             reportWindow.Show();
             this.Close();
         }

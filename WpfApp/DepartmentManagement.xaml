@@ -5,13 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
         Title="DepartmentManagement" Height="500" Width="777">
     <Grid>
 
         <TextBlock Text="Department Management" 
                    FontSize="20" FontWeight="Bold" 
-                   HorizontalAlignment="Center" 
-                   VerticalAlignment="Top" Margin="0,10,0,0" />
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Top" Margin="20,10,0,0" />
 
         <TextBlock Text="Select Department:" 
                    HorizontalAlignment="Left" 
@@ -49,7 +50,7 @@
         <Button Content="Back to Home" 
                 Width="150" 
                 HorizontalAlignment="Left" 
-                VerticalAlignment="Top" Margin="20,302,0,0"
+                VerticalAlignment="Top" Margin="597,17,0,0"
                 Click="BackToHome_Click"/>
         <GroupBox Header="Employees in Selected Department" 
                   VerticalAlignment="Top" Margin="225,60,6,0" Height="400">

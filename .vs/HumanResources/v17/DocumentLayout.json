@@ -1,26 +1,78 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Public\\HuyVVPHE186830-PRN212_HumanResourses\\",
+  "WorkspaceRootPath": "C:\\PEPRN\\new\\PRN212_HumanResourses\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|c:\\users\\public\\huyvvphe186830-prn212_humanresourses\\wpfapp\\viewprofile.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|solutionrelative:wpfapp\\viewprofile.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|c:\\peprn\\new\\prn212_humanresourses\\wpfapp\\attendancewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|solutionrelative:wpfapp\\attendancewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|c:\\users\\public\\huyvvphe186830-prn212_humanresourses\\wpfapp\\homewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|solutionrelative:wpfapp\\homewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|c:\\peprn\\new\\prn212_humanresourses\\wpfapp\\attendancelistdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|solutionrelative:wpfapp\\attendancelistdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|c:\\users\\public\\huyvvphe186830-prn212_humanresourses\\wpfapp\\homewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|c:\\peprn\\new\\prn212_humanresourses\\wpfapp\\employeemanagementwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|solutionrelative:wpfapp\\employeemanagementwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|c:\\peprn\\new\\prn212_humanresourses\\wpfapp\\employeemanagementwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|solutionrelative:wpfapp\\employeemanagementwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|c:\\peprn\\new\\prn212_humanresourses\\wpfapp\\homewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|solutionrelative:wpfapp\\homewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{821B3EA4-CAB6-4035-9085-32CD411762EE}|Objects\\Objects.csproj|c:\\users\\public\\huyvvphe186830-prn212_humanresourses\\objects\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{821B3EA4-CAB6-4035-9085-32CD411762EE}|Objects\\Objects.csproj|solutionrelative:objects\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|c:\\peprn\\new\\prn212_humanresourses\\wpfapp\\viewprofile.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|solutionrelative:wpfapp\\viewprofile.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B3983E8-F962-4423-A105-3637C8AD08A9}|Services\\Services.csproj|c:\\users\\public\\huyvvphe186830-prn212_humanresourses\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B3983E8-F962-4423-A105-3637C8AD08A9}|Services\\Services.csproj|solutionrelative:services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|c:\\peprn\\new\\prn212_humanresourses\\wpfapp\\viewprofile.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|solutionrelative:wpfapp\\viewprofile.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|c:\\peprn\\new\\prn212_humanresourses\\wpfapp\\reportwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|solutionrelative:wpfapp\\reportwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|c:\\peprn\\new\\prn212_humanresourses\\wpfapp\\reportwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|solutionrelative:wpfapp\\reportwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|c:\\peprn\\new\\prn212_humanresourses\\wpfapp\\leaverequestsmanagement.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|solutionrelative:wpfapp\\leaverequestsmanagement.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|c:\\peprn\\new\\prn212_humanresourses\\wpfapp\\departmentmanagement.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|solutionrelative:wpfapp\\departmentmanagement.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|c:\\peprn\\new\\prn212_humanresourses\\wpfapp\\homewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|solutionrelative:wpfapp\\homewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|c:\\peprn\\new\\prn212_humanresourses\\wpfapp\\notificationmanagement.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|solutionrelative:wpfapp\\notificationmanagement.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|c:\\peprn\\new\\prn212_humanresourses\\wpfapp\\departmentmanagement.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|solutionrelative:wpfapp\\departmentmanagement.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|c:\\peprn\\new\\prn212_humanresourses\\wpfapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|solutionrelative:wpfapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|c:\\peprn\\new\\prn212_humanresourses\\wpfapp\\addslawindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|solutionrelative:wpfapp\\addslawindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|c:\\peprn\\new\\prn212_humanresourses\\wpfapp\\slarywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|solutionrelative:wpfapp\\slarywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|c:\\peprn\\new\\prn212_humanresourses\\wpfapp\\editslawindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{696226DC-51C5-4F4E-AEA7-6A3686BE6B79}|WpfApp\\WpfApp.csproj|solutionrelative:wpfapp\\editslawindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,13 +81,9 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 70,
-          "SelectedChildIndex": 10,
+          "DockedWidth": 206,
+          "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
@@ -46,76 +94,21 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:3:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:4:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Notification.cs",
-              "DocumentMoniker": "C:\\Users\\Public\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Notification.cs",
-              "RelativeDocumentMoniker": "Objects\\Notification.cs",
-              "ToolTip": "C:\\Users\\Public\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Notification.cs",
-              "RelativeToolTip": "Objects\\Notification.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T07:19:30.544Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "NotificationService.cs",
-              "DocumentMoniker": "C:\\Users\\Public\\HuyVVPHE186830-PRN212_HumanResourses\\Services\\NotificationService.cs",
-              "RelativeDocumentMoniker": "Services\\NotificationService.cs",
-              "ToolTip": "C:\\Users\\Public\\HuyVVPHE186830-PRN212_HumanResourses\\Services\\NotificationService.cs",
-              "RelativeToolTip": "Services\\NotificationService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T07:19:25.818Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HomeWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Public\\HuyVVPHE186830-PRN212_HumanResourses\\WpfApp\\HomeWindow.xaml.cs",
-              "RelativeDocumentMoniker": "WpfApp\\HomeWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Public\\HuyVVPHE186830-PRN212_HumanResourses\\WpfApp\\HomeWindow.xaml.cs",
-              "RelativeToolTip": "WpfApp\\HomeWindow.xaml.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAA8wFgAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T06:55:50.881Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "HomeWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Public\\HuyVVPHE186830-PRN212_HumanResourses\\WpfApp\\HomeWindow.xaml",
-              "RelativeDocumentMoniker": "WpfApp\\HomeWindow.xaml",
-              "ToolTip": "C:\\Users\\Public\\HuyVVPHE186830-PRN212_HumanResourses\\WpfApp\\HomeWindow.xaml",
-              "RelativeToolTip": "WpfApp\\HomeWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-05T06:55:44.726Z",
-              "EditorCaption": ""
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             }
           ]
         },
         {
-          "DockedWidth": 330,
-          "SelectedChildIndex": 6,
+          "DockedWidth": 194,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -123,40 +116,228 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmployeeManagementWindow.xaml.cs",
+              "DocumentMoniker": "C:\\PEPRN\\new\\PRN212_HumanResourses\\WpfApp\\EmployeeManagementWindow.xaml.cs",
+              "RelativeDocumentMoniker": "WpfApp\\EmployeeManagementWindow.xaml.cs",
+              "ToolTip": "C:\\PEPRN\\new\\PRN212_HumanResourses\\WpfApp\\EmployeeManagementWindow.xaml.cs",
+              "RelativeToolTip": "WpfApp\\EmployeeManagementWindow.xaml.cs",
+              "ViewState": "AgIAAEYBAAAAAAAAAAAAAGIBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T08:09:27.959Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeWindow.xaml.cs",
+              "DocumentMoniker": "C:\\PEPRN\\new\\PRN212_HumanResourses\\WpfApp\\HomeWindow.xaml.cs",
+              "RelativeDocumentMoniker": "WpfApp\\HomeWindow.xaml.cs",
+              "ToolTip": "C:\\PEPRN\\new\\PRN212_HumanResourses\\WpfApp\\HomeWindow.xaml.cs",
+              "RelativeToolTip": "WpfApp\\HomeWindow.xaml.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAAFkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T09:33:14.724Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "AttendanceWindow.xaml",
+              "DocumentMoniker": "C:\\PEPRN\\new\\PRN212_HumanResourses\\WpfApp\\AttendanceWindow.xaml",
+              "RelativeDocumentMoniker": "WpfApp\\AttendanceWindow.xaml",
+              "ToolTip": "C:\\PEPRN\\new\\PRN212_HumanResourses\\WpfApp\\AttendanceWindow.xaml",
+              "RelativeToolTip": "WpfApp\\AttendanceWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-08T08:17:32.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AttendanceListDialog.xaml",
+              "DocumentMoniker": "C:\\PEPRN\\new\\PRN212_HumanResourses\\WpfApp\\AttendanceListDialog.xaml",
+              "RelativeDocumentMoniker": "WpfApp\\AttendanceListDialog.xaml",
+              "ToolTip": "C:\\PEPRN\\new\\PRN212_HumanResourses\\WpfApp\\AttendanceListDialog.xaml",
+              "RelativeToolTip": "WpfApp\\AttendanceListDialog.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-08T08:17:28.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EmployeeManagementWindow.xaml",
+              "DocumentMoniker": "C:\\PEPRN\\new\\PRN212_HumanResourses\\WpfApp\\EmployeeManagementWindow.xaml",
+              "RelativeDocumentMoniker": "WpfApp\\EmployeeManagementWindow.xaml",
+              "ToolTip": "C:\\PEPRN\\new\\PRN212_HumanResourses\\WpfApp\\EmployeeManagementWindow.xaml",
+              "RelativeToolTip": "WpfApp\\EmployeeManagementWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-08T08:09:25.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "ViewProfile.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Public\\HuyVVPHE186830-PRN212_HumanResourses\\WpfApp\\ViewProfile.xaml.cs",
+              "DocumentMoniker": "C:\\PEPRN\\new\\PRN212_HumanResourses\\WpfApp\\ViewProfile.xaml.cs",
               "RelativeDocumentMoniker": "WpfApp\\ViewProfile.xaml.cs",
-              "ToolTip": "C:\\Users\\Public\\HuyVVPHE186830-PRN212_HumanResourses\\WpfApp\\ViewProfile.xaml.cs",
+              "ToolTip": "C:\\PEPRN\\new\\PRN212_HumanResourses\\WpfApp\\ViewProfile.xaml.cs",
               "RelativeToolTip": "WpfApp\\ViewProfile.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAI4AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAiwF0AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-05T07:21:56.259Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ViewProfile.xaml",
+              "DocumentMoniker": "C:\\PEPRN\\new\\PRN212_HumanResourses\\WpfApp\\ViewProfile.xaml",
+              "RelativeDocumentMoniker": "WpfApp\\ViewProfile.xaml",
+              "ToolTip": "C:\\PEPRN\\new\\PRN212_HumanResourses\\WpfApp\\ViewProfile.xaml",
+              "RelativeToolTip": "WpfApp\\ViewProfile.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-08T09:46:18.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ReportWindow.xaml.cs",
+              "DocumentMoniker": "C:\\PEPRN\\new\\PRN212_HumanResourses\\WpfApp\\ReportWindow.xaml.cs",
+              "RelativeDocumentMoniker": "WpfApp\\ReportWindow.xaml.cs",
+              "ToolTip": "C:\\PEPRN\\new\\PRN212_HumanResourses\\WpfApp\\ReportWindow.xaml.cs",
+              "RelativeToolTip": "WpfApp\\ReportWindow.xaml.cs",
+              "ViewState": "AgIAACABAAAAAAAAAAAAADgBAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T08:10:38.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LeaveRequestsManagement.xaml",
+              "DocumentMoniker": "C:\\PEPRN\\new\\PRN212_HumanResourses\\WpfApp\\LeaveRequestsManagement.xaml",
+              "RelativeDocumentMoniker": "WpfApp\\LeaveRequestsManagement.xaml",
+              "ToolTip": "C:\\PEPRN\\new\\PRN212_HumanResourses\\WpfApp\\LeaveRequestsManagement.xaml",
+              "RelativeToolTip": "WpfApp\\LeaveRequestsManagement.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-08T08:22:02.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DepartmentManagement.xaml",
+              "DocumentMoniker": "C:\\PEPRN\\new\\PRN212_HumanResourses\\WpfApp\\DepartmentManagement.xaml",
+              "RelativeDocumentMoniker": "WpfApp\\DepartmentManagement.xaml",
+              "ToolTip": "C:\\PEPRN\\new\\PRN212_HumanResourses\\WpfApp\\DepartmentManagement.xaml",
+              "RelativeToolTip": "WpfApp\\DepartmentManagement.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-08T08:17:45.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ReportWindow.xaml",
+              "DocumentMoniker": "C:\\PEPRN\\new\\PRN212_HumanResourses\\WpfApp\\ReportWindow.xaml",
+              "RelativeDocumentMoniker": "WpfApp\\ReportWindow.xaml",
+              "ToolTip": "C:\\PEPRN\\new\\PRN212_HumanResourses\\WpfApp\\ReportWindow.xaml",
+              "RelativeToolTip": "WpfApp\\ReportWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-08T08:10:35.459Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "NotificationManagement.xaml",
+              "DocumentMoniker": "C:\\PEPRN\\new\\PRN212_HumanResourses\\WpfApp\\NotificationManagement.xaml",
+              "RelativeDocumentMoniker": "WpfApp\\NotificationManagement.xaml",
+              "ToolTip": "C:\\PEPRN\\new\\PRN212_HumanResourses\\WpfApp\\NotificationManagement.xaml",
+              "RelativeToolTip": "WpfApp\\NotificationManagement.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-08T08:12:51.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HomeWindow.xaml",
+              "DocumentMoniker": "C:\\PEPRN\\new\\PRN212_HumanResourses\\WpfApp\\HomeWindow.xaml",
+              "RelativeDocumentMoniker": "WpfApp\\HomeWindow.xaml",
+              "ToolTip": "C:\\PEPRN\\new\\PRN212_HumanResourses\\WpfApp\\HomeWindow.xaml",
+              "RelativeToolTip": "WpfApp\\HomeWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-08T08:14:57.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DepartmentManagement.xaml.cs",
+              "DocumentMoniker": "C:\\PEPRN\\new\\PRN212_HumanResourses\\WpfApp\\DepartmentManagement.xaml.cs",
+              "RelativeDocumentMoniker": "WpfApp\\DepartmentManagement.xaml.cs",
+              "ToolTip": "C:\\PEPRN\\new\\PRN212_HumanResourses\\WpfApp\\DepartmentManagement.xaml.cs",
+              "RelativeToolTip": "WpfApp\\DepartmentManagement.xaml.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAiwEEAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T09:17:16.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\PEPRN\\new\\PRN212_HumanResourses\\WpfApp\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "WpfApp\\MainWindow.xaml",
+              "ToolTip": "C:\\PEPRN\\new\\PRN212_HumanResourses\\WpfApp\\MainWindow.xaml",
+              "RelativeToolTip": "WpfApp\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-08T08:14:54.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AddSlaWindow.xaml",
+              "DocumentMoniker": "C:\\PEPRN\\new\\PRN212_HumanResourses\\WpfApp\\AddSlaWindow.xaml",
+              "RelativeDocumentMoniker": "WpfApp\\AddSlaWindow.xaml",
+              "ToolTip": "C:\\PEPRN\\new\\PRN212_HumanResourses\\WpfApp\\AddSlaWindow.xaml",
+              "RelativeToolTip": "WpfApp\\AddSlaWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-08T08:15:09.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SlaryWindow.xaml",
+              "DocumentMoniker": "C:\\PEPRN\\new\\PRN212_HumanResourses\\WpfApp\\SlaryWindow.xaml",
+              "RelativeDocumentMoniker": "WpfApp\\SlaryWindow.xaml",
+              "ToolTip": "C:\\PEPRN\\new\\PRN212_HumanResourses\\WpfApp\\SlaryWindow.xaml",
+              "RelativeToolTip": "WpfApp\\SlaryWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-08T08:17:53.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "EditSlaWindow.xaml",
+              "DocumentMoniker": "C:\\PEPRN\\new\\PRN212_HumanResourses\\WpfApp\\EditSlaWindow.xaml",
+              "RelativeDocumentMoniker": "WpfApp\\EditSlaWindow.xaml",
+              "ToolTip": "C:\\PEPRN\\new\\PRN212_HumanResourses\\WpfApp\\EditSlaWindow.xaml",
+              "RelativeToolTip": "WpfApp\\EditSlaWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-08T08:20:53.288Z",
+              "EditorCaption": ""
             }
           ]
         }

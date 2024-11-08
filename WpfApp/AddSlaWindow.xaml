@@ -4,24 +4,24 @@
         Title="Thêm/Chỉnh Sửa Lương" Height="317" Width="416">
     <Grid Margin="10">
         <StackPanel>
-            <TextBlock Text="Nhân viên:"/>
+            <TextBlock Text="Employee"/>
             <TextBlock x:Name="EmployeeNameTextBlock" Margin="0,5,0,10" FontWeight="Bold"/>
 
-            <TextBlock Text="Lương Cơ Bản:"/>
+            <TextBlock Text="Base Salary"/>
             <TextBox x:Name="BaseSalaryTextBox" Margin="0,5,0,10"/>
 
-            <TextBlock Text="Phụ Cấp:"/>
+            <TextBlock Text="Allowance"/>
             <TextBox x:Name="AllowanceTextBox" Margin="0,5,0,10"/>
 
-            <TextBlock Text="Thưởng:"/>
+            <TextBlock Text="Bonus"/>
             <TextBox x:Name="BonusTextBox" Margin="0,5,0,10"/>
 
-            <TextBlock Text="Phạt:"/>
+            <TextBlock Text="Penalty"/>
             <TextBox x:Name="PenaltyTextBox" Margin="0,5,0,10"/>
 
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-                <Button Content="Lưu" Click="SaveButton_Click" Margin="5"/>
-                <Button Content="Hủy" Click="CancelButton_Click" Margin="5"/>
+                <Button Content="Save" Click="SaveButton_Click" Margin="5" Width="80" Background="green" Foreground="white"/>
+                <Button Content="Cancel" Click="CancelButton_Click" Margin="5" Foreground="white" Width="52" Background="#FFE50000"/>
             </StackPanel>
         </StackPanel>
     </Grid>

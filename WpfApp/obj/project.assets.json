@@ -4881,19 +4881,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\FPT SHOP\\.nuget\\packages\\": {}
+    "C:\\Users\\RAZER\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Public\\HuyVVPHE186830-PRN212_HumanResourses\\WpfApp\\WpfApp.csproj",
+      "projectUniqueName": "C:\\PEPRN\\new\\PRN212_HumanResourses\\WpfApp\\WpfApp.csproj",
       "projectName": "WpfApp",
-      "projectPath": "C:\\Users\\Public\\HuyVVPHE186830-PRN212_HumanResourses\\WpfApp\\WpfApp.csproj",
-      "packagesPath": "C:\\Users\\FPT SHOP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Public\\HuyVVPHE186830-PRN212_HumanResourses\\WpfApp\\obj\\",
+      "projectPath": "C:\\PEPRN\\new\\PRN212_HumanResourses\\WpfApp\\WpfApp.csproj",
+      "packagesPath": "C:\\Users\\RAZER\\.nuget\\packages\\",
+      "outputPath": "C:\\PEPRN\\new\\PRN212_HumanResourses\\WpfApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\FPT SHOP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\RAZER\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4908,11 +4908,11 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "C:\\Users\\Public\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Objects.csproj": {
-              "projectPath": "C:\\Users\\Public\\HuyVVPHE186830-PRN212_HumanResourses\\Objects\\Objects.csproj"
+            "C:\\PEPRN\\new\\PRN212_HumanResourses\\Objects\\Objects.csproj": {
+              "projectPath": "C:\\PEPRN\\new\\PRN212_HumanResourses\\Objects\\Objects.csproj"
             },
-            "C:\\Users\\Public\\HuyVVPHE186830-PRN212_HumanResourses\\Services\\Services.csproj": {
-              "projectPath": "C:\\Users\\Public\\HuyVVPHE186830-PRN212_HumanResourses\\Services\\Services.csproj"
+            "C:\\PEPRN\\new\\PRN212_HumanResourses\\Services\\Services.csproj": {
+              "projectPath": "C:\\PEPRN\\new\\PRN212_HumanResourses\\Services\\Services.csproj"
             }
           }
         }
@@ -4974,7 +4974,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

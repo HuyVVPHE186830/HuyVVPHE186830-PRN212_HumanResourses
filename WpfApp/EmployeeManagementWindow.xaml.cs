@@ -19,6 +19,7 @@ using Services;
 using System.IO;
 using System.Text.Json;
 using System.Diagnostics;
+using Repositories;
 
 namespace WpfApp
 {
@@ -202,63 +203,83 @@ namespace WpfApp
                 if (txtAccountId == null)
                 {
                     MessageBox.Show("Cannot Add Duplicate Employee");
-                    resetInput();
                     return;
                 }
                 if (string.IsNullOrWhiteSpace(txtUsername.Text))
                 {
                     MessageBox.Show("Please enter a username.");
-                    return;
+                    return;  // Dừng ngay sau khi phát hiện lỗi
                 }
+
+                var accountList = iAccountService.GetAccounts();
+                foreach (var a in accountList)
+                {
+                    if (txtUsername.Text.Equals(a.Username, StringComparison.OrdinalIgnoreCase))
+                    {
+                        MessageBox.Show("Try Other Username!");
+                        txtUsername.Text = "";
+                        return;  // Dừng nếu trùng username
+                    }
+                }
+
                 if (string.IsNullOrWhiteSpace(txtPassword.Text))
                 {
                     MessageBox.Show("Please enter a password.");
-                    return;
+                    return;  // Dừng nếu password không hợp lệ
                 }
+
                 if (cboRole.SelectedValue == null)
                 {
                     MessageBox.Show("Please select a role.");
-                    return;
+                    return;  // Dừng nếu không chọn role
                 }
+
                 if (string.IsNullOrWhiteSpace(txtFullname.Text))
                 {
                     MessageBox.Show("Please enter a full name.");
-                    return;
+                    return;  // Dừng nếu fullname không hợp lệ
                 }
+
                 if (!txtDob.SelectedDate.HasValue)
                 {
                     MessageBox.Show("Please select a date of birth.");
-                    return;
+                    return;  // Dừng nếu không chọn ngày sinh
                 }
-                if (cboGender.SelectedValue == null)
+
+                if (cboGender.SelectedValue == null || string.IsNullOrWhiteSpace(cboGender.SelectedValue.ToString()))
                 {
                     MessageBox.Show("Please select a gender.");
-                    return;
+                    return;  // Dừng nếu không chọn giới tính
                 }
+
                 if (string.IsNullOrWhiteSpace(txtPhoneNumber.Text))
                 {
                     MessageBox.Show("Please enter a phone number.");
-                    return;
+                    return;  // Dừng nếu không nhập số điện thoại
                 }
+
                 if (string.IsNullOrWhiteSpace(txtAddress.Text))
                 {
                     MessageBox.Show("Please enter an address.");
-                    return;
+                    return;  // Dừng nếu không nhập địa chỉ
                 }
+
                 if (string.IsNullOrWhiteSpace(txtSalary.Text) || !double.TryParse(txtSalary.Text, out double salary))
                 {
                     MessageBox.Show("Please enter a valid salary.");
-                    return;
+                    return;  // Dừng nếu salary không hợp lệ
                 }
+
                 if (cboDepartment.SelectedValue == null)
                 {
                     MessageBox.Show("Please select a department.");
-                    return;
+                    return;  // Dừng nếu không chọn department
                 }
+
                 if (cboPosition.SelectedValue == null)
                 {
                     MessageBox.Show("Please select a position.");
-                    return;
+                    return;  // Dừng nếu không chọn position
                 }
 
                 Account account = new Account
@@ -277,12 +298,13 @@ namespace WpfApp
                     Gender = cboGender.SelectedValue.ToString(),
                     PhoneNumber = txtPhoneNumber.Text,
                     Address = txtAddress.Text,
-                    Salary = salary,
+                    Salary = double.Parse(txtSalary.Text),
                     DepartmentId = (int)cboDepartment.SelectedValue,
                     PositionId = (int)cboPosition.SelectedValue,
                     ProfilePicture = avatarImage.Source != null ? avatarImage.Source.ToString() : null
                 };
                 iEmployeeService.AddEmployee(employee);
+                MessageBox.Show("Add Successfully!");
                 ActivityLog activityLog = new ActivityLog();
                 activityLog.AccountId = currentUser.AccountId;
                 activityLog.Action = "Add Employee";
@@ -303,6 +325,7 @@ namespace WpfApp
             }
         }
 
+
         private void resetInput()
         {
             txtAccountId.Text = "";
@@ -320,6 +343,15 @@ namespace WpfApp
             cboPosition.SelectedIndex = -1; // Đặt về mặc định không chọn
 
             avatarImage.Source = null;
+        }
+
+        private void btnAttendance_Click(object sender, RoutedEventArgs e)
+        {
+            List<Employee> employees = iEmployeeService.GetEmployees();
+            IAttendanceRepository attendanceRepository = new AttendanceRepository();
+            IAttendanceService attendanceService = new AttendanceService(attendanceRepository); // Cần khởi tạo đối tượng của class implement IAttendanceService
+            AttendanceWindow attendanceWindow = new AttendanceWindow(employees, attendanceService);
+            attendanceWindow.ShowDialog();
         }
 
 
@@ -365,6 +397,74 @@ namespace WpfApp
         {
             try
             {
+                // Kiểm tra tất cả các trường nhập liệu
+                if (string.IsNullOrWhiteSpace(txtUsername.Text))
+                {
+                    MessageBox.Show("Please enter a username.");
+                    return;  // Dừng lại nếu username không hợp lệ
+                }
+
+                if (string.IsNullOrWhiteSpace(txtPassword.Text))
+                {
+                    MessageBox.Show("Please enter a password.");
+                    return;  // Dừng lại nếu password không hợp lệ
+                }
+
+                if (cboRole.SelectedValue == null)
+                {
+                    MessageBox.Show("Please select a role.");
+                    return;  // Dừng lại nếu không chọn role
+                }
+
+                if (string.IsNullOrWhiteSpace(txtFullname.Text))
+                {
+                    MessageBox.Show("Please enter a full name.");
+                    return;  // Dừng lại nếu fullname không hợp lệ
+                }
+
+                if (!txtDob.SelectedDate.HasValue)
+                {
+                    MessageBox.Show("Please select a date of birth.");
+                    return;  // Dừng lại nếu không chọn ngày sinh
+                }
+
+                if (cboGender.SelectedValue == null || string.IsNullOrWhiteSpace(cboGender.SelectedValue.ToString()))
+                {
+                    MessageBox.Show("Please select a gender.");
+                    return;  // Dừng lại nếu không chọn giới tính
+                }
+
+                if (string.IsNullOrWhiteSpace(txtPhoneNumber.Text))
+                {
+                    MessageBox.Show("Please enter a phone number.");
+                    return;  // Dừng lại nếu không nhập số điện thoại
+                }
+
+                if (string.IsNullOrWhiteSpace(txtAddress.Text))
+                {
+                    MessageBox.Show("Please enter an address.");
+                    return;  // Dừng lại nếu không nhập địa chỉ
+                }
+
+                if (string.IsNullOrWhiteSpace(txtSalary.Text) || !double.TryParse(txtSalary.Text, out double salary))
+                {
+                    MessageBox.Show("Please enter a valid salary.");
+                    return;  // Dừng lại nếu salary không hợp lệ
+                }
+
+                if (cboDepartment.SelectedValue == null)
+                {
+                    MessageBox.Show("Please select a department.");
+                    return;  // Dừng lại nếu không chọn department
+                }
+
+                if (cboPosition.SelectedValue == null)
+                {
+                    MessageBox.Show("Please select a position.");
+                    return;  // Dừng lại nếu không chọn position
+                }
+
+                // Kiểm tra AccountId
                 if (txtAccountId.Text.Length > 0)
                 {
                     Account account = new Account();
@@ -372,8 +472,10 @@ namespace WpfApp
                     account.Username = txtUsername.Text;
                     account.Password = txtPassword.Text;
                     account.RoleId = Int32.Parse(cboRole.SelectedValue.ToString());
+
                     Employee employee = iEmployeeService.GetEmployeeByAccountId(account.AccountId);
                     employee.FullName = txtFullname.Text;
+
                     if (txtDob.SelectedDate.HasValue)
                     {
                         employee.DateOfBirth = txtDob.SelectedDate.Value;
@@ -381,8 +483,9 @@ namespace WpfApp
                     else
                     {
                         MessageBox.Show("Please select Date of Birth.");
-                        return;
+                        return;  // Dừng lại nếu không chọn ngày sinh
                     }
+
                     employee.Gender = cboGender.SelectedValue.ToString();
                     employee.PhoneNumber = txtPhoneNumber.Text;
                     employee.Address = txtAddress.Text;
@@ -390,8 +493,11 @@ namespace WpfApp
                     employee.DepartmentId = (int)cboDepartment.SelectedValue;
                     employee.PositionId = (int)cboPosition.SelectedValue;
                     employee.ProfilePicture = avatarImage.Source != null ? avatarImage.Source.ToString() : null;
+
                     iAccountService.UpdateAccount(account);
                     iEmployeeService.UpdateEmployee(employee);
+                    MessageBox.Show("Update Successfully!");
+                    // Log activity
                     ActivityLog activityLog = new ActivityLog();
                     activityLog.AccountId = currentUser.AccountId;
                     activityLog.Action = "Update Employee";
@@ -409,11 +515,12 @@ namespace WpfApp
             }
             finally
             {
-                resetInput();
+                // Không gọi resetInput() để giữ lại các giá trị người dùng nhập
                 LoadRoleList();
                 LoadEmployeeList();
                 LoadDepartmentList();
                 LoadPositionList();
+                resetInput();
             }
         }
 
@@ -430,6 +537,7 @@ namespace WpfApp
                     var employee = employeeList.FirstOrDefault(a => a.AccountId == accountId);
                     iEmployeeService.DeleteEmployee(employee);
                     iAccountService.DeleteAccount(account);
+                    MessageBox.Show("Delete Successfully!");
                     ActivityLog activityLog = new ActivityLog();
                     activityLog.AccountId = currentUser.AccountId;
                     activityLog.Action = "Delete Employee";
@@ -595,7 +703,7 @@ namespace WpfApp
         }
         private void btnHome_Click(object sender, RoutedEventArgs e)
         {
-            HomeWindow homeWindow = new HomeWindow();
+            HomeWindow homeWindow = new HomeWindow(currentUser);
             homeWindow.Show();
             this.Close();
         }

@@ -18,9 +18,11 @@ namespace WpfApp
         private readonly PositionService _positionService;
         private readonly EmployeeService _employeeService;
         private readonly SalaryService _salaryService;
+        private Objects.Account _account;
 
-        public ReportWindow()
+        public ReportWindow(Objects.Account account)
         {
+            _account = account;
             InitializeComponent();
             _departmentService = new DepartmentService();
             _positionService = new PositionService();
@@ -308,7 +310,7 @@ namespace WpfApp
 
         private void btnBack_Click(object sender, RoutedEventArgs e)
         {
-            HomeWindow reportWindow = new HomeWindow();
+            HomeWindow reportWindow = new HomeWindow(_account);
             reportWindow.Show();
             this.Close();
         }
