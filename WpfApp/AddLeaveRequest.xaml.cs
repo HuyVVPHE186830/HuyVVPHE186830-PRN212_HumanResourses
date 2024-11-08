@@ -31,6 +31,16 @@ namespace WpfApp
         {
             var startDate = DatePicker_StartDate.SelectedDate.Value;
             var endDate = DatePicker_Endate.SelectedDate.Value;
+            if (startDate > endDate)
+            {
+                MessageBox.Show("Start date must be before end date");
+                return;
+            }
+            else if(startDate < DateTime.Now)
+            {
+                MessageBox.Show("Start date must be in the future");
+                return;
+            }
             var leaveType = TextBoxLeaveType.Text;
             var leaveRequest = new Objects.LeaveRequest
             {
