@@ -135,7 +135,10 @@ namespace WpfApp
             this.Close();
         }
 
-     
+        private void btnAddLeaveRequest_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }
 

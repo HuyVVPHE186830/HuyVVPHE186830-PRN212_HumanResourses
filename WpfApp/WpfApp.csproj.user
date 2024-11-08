@@ -7,6 +7,9 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="AddLeaveRequest.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="AddSlaWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -36,6 +39,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="AddLeaveRequest.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="AddSlaWindow.xaml">
       <SubType>Designer</SubType>
     </Page>

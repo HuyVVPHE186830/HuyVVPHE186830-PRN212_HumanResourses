@@ -38,6 +38,7 @@
             <Button Name="btnLeaveRequests" Content="Leave Requests Management" Width="200" Height="50" HorizontalAlignment="Center" Click="btnLeaveRequests_Click" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}"/>
             <Button x:Name="btnDepartmentManagement" Content="Department Management" Width="200" Height="50" HorizontalAlignment="Center" Click="btnDepartmentManagement_Click" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}"/>
             <Button x:Name="btnReport" Content="Report" Width="200" Height="50" HorizontalAlignment="Center" Click="btnReport_Click" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}"/>
+            <Button x:Name="btnAddLeaveRequest" Content="Create Leave Request" Width="200" Height="50" HorizontalAlignment="Center" Click="btnAddLeaveRequest_Click" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}"/>
             <StackPanel Height="30"></StackPanel>
             <StackPanel Background="#FF0079FF" Height="33" RenderTransformOrigin="0.5,0.5">
                 <StackPanel.RenderTransform>
