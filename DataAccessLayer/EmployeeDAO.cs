@@ -68,12 +68,17 @@ namespace DataAccessLayer
             {
                 using var db = new FuhrmContext();
                 var b1 = db.Employees.SingleOrDefault(b => b.EmployeeId == employee.EmployeeId);
-                db.Employees.Remove(b1);
+                db.Employees.Remove(b1) ;
                 db.SaveChanges();
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                throw new Exception(e.Message);
+                string message = ex.Message;
+                if (ex.InnerException != null)
+                {
+                    message += "\nInner Exception: " + ex.InnerException.Message;
+                }
+                MessageBox.Show(message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
         public static List<Employee> SearchEmployee(String keyword)

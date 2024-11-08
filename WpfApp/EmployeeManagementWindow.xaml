@@ -8,7 +8,7 @@
         mc:Ignorable="d"
                 WindowStartupLocation="CenterScreen"
         Loaded="Window_Loaded"
-        Title="EmployeeManagementWindow" Height="450" Width="800">
+        Title="EmployeeManagementWindow" Height="500" Width="800">
     <Grid>
         <Label Content="Employee Management" Margin="301,-2,296,0" VerticalAlignment="Top"  FontSize="17" Height="30" FontWeight="Bold" />
 
@@ -42,20 +42,20 @@
         <Button Content="Chọn ảnh" Width="100" Height="23" Click="SelectImage_Click"
                 VerticalAlignment="Top" HorizontalAlignment="Left" Margin="205,111,0,0"/>
 
-        <Image x:Name="avatarImage" Width="166" Height="87" 
+        <Image x:Name="avatarImage" Width="169" Height="87" 
                VerticalAlignment="Top" HorizontalAlignment="Left" Margin="136,139,0,0" />
         <Label Content="Department" HorizontalAlignment="Left" Margin="336,111,0,0" VerticalAlignment="Top" Width="68" FontSize="10" Height="23"/>
         <ComboBox x:Name="cboDepartment" Width="139" Height="23" IsEnabled="True" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="404,111,0,0"/>
         <Label Content="Position" HorizontalAlignment="Left" Margin="559,111,0,0" VerticalAlignment="Top" Width="64" FontSize="10" Height="23"/>
         <ComboBox x:Name="cboPosition" Width="133" Height="23" IsEnabled="True" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="628,111,0,0"/>
 
-        <Button x:Name="btnAdd" Content="Add" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="356,157,0,0" Width="70" Height="28" Background="Black" Foreground="White" Click="btnAdd_Click"/>
-        <Button x:Name="btnUpdate" Content="Update" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="456,157,0,0" Width="70" Height="28" Background="#FF0099FF" Foreground="White" Click="btnUpdate_Click" RenderTransformOrigin="0.5,0.697"/>
-        <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="556,157,0,0" Width="70" Height="28" Background="#FF1B7140" Foreground="White" Click="btnDelete_Click"/>
-        <Button x:Name="btnRefresh" Content="Refresh" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="656,157,0,0" Width="70" Height="28" Foreground="White" Background="#FFA2AA3D" Click="btnRefresh_Click"/>
+        <Button x:Name="btnAdd" Content="Add" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="330,157,0,0" Width="70" Height="28" Background="Black" Foreground="White" Click="btnAdd_Click"/>
+        <Button x:Name="btnUpdate" Content="Update" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="420,157,0,0" Width="70" Height="28" Background="#FF0099FF" Foreground="White" Click="btnUpdate_Click" RenderTransformOrigin="0.5,0.697"/>
+        <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="510,157,0,0" Width="70" Height="28" Background="#FF1B7140" Foreground="White" Click="btnDelete_Click"/>
+        <Button x:Name="btnRefresh" Content="Refresh" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="600,157,0,0" Width="70" Height="28" Foreground="White" Background="#FFA2AA3D" Click="btnRefresh_Click"/>
 
-        <Label Content="Search" HorizontalAlignment="Left" Margin="356,199,0,0" VerticalAlignment="Top" Width="55" FontSize="10" Height="23"/>
-        <TextBox x:Name="txtSearch"  HorizontalAlignment="Left" Margin="411,199,0,0" VerticalAlignment="Top" Width="279" FontSize="10" Height="23" IsEnabled="True" TextChanged="txtSearch_TextChanged"/>
+        <Label Content="Search" HorizontalAlignment="Left" Margin="342,196,0,0" VerticalAlignment="Top" Width="56" FontSize="14" Height="33"/>
+        <TextBox x:Name="txtSearch"  HorizontalAlignment="Left" Margin="411,199,0,0" VerticalAlignment="Top" Width="349" FontSize="10" Height="23" IsEnabled="True" TextChanged="txtSearch_TextChanged"/>
 
         <DataGrid x:Name="dgData" Margin="10,232,10,10" AutoGenerateColumns="False" SelectionChanged="dgData_SelectionChanged" CanUserAddRows="False">
             <DataGrid.Columns>
@@ -82,9 +82,23 @@
                 </DataGridTemplateColumn>
             </DataGrid.Columns>
         </DataGrid>
-        <Button x:Name="btnAttendance" Content="Attendance" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="39,115,0,0" Click ="btnAttendance_Click" Width="90" Height="28" Background="#FF4CAF50" Foreground="White" />
-        <Button Content="Save Data" HorizontalAlignment="Left" Margin="39,159,0,0" VerticalAlignment="Top" Click="btnSave_Click"/>
-        <Button Content="Restore Data" HorizontalAlignment="Left" Margin="39,196,0,0" VerticalAlignment="Top" Click="btnRestore_Click"/>
+        <Button x:Name="btnAttendance" Content="Attendance" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="690,157,0,0" Click ="btnAttendance_Click" Width="70" Height="28" Background="#FF4CAF50" Foreground="White" />
+        <StackPanel>
+            <!-- Toggle Button -->
+            <ToggleButton x:Name="btnExpand" Content="Data Options" 
+                  HorizontalAlignment="Left" Margin="29,150,0,0" Width="87"
+                  Checked="btnExpand_Checked" Unchecked="btnExpand_Unchecked"/>
+
+            <!-- Panel containing the buttons -->
+            <StackPanel x:Name="optionPanel" Visibility="Collapsed" Margin="29,0,0,0">
+                <Button Content="Save Data" HorizontalAlignment="Left" 
+                Margin="0,5,0,0" VerticalAlignment="Top" 
+                Click="btnSave_Click" Width="78"/>
+                <Button Content="Restore Data" HorizontalAlignment="Left" 
+                Margin="0,5,0,0" VerticalAlignment="Top" 
+                Click="btnRestore_Click" Width="78"/>
+            </StackPanel>
+        </StackPanel>
         <Button Content="Back To Home" HorizontalAlignment="Left" Margin="690,4,0,0" VerticalAlignment="Top" Click="btnHome_Click"/>
     </Grid>
 </Window>
